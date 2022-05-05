@@ -44,7 +44,7 @@
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Location = new System.Drawing.Point(-3, 161);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1993, 710);
+            this.panel1.Size = new System.Drawing.Size(805, 306);
             this.panel1.TabIndex = 1;
             // 
             // dataGridView1
@@ -58,7 +58,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(-16, -3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(2009, 710);
+            this.dataGridView1.Size = new System.Drawing.Size(821, 306);
             this.dataGridView1.TabIndex = 0;
             // 
             // label
@@ -69,7 +69,7 @@
             this.label.Font = new System.Drawing.Font("Segoe UI Semibold", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label.Location = new System.Drawing.Point(466, 9);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(900, 137);
+            this.label.Size = new System.Drawing.Size(0, 0);
             this.label.TabIndex = 1;
             this.label.Text = "PRENOTAZIONI";
             this.label.Click += new System.EventHandler(this.label1_Click_1);
@@ -81,7 +81,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(688, 886);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(298, 55);
+            this.button2.Size = new System.Drawing.Size(0, 0);
             this.button2.TabIndex = 3;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1989, 981);
+            this.ClientSize = new System.Drawing.Size(801, 577);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label);
             this.Controls.Add(this.panel1);
