@@ -1,0 +1,11 @@
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\bin\Debug\EsMedia.exe.config
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\bin\Debug\EsMedia.exe
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\bin\Debug\EsMedia.pdb
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\obj\Debug\EsMedia.csproj.AssemblyReference.cache
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\obj\Debug\EsMedia.csproj.SuggestedBindingRedirects.cache
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\obj\Debug\EsMedia.Form1.resources
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\obj\Debug\EsMedia.Properties.Resources.resources
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\obj\Debug\EsMedia.csproj.GenerateResource.cache
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\obj\Debug\EsMedia.csproj.CoreCompileInputs.cache
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\obj\Debug\EsMedia.exe
+C:\Users\leona\School\Csharp\Windowsform\EsMedia\EsMedia\obj\Debug\EsMedia.pdb
