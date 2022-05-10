@@ -1,0 +1,11 @@
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\bin\Debug\Range.exe.config
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\bin\Debug\Range.exe
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\bin\Debug\Range.pdb
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\obj\Debug\Range.csproj.AssemblyReference.cache
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\obj\Debug\Range.csproj.SuggestedBindingRedirects.cache
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\obj\Debug\Range.Form1.resources
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\obj\Debug\Range.Properties.Resources.resources
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\obj\Debug\Range.csproj.GenerateResource.cache
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\obj\Debug\Range.csproj.CoreCompileInputs.cache
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\obj\Debug\Range.exe
+C:\Users\leona\School\Csharp\Windowsform\Range\Range\obj\Debug\Range.pdb
