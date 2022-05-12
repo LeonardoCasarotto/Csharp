@@ -1,0 +1,11 @@
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.FormMain.resources
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.Properties.Resources.resources
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.csproj.GenerateResource.cache
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.csproj.CoreCompileInputs.cache
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\bin\Debug\WF_PrenotazioniDIM.exe.config
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\bin\Debug\WF_PrenotazioniDIM.exe
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\bin\Debug\WF_PrenotazioniDIM.pdb
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.FormIns.resources
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.exe
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.pdb
+C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.csprojAssemblyReference.cache
