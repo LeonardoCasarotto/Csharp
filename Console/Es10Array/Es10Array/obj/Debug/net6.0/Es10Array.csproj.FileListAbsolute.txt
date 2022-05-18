@@ -1,0 +1,15 @@
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\bin\Debug\net6.0\Es10Array.exe
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\bin\Debug\net6.0\Es10Array.deps.json
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\bin\Debug\net6.0\Es10Array.runtimeconfig.json
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\bin\Debug\net6.0\Es10Array.dll
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\bin\Debug\net6.0\Es10Array.pdb
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\obj\Debug\net6.0\Es10Array.csproj.AssemblyReference.cache
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\obj\Debug\net6.0\Es10Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\obj\Debug\net6.0\Es10Array.AssemblyInfoInputs.cache
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\obj\Debug\net6.0\Es10Array.AssemblyInfo.cs
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\obj\Debug\net6.0\Es10Array.csproj.CoreCompileInputs.cache
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\obj\Debug\net6.0\Es10Array.dll
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\obj\Debug\net6.0\refint\Es10Array.dll
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\obj\Debug\net6.0\Es10Array.pdb
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\obj\Debug\net6.0\Es10Array.genruntimeconfig.cache
+C:\Users\leona\School\Csharp\Console\Es10Array\Es10Array\obj\Debug\net6.0\ref\Es10Array.dll

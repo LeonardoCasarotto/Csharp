@@ -9,3 +9,15 @@ C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_P
 C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.exe
 C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.pdb
 C:\Users\dpana\source\repos\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.csprojAssemblyReference.cache
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\bin\Debug\WF_PrenotazioniDIM.exe.config
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\bin\Debug\WF_PrenotazioniDIM.exe
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\bin\Debug\WF_PrenotazioniDIM.pdb
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.csproj.AssemblyReference.cache
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.csproj.SuggestedBindingRedirects.cache
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.FormIns.resources
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.FormMain.resources
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.Properties.Resources.resources
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.csproj.GenerateResource.cache
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.csproj.CoreCompileInputs.cache
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.exe
+C:\Users\leona\School\Csharp\WF_PrenotazioniDIM\WF_PrenotazioniDIM\obj\Debug\WF_PrenotazioniDIM.pdb
