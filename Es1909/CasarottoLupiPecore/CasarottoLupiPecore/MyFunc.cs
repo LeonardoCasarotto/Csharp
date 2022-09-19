@@ -32,11 +32,15 @@ namespace CasarottoLupiPecore
            
                 int lg = lettere.Length;
 
+                // se l'array è composto da un solo elemento, lo ritorna
                 if (lg == 1)
                     return lettere;
 
                 for (int i = 0; i < lg - 1; i++)
+
                 {
+
+                    //suddivisione del percorso sulla base della lettera corrente
                     switch (lettere[i])
                     {
 

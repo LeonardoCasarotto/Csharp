@@ -18,9 +18,10 @@ namespace CasarottoLupiPecore
         public Form1()
         {
             InitializeComponent();
-            string file = System.IO.File.ReadAllText(@"../../Pecore_Cavoli.csv");
-            file =file.Replace(";", "");
-            lettere = file.ToCharArray();
+
+            string file = System.IO.File.ReadAllText(@"../../Pecore_Cavoli.csv"); //Lettura file
+            file =file.Replace(";", "");// Rimuove il ;
+            lettere = file.ToCharArray(); // Trasforma la stringa in un array di char
 
             lettere =MyFunc.Ordina(lettere);
 
