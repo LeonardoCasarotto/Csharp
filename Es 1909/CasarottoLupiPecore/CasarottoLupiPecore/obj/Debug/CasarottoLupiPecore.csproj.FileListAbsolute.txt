@@ -1,0 +1,9 @@
+C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\bin\Debug\CasarottoLupiPecore.exe.config
+C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\bin\Debug\CasarottoLupiPecore.exe
+C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\bin\Debug\CasarottoLupiPecore.pdb
+C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.Properties.Resources.resources
+C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.csproj.GenerateResource.cache
+C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.exe
+C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.pdb
