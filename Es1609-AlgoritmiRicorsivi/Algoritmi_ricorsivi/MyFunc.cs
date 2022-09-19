@@ -47,7 +47,35 @@ namespace Algoritmi_ricorsivi
             else
             {
                 return num+somma(num - 1);
-            }
+            }}
+         public static int fib(int num){
+             if(num==1||num==0)
+             {
+                 return 1;}
+             else
+             {
+                 return fib(num-1)+fib(num-2);}
         }
-    }
-}
+        public static int[] BinSearch(int[] arr,int left, int right, int x){
+            
+            int mid = (right-left)/2+left;
+            
+            if(right>left){
+                
+                if(arr[mid] ==0)
+                    return mid;
+
+                else if (arr[mid]>0)
+                    return BinSearch(arr, left,mid-1);
+
+                else 
+                    return BinSearch(arr, mid-1, right);}
+            
+            else{
+                 return -1;
+            }
+                
+        
+        
+        
+        }
