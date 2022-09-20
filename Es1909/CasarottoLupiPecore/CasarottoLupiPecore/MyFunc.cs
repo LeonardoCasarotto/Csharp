@@ -27,60 +27,22 @@ namespace CasarottoLupiPecore
 
         }
 
-        public static char[] Ordina(char[] lettere)
+        public static char[] Ordina(char[] lettere,int right)
         {
-           
-                int lg = lettere.Length;
+            if (right == 0)
+                return lettere;
 
-                // se l'array è composto da un solo elemento, lo ritorna
-                if (lg == 1)
-                    return lettere;
-
-                for (int i = 0; i < lg - 1; i++)
-
+            for(int i = 0; i < right; i++)
+            {
+                if (lettere[i + 1] == 'c' || lettere[i] == 'l' && lettere[i+1] == 'p')
                 {
-
-                    //suddivisione del percorso sulla base della lettera corrente
-                    switch (lettere[i])
-                    {
-
-                        case 'c':
-                            if (lettere[i] > lettere[i + 1])
-                            {
-
-                                char temp = lettere[i + 1];
-                                lettere[i + 1] = lettere[i];
-                                lettere[i] = temp;
-
-                            }
-
-                            break;
-
-                        case 'p':
-                            if (lettere[i + 1] == 'c')
-                            {
-                                char temp = lettere[i + 1];
-                                lettere[i + 1] = lettere[i];
-                                lettere[i] = temp;
-                            }
-                            break;
-
-                        case 'l':
-                            if (lettere[i + 1] != 'l')
-                            {
-                                char temp = lettere[i + 1];
-                                lettere[i + 1] = lettere[i];
-                                lettere[i] = temp;
-                            }
-                            break;
-
-                    }
+                    char appoggio = lettere[i + 1];
+                    lettere[i + 1] = lettere[i];
+                    lettere[i] = appoggio;
                 }
-                
-
-                return Ordina(lettere);
-            
-
+            }
+            right--;
+            return Ordina(lettere, right);
 
         }
 

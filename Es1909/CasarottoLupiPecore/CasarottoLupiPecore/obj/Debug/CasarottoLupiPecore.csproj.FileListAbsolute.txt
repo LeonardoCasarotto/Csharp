@@ -7,3 +7,13 @@ C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\D
 C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.csproj.CoreCompileInputs.cache
 C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.exe
 C:\Users\leona\Code\Csharp\Es 1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.pdb
+C:\Users\8293359\C#\Csharp-main\Es1909\CasarottoLupiPecore\CasarottoLupiPecore\bin\Debug\CasarottoLupiPecore.exe.config
+C:\Users\8293359\C#\Csharp-main\Es1909\CasarottoLupiPecore\CasarottoLupiPecore\bin\Debug\CasarottoLupiPecore.exe
+C:\Users\8293359\C#\Csharp-main\Es1909\CasarottoLupiPecore\CasarottoLupiPecore\bin\Debug\CasarottoLupiPecore.pdb
+C:\Users\8293359\C#\Csharp-main\Es1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.csproj.AssemblyReference.cache
+C:\Users\8293359\C#\Csharp-main\Es1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.Properties.Resources.resources
+C:\Users\8293359\C#\Csharp-main\Es1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.csproj.GenerateResource.cache
+C:\Users\8293359\C#\Csharp-main\Es1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.csproj.CoreCompileInputs.cache
+C:\Users\8293359\C#\Csharp-main\Es1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.exe
+C:\Users\8293359\C#\Csharp-main\Es1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.pdb
+C:\Users\8293359\C#\Csharp-main\Es1909\CasarottoLupiPecore\CasarottoLupiPecore\obj\Debug\CasarottoLupiPecore.Form1.resources

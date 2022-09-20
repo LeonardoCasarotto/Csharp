@@ -20,13 +20,23 @@ namespace CasarottoLupiPecore
             InitializeComponent();
 
             string file = System.IO.File.ReadAllText(@"../../Pecore_Cavoli.csv"); //Lettura file
-            file =file.Replace(";", "");// Rimuove il ;
+            file =file.Replace(";","");// Rimuove il ;
             lettere = file.ToCharArray(); // Trasforma la stringa in un array di char
 
-            lettere =MyFunc.Ordina(lettere);
+            
+            lettere =MyFunc.Ordina(lettere,lettere.Length-1);
+            label1.Text = "Array non ordinato: ";
+            label2.Text = "Array ordinato: ";
+            
+            for(int i = 0; i < lettere.Length; i++)
+            {
+                label1.Text += file[i] + ";";
 
-            MessageBox.Show(MyFunc.Ordina(lettere).ToString());
-           
+                label2.Text += lettere[i] +";";
+            }
+            
+            
+
         }
     }
 }
