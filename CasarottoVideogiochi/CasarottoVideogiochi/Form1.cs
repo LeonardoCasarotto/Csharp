@@ -6,13 +6,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Krypton.Toolkit;
 using System.Windows.Forms;
 
 namespace CasarottoVideogiochi
 {
-    public partial class Form1 : Form
+    public partial class HomePage : KryptonForm
     {
-        public Form1()
+        public HomePage()
         {
             InitializeComponent();
         }
