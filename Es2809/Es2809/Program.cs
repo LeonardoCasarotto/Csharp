@@ -1,14 +1,22 @@
 ﻿using System;
 using static System.Console;
+using System.IO;
 namespace Es2809
 {
     class Program
     {
         static void Main(string[] args)
+
+
         {
+
+            /*
             int[] arr = { 3, 7, 4, 3, 10, 3 };
 
-            WriteLine(myfunc(arr, 0, 5, 3));
+            WriteLine(myfunc(arr, 0, 5, 3));*/
+
+
+            WriteLine(File.ReadAllLines(@"../../../../main.csv").Length);
 
 
         }

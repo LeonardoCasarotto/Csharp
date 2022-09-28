@@ -12,3 +12,17 @@ C:\Users\leona\School\Csharp\Es2809\Es2809\bin\Debug\netcoreapp3.1\Es2809.pdb
 C:\Users\leona\School\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.dll
 C:\Users\leona\School\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.pdb
 C:\Users\leona\School\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.genruntimeconfig.cache
+C:\Users\leona\Code\Csharp\Es2809\Es2809\bin\Debug\netcoreapp3.1\Es2809.exe
+C:\Users\leona\Code\Csharp\Es2809\Es2809\bin\Debug\netcoreapp3.1\Es2809.deps.json
+C:\Users\leona\Code\Csharp\Es2809\Es2809\bin\Debug\netcoreapp3.1\Es2809.runtimeconfig.json
+C:\Users\leona\Code\Csharp\Es2809\Es2809\bin\Debug\netcoreapp3.1\Es2809.runtimeconfig.dev.json
+C:\Users\leona\Code\Csharp\Es2809\Es2809\bin\Debug\netcoreapp3.1\Es2809.dll
+C:\Users\leona\Code\Csharp\Es2809\Es2809\bin\Debug\netcoreapp3.1\Es2809.pdb
+C:\Users\leona\Code\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Code\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.AssemblyInfoInputs.cache
+C:\Users\leona\Code\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.AssemblyInfo.cs
+C:\Users\leona\Code\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.dll
+C:\Users\leona\Code\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.pdb
+C:\Users\leona\Code\Csharp\Es2809\Es2809\obj\Debug\netcoreapp3.1\Es2809.genruntimeconfig.cache
