@@ -41,7 +41,7 @@ namespace CasarottoVideogiochi
 
             for(int i = 0; i < 25; i++)
             {
-                dGrid.Rows.Add()
+                dGrid.Rows.Add(main.GetName(i));
             }
         }
 
