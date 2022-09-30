@@ -9,7 +9,7 @@ namespace CasarottoVideogiochi
     class Catalogo
     {
         private Videogioco[] games;
-
+        private int indice;
 
 
 
@@ -26,14 +26,14 @@ namespace CasarottoVideogiochi
         {
 
             //counting the rows in the csv file and declarating the length of the array
-            int rows = File.ReadAllLines(@"../../../dep/dataset.csv").Length;
-            games = new Videogioco[rows];
+            
+            games = new Videogioco[200];
 
 
             //RESTART FROM HERE
             StreamReader st = new StreamReader(@" ../../../../../dep/dataset.csv");
-            StreamWriter mt = new StreamWriter(@" ../../../../../dep/dataset.txt");
-            for (int i = 0; i < rows; i++)
+            indice = File.ReadAllLines(@"../../../dep/dataset.csv").Length;
+            for (int i = 0; i < indice; i++)
             {
 
                 string[] line = st.ReadLine().Split(';');
@@ -45,7 +45,7 @@ namespace CasarottoVideogiochi
 
             }
             st.Close();
-            mt.Close();
+            
 
 
 
@@ -54,6 +54,11 @@ namespace CasarottoVideogiochi
 
 
         }
+
+        
+
+
+
 
 
 
@@ -70,6 +75,20 @@ namespace CasarottoVideogiochi
             return this.games[index].GeTitle();
         }
 
+        public string GetData(int index)
+        {
+            return this.games[index].GetDate().ToString("dd-MM-yyyy");
+        }
+
+        public float GetPrice(int index)
+        {
+            return this.games[index].GetPrice();
+        }
+
+        public int GeTime(int index)
+        {
+            return this.games[index].GetDuration();
+        }
 
 
 

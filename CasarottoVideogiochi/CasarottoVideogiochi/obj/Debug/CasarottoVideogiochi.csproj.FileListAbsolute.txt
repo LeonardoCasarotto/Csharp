@@ -24,3 +24,16 @@ C:\Users\leona\Code\Csharp\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\C
 C:\Users\leona\Code\Csharp\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.csproj.CopyComplete
 C:\Users\leona\Code\Csharp\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.exe
 C:\Users\leona\Code\Csharp\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.pdb
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.csprojAssemblyReference.cache
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.HomePage.resources
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.Properties.Resources.resources
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.csproj.GenerateResource.cache
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.csproj.CoreCompileInputs.cache
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.exe
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.pdb
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\bin\Debug\CasarottoVideogiochi.exe.config
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\bin\Debug\CasarottoVideogiochi.exe
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\bin\Debug\CasarottoVideogiochi.pdb
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\bin\Debug\Krypton.Toolkit.dll
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\bin\Debug\Krypton.Toolkit.xml
+C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.csproj.CopyComplete
