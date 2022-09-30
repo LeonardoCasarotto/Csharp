@@ -54,15 +54,21 @@ namespace CasarottoVideogiochi
             // 
             // kryptonComboBox1
             // 
-            this.kryptonComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.kryptonComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.kryptonComboBox1.DropDownWidth = 121;
             this.kryptonComboBox1.IntegralHeight = false;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(25, 28);
+            this.kryptonComboBox1.Items.AddRange(new object[] {
+            "Titolo",
+            "Data di uscita",
+            "Prezzo",
+            "Tempo di gioco"});
+            this.kryptonComboBox1.Location = new System.Drawing.Point(12, 41);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(121, 21);
+            this.kryptonComboBox1.Size = new System.Drawing.Size(170, 21);
             this.kryptonComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonComboBox1.TabIndex = 2;
-            this.kryptonComboBox1.Text = "kryptonComboBox1";
+            this.kryptonComboBox1.Text = "Selezionare ";
+            this.kryptonComboBox1.SelectedIndexChanged += new System.EventHandler(this.kryptonComboBox1_SelectedIndexChanged);
             // 
             // HomePage
             // 

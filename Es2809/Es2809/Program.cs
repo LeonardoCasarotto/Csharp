@@ -10,13 +10,13 @@ namespace Es2809
 
         {
 
-            /*
-            int[] arr = { 3, 7, 4, 3, 10, 3 };
+            DateTime ciao = Convert.ToDateTime("17/08/2022");
+            DateTime ciaz = Convert.ToDateTime("14/06/2025");
 
-            WriteLine(myfunc(arr, 0, 5, 3));*/
+            WriteLine(ciao + "\n" + ciaz);
+            WriteLine(DateTime.Compare(ciao, ciaz));
+            WriteLine(DateTime.Compare(ciaz, ciao));
 
-
-            WriteLine(File.ReadAllLines(@"../../../../main.csv").Length);
 
 
         }
