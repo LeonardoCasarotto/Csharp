@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CasarottoVideogiochi
 {
-    class Videogioco
+    public class Videogioco
     {
         //attributes
         private string Title;

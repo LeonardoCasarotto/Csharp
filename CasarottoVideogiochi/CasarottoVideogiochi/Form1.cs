@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace CasarottoVideogiochi
 {
-    public partial class HomePage : KryptonForm
+    public  partial class Form1 :  KryptonForm
     {
-        Catalogo main = new Catalogo();
-        public HomePage()
+        Catalogo  main= new Catalogo();
+        public Form1()
         {
             InitializeComponent();
             
@@ -40,7 +40,7 @@ namespace CasarottoVideogiochi
             dGrid.ReadOnly = true;
             dGrid.Visible = true;
             this.Controls.Add(dGrid);
-            riempi(main);
+            riempi();
             
 
             
@@ -50,8 +50,17 @@ namespace CasarottoVideogiochi
 
         private void KryptonButton1_Click(object sender, EventArgs e)
         {
-              
+            Form2 ins = new Form2(main);
+            this.Hide();
+            ins.Show();
+            //TODO FIX
+            
+
+            
+            
+            
         }
+        
 
         private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -78,21 +87,27 @@ namespace CasarottoVideogiochi
                     main = main.SortByTime(length, main);
                     break;
             }
-            riempi(main);
+            riempi();
         }
+       
 
-        
-
-        private void riempi(Catalogo ciao)
+            private void riempi()
 
         {
 
             DataGridView dGrid = this.kryptonDataGridView1;
             dGrid.Rows.Clear();
-            for (int i = 0; i < 25; i++)
+            for (int i = 0; i < main.GetLength()+1; i++)
             {
                 dGrid.Rows.Add(main.GetName(i), main.GetData(i).ToString("dd/MM/yyyy"), "€ "+main.GetPrice(i), main.GeTime(i));
             }
+
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            riempi();
         }
     }
 }

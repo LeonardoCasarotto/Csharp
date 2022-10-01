@@ -7,7 +7,7 @@ using System.Windows.Forms;//to remove
 
 namespace CasarottoVideogiochi
 {
-    class Catalogo
+      public class Catalogo
     {
         private Videogioco[] games;
         private int indice;
@@ -34,6 +34,7 @@ namespace CasarottoVideogiochi
 
             StreamReader st = new StreamReader(@" ../../../../../dep/dataset.csv");
             indice = File.ReadAllLines(@"../../../dep/dataset.csv").Length;
+            
             for (int i = 0; i < indice; i++)
             {
 
@@ -87,8 +88,42 @@ namespace CasarottoVideogiochi
 
         public int GetLength()
         {
-            return this.indice - 1;
+            return this.indice-1;
         }
+        
+        
+
+
+
+
+
+        //edit methods
+
+        public void incrementIndex()
+        {
+            this.indice++;
+        }
+        public void newvoice(string title, DateTime data, float prezzo, int minuti)
+
+        {
+            string day = data.ToString("dd/MM/yyyy");
+            this.games[indice - 1] = new Videogioco(title, day, prezzo, minuti);
+
+
+            StreamWriter sw = new StreamWriter(@" ../../../../../dep/dataset.csv",true);
+
+            sw.WriteLine(title+";"+ day+";"+ prezzo+";"+ minuti);
+            sw.Close();
+
+
+        }
+
+        
+
+
+
+
+
 
 
         //sorting methods

@@ -1,7 +1,7 @@
 ﻿
 namespace CasarottoVideogiochi
 {
-    partial class HomePage
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -70,7 +70,7 @@ namespace CasarottoVideogiochi
             this.kryptonComboBox1.Text = "Selezionare ";
             this.kryptonComboBox1.SelectedIndexChanged += new System.EventHandler(this.kryptonComboBox1_SelectedIndexChanged);
             // 
-            // HomePage
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,8 +78,9 @@ namespace CasarottoVideogiochi
             this.Controls.Add(this.kryptonComboBox1);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.kryptonDataGridView1);
-            this.Name = "HomePage";
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             this.ResumeLayout(false);
