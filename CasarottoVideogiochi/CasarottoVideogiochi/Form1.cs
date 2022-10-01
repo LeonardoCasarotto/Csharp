@@ -51,9 +51,10 @@ namespace CasarottoVideogiochi
         private void KryptonButton1_Click(object sender, EventArgs e)
         {
             Form2 ins = new Form2(main);
-            this.Hide();
-            ins.Show();
-            //TODO FIX
+            
+            ins.ShowDialog();
+            riempi();
+            
             
 
             
