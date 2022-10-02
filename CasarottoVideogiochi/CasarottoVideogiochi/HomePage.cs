@@ -38,7 +38,7 @@ namespace CasarottoVideogiochi
             dGrid.Columns[2].Width = 150;
             dGrid.Columns[3].Name = "Minuti di Gioco";
             dGrid.Columns[3].Width = 120;
-            dGrid.AlternatingRowsDefaultCellStyle.BackColor = Color.Beige;
+            dGrid.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.ColorTranslator.FromHtml("#d9e1f2"); ;
             dGrid.ReadOnly = true;
             dGrid.Visible = true;
             this.Controls.Add(dGrid);
