@@ -12,12 +12,12 @@ using System.IO;
 
 namespace CasarottoVideogiochi
 {
-    public partial class Form2 : KryptonForm
+    public partial class FormIns : KryptonForm
     {
 
 
         public Catalogo ctl;
-        public Form2(Catalogo main)
+        public FormIns(Catalogo main)
         {
             InitializeComponent();
 
@@ -26,10 +26,6 @@ namespace CasarottoVideogiochi
             
 
         }
-
-
-       
-        
 
 
         private void btnBack_Click(object sender, EventArgs e)

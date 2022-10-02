@@ -1,7 +1,7 @@
 ﻿
 namespace CasarottoVideogiochi
 {
-    partial class Form2
+    partial class FormIns
     {
         /// <summary>
         /// Required designer variable.
@@ -40,21 +40,23 @@ namespace CasarottoVideogiochi
             this.txTitle = new Krypton.Toolkit.KryptonTextBox();
             this.releaseDtp = new Krypton.Toolkit.KryptonDateTimePicker();
             this.btnBack = new Krypton.Toolkit.KryptonButton();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.cbUnit)).BeginInit();
             this.SuspendLayout();
             // 
             // cbUnit
             // 
             this.cbUnit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbUnit.DropDownWidth = 115;
             this.cbUnit.IntegralHeight = false;
             this.cbUnit.Items.AddRange(new object[] {
             "Seleziona",
             "Ore",
             "Minuti"});
-            this.cbUnit.Location = new System.Drawing.Point(331, 231);
+            this.cbUnit.Location = new System.Drawing.Point(413, 234);
             this.cbUnit.Name = "cbUnit";
-            this.cbUnit.Size = new System.Drawing.Size(115, 21);
+            this.cbUnit.Size = new System.Drawing.Size(147, 21);
             this.cbUnit.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cbUnit.TabIndex = 22;
             // 
@@ -73,7 +75,6 @@ namespace CasarottoVideogiochi
             this.txTime.Name = "txTime";
             this.txTime.Size = new System.Drawing.Size(147, 23);
             this.txTime.TabIndex = 20;
-            this.txTime.Text = "kryptonTextBox3";
             // 
             // txPrice
             // 
@@ -81,7 +82,6 @@ namespace CasarottoVideogiochi
             this.txPrice.Name = "txPrice";
             this.txPrice.Size = new System.Drawing.Size(147, 23);
             this.txPrice.TabIndex = 19;
-            this.txPrice.Text = "kryptonTextBox2";
             // 
             // kryptonLabel5
             // 
@@ -138,11 +138,20 @@ namespace CasarottoVideogiochi
             this.btnBack.Values.Text = "Indietro";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // Form2
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(314, 234);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(93, 20);
+            this.kryptonLabel1.TabIndex = 24;
+            this.kryptonLabel1.Values.Text = "Unità di misura";
+            // 
+            // FormIns
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 376);
+            this.ClientSize = new System.Drawing.Size(584, 322);
+            this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.cbUnit);
             this.Controls.Add(this.btnIns);
@@ -154,8 +163,10 @@ namespace CasarottoVideogiochi
             this.Controls.Add(this.kryptonLabel2);
             this.Controls.Add(this.txTitle);
             this.Controls.Add(this.releaseDtp);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Name = "FormIns";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Inserisci Nuovo Videogioco";
             ((System.ComponentModel.ISupportInitialize)(this.cbUnit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -174,5 +185,6 @@ namespace CasarottoVideogiochi
         private Krypton.Toolkit.KryptonTextBox txTitle;
         private Krypton.Toolkit.KryptonDateTimePicker releaseDtp;
         private Krypton.Toolkit.KryptonButton btnBack;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
     }
 }

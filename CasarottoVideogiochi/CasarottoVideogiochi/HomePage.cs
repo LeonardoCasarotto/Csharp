@@ -11,19 +11,21 @@ using System.Windows.Forms;
 
 namespace CasarottoVideogiochi
 {
-    public  partial class Form1 :  KryptonForm
+    public  partial class HomePage :  KryptonForm
     {
         Catalogo  main= new Catalogo();
-        public Form1()
+        public HomePage()
         {
             InitializeComponent();
+            //select default index for sorting combobox
             
 
+            //dgrid properties
             DataGridView dGrid = kryptonDataGridView1;
 
             dGrid.RowHeadersVisible = true;
             dGrid.SelectionMode = 0;
-            dGrid.Width = 150 * 4 +40;
+            dGrid.Width = 150 * 4 +30;
             dGrid.DefaultCellStyle.SelectionBackColor = Color.White;
             dGrid.DefaultCellStyle.SelectionForeColor = Color.Black;
             dGrid.ColumnCount = 4;
@@ -36,10 +38,12 @@ namespace CasarottoVideogiochi
             dGrid.Columns[2].Width = 150;
             dGrid.Columns[3].Name = "Minuti di Gioco";
             dGrid.Columns[3].Width = 120;
-            
+            dGrid.AlternatingRowsDefaultCellStyle.BackColor = Color.Beige;
             dGrid.ReadOnly = true;
             dGrid.Visible = true;
             this.Controls.Add(dGrid);
+
+            //fill datagrid
             riempi();
             
 
@@ -48,9 +52,9 @@ namespace CasarottoVideogiochi
             
         }
 
-        private void KryptonButton1_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            Form2 ins = new Form2(main);
+            FormIns ins = new FormIns(main);
             
             ins.ShowDialog();
             riempi();
@@ -63,15 +67,13 @@ namespace CasarottoVideogiochi
         }
         
 
-        private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbSort_SelectedIndexChanged(object sender, EventArgs e)
         {
             int length = main.GetLength();
-            switch (kryptonComboBox1.Text)
+            switch (cmbSort.Text)
             {
-
+                
                 case "Titolo":
-                   
-
 
                     main = main.SortByTitle(length, main);
                     
@@ -92,9 +94,9 @@ namespace CasarottoVideogiochi
         }
        
 
+            //function for updating datagrid
             private void riempi()
-
-        {
+            {
 
             DataGridView dGrid = this.kryptonDataGridView1;
             dGrid.Rows.Clear();
@@ -104,11 +106,7 @@ namespace CasarottoVideogiochi
             }
 
 
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            riempi();
-        }
+            }
+        
     }
 }

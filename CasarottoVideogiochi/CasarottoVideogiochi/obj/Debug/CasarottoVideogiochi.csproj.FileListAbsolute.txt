@@ -36,5 +36,5 @@ C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\b
 C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\bin\Debug\Krypton.Toolkit.dll
 C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\bin\Debug\Krypton.Toolkit.xml
 C:\Users\8293359\Desktop\Csharp-main\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.csproj.CopyComplete
-C:\Users\leona\Code\Csharp\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.Form2.resources
-C:\Users\leona\Code\Csharp\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.Form1.resources
+C:\Users\leona\Code\Csharp\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.HomePage.resources
+C:\Users\leona\Code\Csharp\CasarottoVideogiochi\CasarottoVideogiochi\obj\Debug\CasarottoVideogiochi.FormIns.resources
