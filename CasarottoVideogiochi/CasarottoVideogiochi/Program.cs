@@ -9,7 +9,7 @@ namespace CasarottoVideogiochi
     static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// The ctl entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()

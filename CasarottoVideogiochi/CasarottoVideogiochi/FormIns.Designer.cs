@@ -53,7 +53,6 @@ namespace CasarottoVideogiochi
             this.cbUnit.DropDownWidth = 115;
             this.cbUnit.IntegralHeight = false;
             this.cbUnit.Items.AddRange(new object[] {
-            "Seleziona",
             "Ore",
             "Minuti"});
             this.cbUnit.Location = new System.Drawing.Point(360, 227);

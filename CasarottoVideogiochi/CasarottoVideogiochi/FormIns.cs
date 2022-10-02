@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,6 +21,7 @@ namespace CasarottoVideogiochi
             InitializeComponent();
 
             ctl = main;
+            
 
             
 
@@ -44,7 +44,7 @@ namespace CasarottoVideogiochi
 
                 ctl.newvoice(txTitle.Text, releaseDtp.Value, float.Parse(txPrice.Text), Convert.ToInt32(txTime.Text));
 
-                MessageBox.Show("tutto è stato inserito con succ");
+                MessageBox.Show("I dati sono stati inseriti con successo!");
                 this.Close();
                 
                 
@@ -66,7 +66,7 @@ namespace CasarottoVideogiochi
             if(txTitle.Text.Length>0&&float.TryParse(txPrice.Text,out float c)){
                 switch (cbUnit.SelectedItem)
                 {
-                    case "Seleziona":
+                    case null:
                         errore();
                         return false;
                         
@@ -82,7 +82,7 @@ namespace CasarottoVideogiochi
                         
                     case "Ore":
                         
-                        if (float.TryParse(txPrice.Text, out float z) == false)
+                        if (float.TryParse(txTime.Text, out float z) == false)
                         {
                             errore();
 
@@ -90,7 +90,8 @@ namespace CasarottoVideogiochi
                         }
                         else
                         {
-                            txPrice.Text = (z*60).ToString();
+
+                            txTime.Text = (z*60).ToString();
                         }
                         
                         

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Krypton.Toolkit;
@@ -13,14 +12,15 @@ namespace CasarottoVideogiochi
 {
     public  partial class HomePage :  KryptonForm
     {
-        Catalogo  main= new Catalogo();
+        //create a new catalogo object
+        Catalogo  ctl= new Catalogo();
         public HomePage()
         {
             InitializeComponent();
             //select default index for sorting combobox
-            
 
-            //dgrid properties
+
+            //initializing and customizing dgrid
             DataGridView dGrid = kryptonDataGridView1;
 
             dGrid.RowHeadersVisible = true;
@@ -29,7 +29,6 @@ namespace CasarottoVideogiochi
             dGrid.DefaultCellStyle.SelectionBackColor = Color.White;
             dGrid.DefaultCellStyle.SelectionForeColor = Color.Black;
             dGrid.ColumnCount = 4;
-            //values
             dGrid.Columns[0].Name = "Titolo"; 
             dGrid.Columns[0].Width = 150;
             dGrid.Columns[1].Name = "Data";
@@ -43,7 +42,7 @@ namespace CasarottoVideogiochi
             dGrid.Visible = true;
             this.Controls.Add(dGrid);
 
-            //fill datagrid
+            //filling  datagrid
             riempi();
             
 
@@ -52,62 +51,59 @@ namespace CasarottoVideogiochi
             
         }
 
+        //adding a new element
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FormIns ins = new FormIns(main);
+            FormIns ins = new FormIns(ctl);
             
             ins.ShowDialog();
-            riempi();
-            
-            
-
-            
-            
+            riempi(); 
             
         }
         
-
+        //calling sort methods
         private void cmbSort_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int length = main.GetLength();
+            int length = ctl.GetLength();
             switch (cmbSort.Text)
             {
                 
                 case "Titolo":
 
-                    main = main.SortByTitle(length, main);
+                    ctl = ctl.SortByTitle(length, ctl);
                     
                     break;
                 case "Data di uscita":
-                    main = main.SortByDate(length, main);
+                    ctl = ctl.SortByDate(length, ctl);
                     
                     break;
                 case "Prezzo":
-                    main = main.SortByPrice(length, main);
+                    ctl = ctl.SortByPrice(length, ctl);
                     
                     break;
                 case "Tempo di gioco":
-                    main = main.SortByTime(length, main);
+                    ctl = ctl.SortByTime(length, ctl);
                     break;
             }
             riempi();
         }
        
 
-            //function for updating datagrid
-            private void riempi()
-            {
+        //function for updating datagrid
+        private void riempi()
+        {
 
             DataGridView dGrid = this.kryptonDataGridView1;
             dGrid.Rows.Clear();
-            for (int i = 0; i < main.GetLength()+1; i++)
+            for (int i = 0; i < ctl.GetLength()+1; i++)
             {
-                dGrid.Rows.Add(main.GetName(i), main.GetData(i).ToString("dd/MM/yyyy"), "€ "+main.GetPrice(i), main.GeTime(i));
+                dGrid.Rows.Add(ctl.GetName(i), ctl.GetData(i).ToString("dd/MM/yyyy"), "€ "+ctl.GetPrice(i), ctl.GeTime(i));
             }
 
 
-            }
+         }
 
+        //exit from the application
         private void btnEsc_Click(object sender, EventArgs e)
         {
             DialogResult quit = MessageBox.Show("Si desidera davvero uscire?", "Esci", MessageBoxButtons.YesNo);

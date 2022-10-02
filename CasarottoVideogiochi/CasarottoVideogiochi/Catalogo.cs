@@ -17,13 +17,7 @@ namespace CasarottoVideogiochi
 
 
         //constructing method
-
-
-
-
-
-
-        public Catalogo()
+       public Catalogo()
         {
 
             //counting the rows in the csv file and declarating the length of the array
@@ -48,18 +42,11 @@ namespace CasarottoVideogiochi
             }
             st.Close();
 
-
-
-
-
-
-
-
         }
 
 
 
-        //get method
+        //get methods
 
         public Videogioco[] GetVideogioco()
         {
@@ -94,15 +81,13 @@ namespace CasarottoVideogiochi
         
 
 
-
-
-
         //edit methods
 
         public void incrementIndex()
         {
             this.indice++;
         }
+        //add a new voice
         public void newvoice(string title, DateTime data, float prezzo, int minuti)
 
         {
@@ -118,16 +103,11 @@ namespace CasarottoVideogiochi
 
         }
 
-        
-
-
-
-
-
 
 
         //sorting methods
 
+        //sort by title
         public Catalogo SortByTitle(int right, Catalogo main)
         {
 
@@ -150,12 +130,9 @@ namespace CasarottoVideogiochi
 
             return SortByTitle(right, main);
 
-
-
-
         }
 
-
+        //sort by date
         public Catalogo SortByDate(int right, Catalogo main)
         {
             if (right == 0)
@@ -181,7 +158,7 @@ namespace CasarottoVideogiochi
 
 
         }
-
+        //sort by price
         public Catalogo SortByPrice(int right, Catalogo main)
         {
             if (right == 0)
@@ -203,10 +180,8 @@ namespace CasarottoVideogiochi
 
             return SortByPrice(right, main);
 
-
-
-
         }
+        //sort by game duration
         public Catalogo SortByTime(int right, Catalogo main)
         {
             if (right == 0)
@@ -228,17 +203,7 @@ namespace CasarottoVideogiochi
 
             return SortByTime(right, main);
 
-
-
-
-
-
-
-
-
-
         }
-
 
     }
 }

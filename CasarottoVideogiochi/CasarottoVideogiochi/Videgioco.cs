@@ -15,8 +15,7 @@ namespace CasarottoVideogiochi
         private int Duration;
 
 
-        //constructing methods
-
+        //constructing method
         public Videogioco(string title, string releaseDate,float price, int duration)
         {
             this.Title = title;
