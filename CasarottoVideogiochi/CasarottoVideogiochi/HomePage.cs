@@ -107,6 +107,14 @@ namespace CasarottoVideogiochi
 
 
             }
-        
+
+        private void btnEsc_Click(object sender, EventArgs e)
+        {
+            DialogResult quit = MessageBox.Show("Si desidera davvero uscire?", "Esci", MessageBoxButtons.YesNo);
+           if (quit == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
