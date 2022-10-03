@@ -39,10 +39,15 @@ namespace CasarottoVideogiochi
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnEsc = new Krypton.Toolkit.KryptonButton();
+            this.btnDel = new Krypton.Toolkit.KryptonButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txRemove = new Krypton.Toolkit.KryptonTextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSort)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonDataGridView1
@@ -161,7 +166,7 @@ namespace CasarottoVideogiochi
             // 
             // btnEsc
             // 
-            this.btnEsc.Location = new System.Drawing.Point(741, 397);
+            this.btnEsc.Location = new System.Drawing.Point(741, 456);
             this.btnEsc.Name = "btnEsc";
             this.btnEsc.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
             this.btnEsc.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
@@ -184,12 +189,73 @@ namespace CasarottoVideogiochi
             this.btnEsc.Values.Text = "Esci";
             this.btnEsc.Click += new System.EventHandler(this.btnEsc_Click);
             // 
+            // btnDel
+            // 
+            this.btnDel.Location = new System.Drawing.Point(6, 74);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnDel.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnDel.Size = new System.Drawing.Size(168, 30);
+            this.btnDel.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnDel.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnDel.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDel.StateCommon.Border.Rounding = 7F;
+            this.btnDel.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnDel.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnDel.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnDel.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnDel.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnDel.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnDel.TabIndex = 5;
+            this.btnDel.Values.Text = "Rimuovi Gioco";
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(6, 17);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 21);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Per rimuovere:";
+            // 
+            // txRemove
+            // 
+            this.txRemove.Location = new System.Drawing.Point(6, 41);
+            this.txRemove.Name = "txRemove";
+            this.txRemove.Size = new System.Drawing.Size(168, 29);
+            this.txRemove.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txRemove.StateCommon.Border.Rounding = 7F;
+            this.txRemove.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txRemove.TabIndex = 15;
+            this.txRemove.Text = "Nome del gioco";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnDel);
+            this.groupBox3.Controls.Add(this.txRemove);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Location = new System.Drawing.Point(668, 293);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 110);
+            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabStop = false;
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(880, 444);
+            this.ClientSize = new System.Drawing.Size(880, 495);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnEsc);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -204,6 +270,8 @@ namespace CasarottoVideogiochi
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,6 +287,10 @@ namespace CasarottoVideogiochi
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
         private Krypton.Toolkit.KryptonButton btnEsc;
+        private Krypton.Toolkit.KryptonButton btnDel;
+        private System.Windows.Forms.Label label4;
+        private Krypton.Toolkit.KryptonTextBox txRemove;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 

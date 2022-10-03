@@ -103,6 +103,35 @@ namespace CasarottoVideogiochi
 
         }
 
+        //remove a voice
+
+        public void RemoveVoice(string title)
+        {
+            StreamReader sr = new StreamReader(@" ../../../../../dep/dataset.csv");
+            StreamWriter sw = new StreamWriter(@" ../../../../../dep/temp.csv");
+
+            indice = File.ReadAllLines(@"../../../dep/dataset.csv").Length;
+
+            for (int i = 0; i < indice; i++)
+            {
+                string[] line = sr.ReadLine().Split(';');
+                if (line[0] != title)
+                {
+                    sw.WriteLine(line[0] + ";" + line[1] + ";" + line[2]+";"+line[3]) ;
+                }
+            }
+            sr.Close();
+            sw.Close();
+            File.Delete(@" ../../../../../dep/dataset.csv");
+            File.Move(@" ../../../../../dep/temp.csv", @" ../../../../../dep/dataset.csv");
+
+
+
+
+
+
+        }
+
 
 
         //sorting methods
