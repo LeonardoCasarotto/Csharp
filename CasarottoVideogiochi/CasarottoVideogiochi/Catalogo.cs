@@ -105,8 +105,9 @@ namespace CasarottoVideogiochi
 
         //remove a voice
 
-        public void RemoveVoice(string title)
+        public bool RemoveVoice(string title)
         {
+            bool m = false;
             StreamReader sr = new StreamReader(@" ../../../../../dep/dataset.csv");
             StreamWriter sw = new StreamWriter(@" ../../../../../dep/temp.csv");
 
@@ -117,18 +118,16 @@ namespace CasarottoVideogiochi
                 string[] line = sr.ReadLine().Split(';');
                 if (line[0] != title)
                 {
-                    sw.WriteLine(line[0] + ";" + line[1] + ";" + line[2]+";"+line[3]) ;
+                    sw.WriteLine(line[0] + ";" + line[1] + ";" + line[2] + ";" + line[3]);
                 }
+                else m = true;
             }
             sr.Close();
             sw.Close();
             File.Delete(@" ../../../../../dep/dataset.csv");
             File.Move(@" ../../../../../dep/temp.csv", @" ../../../../../dep/dataset.csv");
 
-
-
-
-
+            return m;
 
         }
 

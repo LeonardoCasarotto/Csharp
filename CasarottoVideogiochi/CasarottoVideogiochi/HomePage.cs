@@ -115,11 +115,13 @@ namespace CasarottoVideogiochi
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            if (txRemove.Text.Length > 0)
+            if (txRemove.Text.Length > 0&&ctl.RemoveVoice(txRemove.Text))
             {
-                ctl.RemoveVoice(txRemove.Text);
-                ctl = new Catalogo();
-                riempi();
+                
+                    ctl = new Catalogo();
+                    riempi();
+                
+                
             }
             else MessageBox.Show("Attenzione! Inserire i dati correttamente!", "Attenzione!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
