@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leona\\Code\\Csharp\\Es0410\\Es0410\\Es0410.csproj": {}
+    "C:\\Users\\leona\\Code\\Csharp\\Es1010\\Es1010\\Es1010.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leona\\Code\\Csharp\\Es0410\\Es0410\\Es0410.csproj": {
+    "C:\\Users\\leona\\Code\\Csharp\\Es1010\\Es1010\\Es1010.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es0410\\Es0410\\Es0410.csproj",
-        "projectName": "Es0410",
-        "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es0410\\Es0410\\Es0410.csproj",
+        "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es1010\\Es1010\\Es1010.csproj",
+        "projectName": "Es1010",
+        "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es1010\\Es1010\\Es1010.csproj",
         "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es0410\\Es0410\\obj\\",
+        "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es1010\\Es1010\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
