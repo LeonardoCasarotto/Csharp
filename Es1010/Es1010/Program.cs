@@ -6,11 +6,18 @@ namespace Es1010
 {
      class Program
     {
-        Squadra team = new Squadra();
+        
        
         static void Main(string[] args)
         {
-           
+          Squadra team = new Squadra();
+
+            WriteLine("Nome\tCognome\tnascita\tNumero\t Ruolo\n");
+            for(int i = 0; i < team.GetIndice(); i++)
+            {
+                WriteLine(team.GetNome(i) + "\t" + team.GetCognome(i) + "\t" + team.GetBirth(i).ToString("dd/MM/yyyy") + "\t" + team.GetRole(i));
+            }
+
             
         }
         

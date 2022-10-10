@@ -66,5 +66,26 @@ namespace Es1010
             return this.indice;
         }
 
+        public Squadra Sort(Squadra team,int left, int right)
+        {
+            if (this.GetNum(left) < this.GetNum(right))
+            {
+                int middle = left + (right - left) / 2;
+
+                Sort(team, left, middle);
+                Sort(team, middle + 1, right);
+
+            }
+            return team; 
+        }
+
+        public void Merge(Squadra team, int left, int middle, int right)
+        {
+            
+            
+            
+
+
+        }
     }
 }
