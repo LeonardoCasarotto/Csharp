@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leona\\School\\Csharp\\Es1012\\Es1012\\Es1012.csproj",
+      "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es1012\\Es1012\\Es1012.csproj",
       "projectName": "Es1012",
-      "projectPath": "C:\\Users\\leona\\School\\Csharp\\Es1012\\Es1012\\Es1012.csproj",
+      "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es1012\\Es1012\\Es1012.csproj",
       "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leona\\School\\Csharp\\Es1012\\Es1012\\obj\\",
+      "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es1012\\Es1012\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",

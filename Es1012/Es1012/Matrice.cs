@@ -10,18 +10,20 @@ namespace Es1012
         private int[,] matrix;
         private int rows;
         private int cols;
+        private bool fill = false;
         public Matrice(int rows, int cols)
         {
 
             this.matrix = new int[rows, cols];
             this.rows = rows;
             this.cols = cols;
+            
         }
 
 
 
 
-        public int [,] SuMatrix(int[,] mat)
+        public int [,] SuMatrix(int [,] mat)
         {
             if (mat.Length != this.matrix.Length)
             {
@@ -37,8 +39,10 @@ namespace Es1012
                         fin[i, m] = mat[i, m] + this.matrix[i, m];
                     }
                 }
+                WriteLine("Operazione svolta con successo!");
                 return fin;
             }
+
 
             
         }
@@ -78,7 +82,7 @@ namespace Es1012
             return this.matrix;
         }
 
-        void print()
+        public void print()
         {
             for(int i = 0; i < this.rows; i++)
             {
@@ -89,15 +93,31 @@ namespace Es1012
                 Write("\n");
             }
         }
+         public void Load()
+        {
+            for(int i = 0; i < this.rows; i++)
+            {
+                for(int m = 0; m < this.cols; m++)
+                {
+                    bool z = false;
+                    while (!z) {
+                        WriteLine("Inserire il numero a riga " + i + " e colonna " + m);
+                        z = Int32.TryParse(ReadLine(), out this.matrix[i,m]);       
+                     }
+}
+            }
+            this.fill = true;
+            WriteLine("La matrice è stata caricata correttamente!");
+        }
 
-        void printRow(int r)
+        public void printRow(int r)
         {
             for (int i = 0; i < this.cols; i++)
             {
                 Write(this.matrix[r, i] + "\t");
             }
         }
-        void printCol(int c)
+        public void printCol(int c)
         {
             for(int i = 0; i < this.rows; i++)
             {
@@ -105,5 +125,27 @@ namespace Es1012
             }
         }
 
+        public bool Loaded()
+        {
+            if (this.fill)
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public int [,] getma()
+        {
+            return this.matrix;
+        }
+
+        public int getrow()
+        {
+            return this.rows;
+        }
+        public int getcol()
+        {
+            return this.cols;
+        }
     }
 }
