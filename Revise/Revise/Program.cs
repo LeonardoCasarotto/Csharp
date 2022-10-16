@@ -9,13 +9,22 @@ namespace Revise
         {
 
             int[] array = { 5, 9, 4, 8, 3, 1, 0, 55, 12 };
-            QuickSort(array, 0, array.Length - 1);
+            print(array);
+            WriteLine("\n");
 
-            for (int i = 0; i < array.Length; i++)
-            {
-                WriteLine(array[i]);
-            }
+            //print(selection(array, 0, 1));
 
+            //QuickSort(array, 0, array.Length - 1);
+
+            //print(bubble(array, array.Length - 1));
+            MergeSort(array, 0, array.Length - 1);
+
+
+
+
+
+            print(array);
+            
 
 
 
@@ -182,6 +191,12 @@ namespace Revise
 
 
         }
-
+        static void print(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                WriteLine(array[i]);
+            }
+        }
     }
 }
