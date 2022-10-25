@@ -1,4 +1,5 @@
 ﻿using static System.Console;
+using System;
 
 namespace Es1024
 {
@@ -6,8 +7,9 @@ namespace Es1024
     {
         static void Main(string[] args)
         {
-            bool m = true;
-
+            //bool m = true;
+            WriteLine(DateTime.Now.Year.ToString());
+            
             while (m)
             {
                 Menu();
@@ -46,9 +48,21 @@ namespace Es1024
                     int anno, cilindrata;
                     string marca;
                     WriteLine("Inserire l'anno di fabbricazione del veicolo:");
-                    //undone insert park verification.
+                    bool c = true;
+                    while (c)
+                    {
+                        c = Int32.TryParse(ReadLine(), out anno);
+                        if (!c || anno < 1950 || anno < DateTime.Now.Year)
+                        {
+                            Errore();
+                        }
+                        c = false;
+                    }
+                    c = false;
+                    
+
                     break;
-                case "F":
+               case "F":
                     break;
                 case "M":
                     break;
@@ -61,7 +75,7 @@ namespace Es1024
         {
             WriteLine("Errore! Ritentare.");
         }
-        // TODO: ADD ERROR HANDLING 
+        
         // TODO: COMPLETE
 
 

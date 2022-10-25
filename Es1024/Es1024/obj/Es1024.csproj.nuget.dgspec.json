@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leona\\Code\\Csharp\\Es1024\\Es1024\\Es1024.csproj": {}
+    "C:\\Users\\leona\\School\\Csharp\\Es1024\\Es1024\\Es1024.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leona\\Code\\Csharp\\Es1024\\Es1024\\Es1024.csproj": {
+    "C:\\Users\\leona\\School\\Csharp\\Es1024\\Es1024\\Es1024.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es1024\\Es1024\\Es1024.csproj",
+        "projectUniqueName": "C:\\Users\\leona\\School\\Csharp\\Es1024\\Es1024\\Es1024.csproj",
         "projectName": "Es1024",
-        "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es1024\\Es1024\\Es1024.csproj",
+        "projectPath": "C:\\Users\\leona\\School\\Csharp\\Es1024\\Es1024\\Es1024.csproj",
         "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es1024\\Es1024\\obj\\",
+        "outputPath": "C:\\Users\\leona\\School\\Csharp\\Es1024\\Es1024\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
