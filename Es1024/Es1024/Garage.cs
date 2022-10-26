@@ -15,14 +15,16 @@ namespace Es1024
 
         public string GetSituazione()
         {
+
             string m = "";
             for(int i = 0; i < gar.Length; i++)
             {
-                m += i + 1;
-                if (gar[i] == null) m += "LIBERO";
-                else m += "OCCUPATO";
+                m += i + 1+".\t";
+                if (gar[i] == null) m += "LIBERO\n";
+                else m += "OCCUPATO\n";
             } 
             return m;
+            
         }
 
         public bool parcheggia(int posto)
@@ -40,10 +42,14 @@ namespace Es1024
         {
             gar[id] = new Furgone(id, marca, anno, cilindrata, capacit);
         }
-        public void Motocicletta(int anno, int id, int cilindrata, string marca,int stroke)
+        public void AddMoto(int anno, int id, int cilindrata, string marca,int stroke)
         {
-            gar[id] = new Motocicletta(id, marca, anno, cilindrata, stroke);
+            gar[id] = new Motocicletta(id, marca, anno, cilindrata, stroke); 
         }
         
+        public void Esci(int id)
+        {
+            gar[id] = null;
+        }
     }
 }

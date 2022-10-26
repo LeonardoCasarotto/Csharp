@@ -5,12 +5,12 @@ namespace Es1024
 {
     class Program
     {
-       
+        public Garage rimessa;
         static void Main(string[] args)
         {
            Garage rimessa= new Garage();
             bool m = true;
-            WriteLine(DateTime.Now.Year.ToString());
+            
             
             while (m)
             {
@@ -18,12 +18,15 @@ namespace Es1024
                 switch (ReadLine())
                 {
                     case "1":
-
+                        New( rimessa);
                         break;
 
                     case "2":
+
                         break;
                     case "3":
+                        WriteLine(rimessa.GetSituazione());
+                        
                         break;
                     default:
                         Errore();
@@ -49,8 +52,8 @@ namespace Es1024
             {
                 //automobile
                 case "A":
-                    int anno, cilindrata,doors,id;
-                    string marca,alim;
+                    int anno, cilindrata,doors=0,id;
+                    string marca,alim="";
                     anno = Anno();
                     marca = Marca();
                     cilindrata = Cilindrata();
@@ -93,72 +96,75 @@ namespace Es1024
                     }
 
                     id = Posteggio(rim);
+                   
+                    rim.AddCar(anno, cilindrata, doors, marca, alim, id-1);
                     
+                    WriteLine("Veicolo inserito correttamente!");
 
-                    break;
+               break;
                     //furgone
                case "F":
                     int year, cil;
                     string mar;
-                    float cap;
+                    float cap=0;
+                    int p;
 
                     year = Anno();
                     mar = Marca();
                     cil = Cilindrata();
 
-                    WriteLine("Inserire il numero di porte dell'auto");
-                    while (c)
+                    WriteLine("Inserire la capacità del furgone in Litri");
+                    bool s = true;
+                    while (s)
                     {
-                        c = Int32.TryParse(ReadLine(), out doors);
-                        if (!c || doors < 1 || doors > 7)
+                        s = float.TryParse(ReadLine(), out cap);
+                        if (!s || cap < 100 || cap > 50000)
                         {
                             Errore();
                         }
                         c = false;
                     }
 
-                    WriteLine("infine selezionare 1 se l'automobile si alimenta a gasolio, 2 per la benzina e 3 elettrica");
+                    p = Posteggio(rim);
+                    
+                    rim.AddFurgone(year, cil, mar, p-1, cap);
+                    
+                    WriteLine("Veicolo inserito correttamente!");
 
-                    c = true;
-                    while (c)
-                    {
-                        switch (ReadLine())
-                        {
-                            case "1":
-                                alim = "Gasolio";
-                                c = false;
-                                break;
-                            case "2":
-                                alim = "Benzina";
-                                c = false;
-                                break;
-                            case "3":
-                                alim = "elettrica";
-                                c = false;
-                                break;
-                            default:
-                                Errore();
-                                break;
-                        }
-                    }
-                    WriteLine("Segliere infine il numero del posteggio che si desidera occupare\n" + rim.GetSituazione());
-                    int parch;
-                    while (c)
-                    {
-
-                        c = Int32.TryParse(ReadLine(), out parch);
-
-                        c = rim.parcheggia(parch);
-                        if (!c) Errore();
-                    }
 
                     break;
                 case "M":
+                    int yr, cyl,j,st;
+                    string br;
+                    yr = Anno();
+                    cyl = Cilindrata();
+                    br = Marca();
+                    WriteLine("Inserire il numero di tempi");
+                    
+                    bool d = true;
+                    st = 0;
+                    while (d)
+                    {
+                        d = Int32.TryParse(ReadLine(), out st);
+                        if (!d || st< 1 || st > 10)
+                        {
+                            Errore();
+                        }
+                        
+                    }
+                    j = Posteggio(rim);
+                    rim.AddMoto(yr, j-1, cyl, br, st);
+                    WriteLine("Veicolo inserito correttamente!");
+
+
                     break;
                 default:
                     Errore();
                     break;
             }
+            return;
+            
+
         }
         static void Errore()
         {
@@ -181,7 +187,7 @@ namespace Es1024
             }
             return anno;
         }
-        // TODO: COMPLETE
+        
 
         static string Marca()
         {
@@ -218,18 +224,40 @@ namespace Es1024
         }
        static int Posteggio(Garage rim)
         {
-            WriteLine("Segliere infine il numero del posteggio che si desidera occupare\n" + rim.GetSituazione());
+            WriteLine("Scegliere infine il numero del posteggio che si desidera occupare\n" + rim.GetSituazione());
             int parch=-1;
             bool c = true;
             while (c)
             {
 
                 c = Int32.TryParse(ReadLine(), out parch);
+                
 
                 c = rim.parcheggia(parch);
                 if (!c) Errore();
+                else c = false;
             }
             return parch;
+        }
+
+        void Estrazione(Garage rim)
+        {
+            WriteLine("Inserire il numero del posteggio occupato");
+            int choose;
+            bool c = true;
+            while (c)
+            {
+                c = Int32.TryParse(ReadLine(), out choose);
+
+                if (!c || choose < 0 || choose > 15)
+                {
+
+                    Errore();
+                    c = false;
+                }
+                rim.Esci(choose);
+                WriteLine("Auto rimossa con successo!");
+            }
         }
     }
 }
