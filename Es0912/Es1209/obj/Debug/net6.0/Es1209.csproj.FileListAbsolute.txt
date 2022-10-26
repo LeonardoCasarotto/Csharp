@@ -1,0 +1,15 @@
+C:\Users\leona\Code\Csharp\Es1209\Es1209\obj\Debug\net6.0\Es1209.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es1209\Es1209\obj\Debug\net6.0\Es1209.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Code\Csharp\Es1209\Es1209\obj\Debug\net6.0\Es1209.AssemblyInfoInputs.cache
+C:\Users\leona\Code\Csharp\Es1209\Es1209\obj\Debug\net6.0\Es1209.AssemblyInfo.cs
+C:\Users\leona\Code\Csharp\Es1209\Es1209\obj\Debug\net6.0\Es1209.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es1209\Es1209\bin\Debug\net6.0\Es1209.exe
+C:\Users\leona\Code\Csharp\Es1209\Es1209\bin\Debug\net6.0\Es1209.deps.json
+C:\Users\leona\Code\Csharp\Es1209\Es1209\bin\Debug\net6.0\Es1209.runtimeconfig.json
+C:\Users\leona\Code\Csharp\Es1209\Es1209\bin\Debug\net6.0\Es1209.dll
+C:\Users\leona\Code\Csharp\Es1209\Es1209\bin\Debug\net6.0\Es1209.pdb
+C:\Users\leona\Code\Csharp\Es1209\Es1209\obj\Debug\net6.0\Es1209.dll
+C:\Users\leona\Code\Csharp\Es1209\Es1209\obj\Debug\net6.0\refint\Es1209.dll
+C:\Users\leona\Code\Csharp\Es1209\Es1209\obj\Debug\net6.0\Es1209.pdb
+C:\Users\leona\Code\Csharp\Es1209\Es1209\obj\Debug\net6.0\Es1209.genruntimeconfig.cache
+C:\Users\leona\Code\Csharp\Es1209\Es1209\obj\Debug\net6.0\ref\Es1209.dll
