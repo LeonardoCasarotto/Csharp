@@ -10,7 +10,6 @@ namespace Es1111
         private string verso;
         private string habitat;
 
-
         public abstract string Verso();
 
         public abstract string Vive();
