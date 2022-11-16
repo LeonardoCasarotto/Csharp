@@ -6,14 +6,16 @@ namespace Es1111
 {
     public abstract class Animale
     {
-        private string nome;
-        private string verso;
-        private string habitat;
+        protected string nome="";
 
         public abstract string Verso();
 
         public abstract string Vive();
 
-        public abstract bool Mangia();
+        public abstract bool Mangia(string cibo);
+
+        public abstract string Nome();
+
+        public abstract void setNome(string name);
     }
 }
