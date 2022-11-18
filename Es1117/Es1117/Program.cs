@@ -1,5 +1,5 @@
 ﻿using System;
-
+using static System.Console;
 namespace Es1117
 {
     class Program
@@ -7,7 +7,9 @@ namespace Es1117
         static void Main(string[] args)
         {
             //todo write program
-            Console.WriteLine("Hello World!");
+            WriteLine("Benvenuti, inserire la llunghezza dell'array");
+
+            
         }
     }
 }

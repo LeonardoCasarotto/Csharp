@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leona\\Code\\Csharp\\Es1117\\Es1117\\Es1117.csproj": {}
+    "C:\\Users\\8293359\\Csharp\\Es1117\\Es1117\\Es1117.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leona\\Code\\Csharp\\Es1117\\Es1117\\Es1117.csproj": {
+    "C:\\Users\\8293359\\Csharp\\Es1117\\Es1117\\Es1117.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es1117\\Es1117\\Es1117.csproj",
+        "projectUniqueName": "C:\\Users\\8293359\\Csharp\\Es1117\\Es1117\\Es1117.csproj",
         "projectName": "Es1117",
-        "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es1117\\Es1117\\Es1117.csproj",
-        "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es1117\\Es1117\\obj\\",
+        "projectPath": "C:\\Users\\8293359\\Csharp\\Es1117\\Es1117\\Es1117.csproj",
+        "packagesPath": "C:\\Users\\8293359\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\8293359\\Csharp\\Es1117\\Es1117\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\8293359\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -54,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
