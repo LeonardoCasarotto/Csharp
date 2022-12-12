@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leona\\Code\\Csharp\\Es1117\\Es1117\\Es1117.csproj": {}
+    "C:\\Users\\leona\\School\\Csharp\\Es1117\\Es1117\\Es1117.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leona\\Code\\Csharp\\Es1117\\Es1117\\Es1117.csproj": {
+    "C:\\Users\\leona\\School\\Csharp\\Es1117\\Es1117\\Es1117.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es1117\\Es1117\\Es1117.csproj",
+        "projectUniqueName": "C:\\Users\\leona\\School\\Csharp\\Es1117\\Es1117\\Es1117.csproj",
         "projectName": "Es1117",
-        "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es1117\\Es1117\\Es1117.csproj",
+        "projectPath": "C:\\Users\\leona\\School\\Csharp\\Es1117\\Es1117\\Es1117.csproj",
         "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es1117\\Es1117\\obj\\",
+        "outputPath": "C:\\Users\\leona\\School\\Csharp\\Es1117\\Es1117\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
