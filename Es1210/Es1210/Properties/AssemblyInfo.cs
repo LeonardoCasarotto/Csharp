@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Es1212")]
+[assembly: AssemblyTitle("Es1210")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Es1212")]
+[assembly: AssemblyProduct("Es1210")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d4cce1c8-33ef-46ef-b716-63e5c7bf0d62")]
+[assembly: Guid("3f9f84f1-820f-4151-874c-a0e05e2cc9cc")]
 
 // Version information for an assembly consists of the following four values:
 //
