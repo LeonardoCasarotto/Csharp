@@ -62,7 +62,7 @@ namespace Es1215
         string nome;
         Atleta[] giocatori;
         int index;
-
+        
 
         public Squadra(string name, int part)
         {
@@ -89,6 +89,7 @@ namespace Es1215
         {
             return giocatori[n].personalizza() + n;
         }
+
 
     }
 
