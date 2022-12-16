@@ -1,0 +1,10 @@
+C:\Users\leona\Code\Csharp\Es2309\CasarottoTestLampadina\CasarottoTestLampadina\bin\Debug\CasarottoTestLampadina.exe.config
+C:\Users\leona\Code\Csharp\Es2309\CasarottoTestLampadina\CasarottoTestLampadina\bin\Debug\CasarottoTestLampadina.exe
+C:\Users\leona\Code\Csharp\Es2309\CasarottoTestLampadina\CasarottoTestLampadina\bin\Debug\CasarottoTestLampadina.pdb
+C:\Users\leona\Code\Csharp\Es2309\CasarottoTestLampadina\CasarottoTestLampadina\obj\Debug\CasarottoTestLampadina.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es2309\CasarottoTestLampadina\CasarottoTestLampadina\obj\Debug\CasarottoTestLampadina.Properties.Resources.resources
+C:\Users\leona\Code\Csharp\Es2309\CasarottoTestLampadina\CasarottoTestLampadina\obj\Debug\CasarottoTestLampadina.csproj.GenerateResource.cache
+C:\Users\leona\Code\Csharp\Es2309\CasarottoTestLampadina\CasarottoTestLampadina\obj\Debug\CasarottoTestLampadina.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es2309\CasarottoTestLampadina\CasarottoTestLampadina\obj\Debug\CasarottoTestLampadina.exe
+C:\Users\leona\Code\Csharp\Es2309\CasarottoTestLampadina\CasarottoTestLampadina\obj\Debug\CasarottoTestLampadina.pdb
+C:\Users\leona\Code\Csharp\Es2309\CasarottoTestLampadina\CasarottoTestLampadina\obj\Debug\CasarottoTestLampadina.FormLampadina.resources
