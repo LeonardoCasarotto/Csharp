@@ -8,6 +8,8 @@ namespace Es1220
     {
         string name;
 
+        
+
         private void SetName(string name)
         {
             this.name = name;
