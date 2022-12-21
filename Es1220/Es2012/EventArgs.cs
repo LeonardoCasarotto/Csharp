@@ -8,7 +8,7 @@ namespace Es1220
     {
         string name;
 
-        
+
 
         private void SetName(string name)
         {
@@ -18,6 +18,11 @@ namespace Es1220
         {
             return this.name;
         }
+        public EventArgs(string n)
+        {
+            this.name = n;
+        }
+
 
 
 

@@ -11,7 +11,7 @@ namespace Es1220
         public void OnDispatcherNameChange(object sender, NameChangeEventArgs args)
         {
 
-           //?????
+            WriteLine("Il nome è " + args.GetName());
 
         } 
 
