@@ -38,5 +38,32 @@ namespace Es0113.Classes
         public event DoppiaTesta;
         public event TriplaCroce;*/
         
+        
+        //events handler --> servono?
+        public static string DoppiaTesta_completed(object sender, EventArgs e)
+        {
+            return "Nella moneta è uscito due volte il valore testa";
+
+
+        }
+
+        public static string TriplaCroce_completed(object sender, EventArgs e)
+        {
+            return "Nella moneta è uscito tre volte il valore croce";
+        }
+
+        //eventi
+
+        public event EventHandler DoppiaTesta;
+        public event EventHandler TriplaCroce;
+
+
+
+
+
+        protected virtual void OnProcessCompleted(EventArgs e)
+        {
+            DoppiaTesta?.Invoke(this, e);
+        }
     }
 }
