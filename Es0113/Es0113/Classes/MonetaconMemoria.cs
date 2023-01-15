@@ -15,6 +15,8 @@ namespace Es0113.Classes
             memoria[1] = 9;
 
         }
+        public event EventHandler DoppiaTesta;
+        public event EventHandler TriplaCroce;
 
         public int Lancia()
         {
@@ -24,46 +26,44 @@ namespace Es0113.Classes
 
             if (memoria[0] == 0 && m == 0)
             {
-                //aderisci a doppiatesta
+                OnDoppiaTesta();
             }
             else if(memoria[0]==1 && memoria[1] == 1 && m == 1)
             {
-                //aderisci a triplacroce
+                OnTriplaCroce();
             }
-            //todo cambiomemoria
+
+
+            memoria[0] = memoria[1];
+            memoria[1] = m;
 
             return m;
         }
-        /*
-        public event DoppiaTesta;
-        public event TriplaCroce;*/
-        
-        
-        //events handler --> servono?
-        public static string DoppiaTesta_completed(object sender, EventArgs e)
+
+       
+
+
+
+        // the name of the method must be On+event name, the signature protected virtual void.
+        protected virtual void OnDoppiaTesta()
         {
-            return "Nella moneta è uscito due volte il valore testa";
 
-
+            
+           if(DoppiaTesta != null)
+            {
+                DoppiaTesta(this, EventArgs.Empty);
+               
+            }
         }
 
-        public static string TriplaCroce_completed(object sender, EventArgs e)
+        protected virtual void OnTriplaCroce()
         {
-            return "Nella moneta è uscito tre volte il valore croce";
+            if(TriplaCroce != null)
+            {
+                TriplaCroce(this, EventArgs.Empty);
+
+            }
         }
 
-        //eventi
-
-        public event EventHandler DoppiaTesta;
-        public event EventHandler TriplaCroce;
-
-
-
-
-
-        protected virtual void OnProcessCompleted(EventArgs e)
-        {
-            DoppiaTesta?.Invoke(this, e);
-        }
     }
 }

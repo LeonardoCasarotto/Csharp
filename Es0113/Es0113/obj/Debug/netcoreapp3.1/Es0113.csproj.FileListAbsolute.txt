@@ -1,0 +1,14 @@
+C:\Users\leona\Code\Csharp\Es0113\Es0113\bin\Debug\netcoreapp3.1\Es0113.exe
+C:\Users\leona\Code\Csharp\Es0113\Es0113\bin\Debug\netcoreapp3.1\Es0113.deps.json
+C:\Users\leona\Code\Csharp\Es0113\Es0113\bin\Debug\netcoreapp3.1\Es0113.runtimeconfig.json
+C:\Users\leona\Code\Csharp\Es0113\Es0113\bin\Debug\netcoreapp3.1\Es0113.runtimeconfig.dev.json
+C:\Users\leona\Code\Csharp\Es0113\Es0113\bin\Debug\netcoreapp3.1\Es0113.dll
+C:\Users\leona\Code\Csharp\Es0113\Es0113\bin\Debug\netcoreapp3.1\Es0113.pdb
+C:\Users\leona\Code\Csharp\Es0113\Es0113\obj\Debug\netcoreapp3.1\Es0113.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es0113\Es0113\obj\Debug\netcoreapp3.1\Es0113.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Code\Csharp\Es0113\Es0113\obj\Debug\netcoreapp3.1\Es0113.AssemblyInfoInputs.cache
+C:\Users\leona\Code\Csharp\Es0113\Es0113\obj\Debug\netcoreapp3.1\Es0113.AssemblyInfo.cs
+C:\Users\leona\Code\Csharp\Es0113\Es0113\obj\Debug\netcoreapp3.1\Es0113.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es0113\Es0113\obj\Debug\netcoreapp3.1\Es0113.dll
+C:\Users\leona\Code\Csharp\Es0113\Es0113\obj\Debug\netcoreapp3.1\Es0113.pdb
+C:\Users\leona\Code\Csharp\Es0113\Es0113\obj\Debug\netcoreapp3.1\Es0113.genruntimeconfig.cache
