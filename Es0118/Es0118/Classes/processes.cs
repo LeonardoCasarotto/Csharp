@@ -14,6 +14,7 @@ namespace Es0118.Classes
             for(int j = 0; j < 100; j++)
             {
                 Write("A");
+                Thread.Sleep(10);
             }
             ReadKey();
         }
