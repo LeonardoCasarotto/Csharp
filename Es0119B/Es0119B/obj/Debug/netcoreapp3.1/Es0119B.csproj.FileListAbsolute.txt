@@ -1,0 +1,14 @@
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\bin\Debug\netcoreapp3.1\Es0119B.exe
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\bin\Debug\netcoreapp3.1\Es0119B.deps.json
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\bin\Debug\netcoreapp3.1\Es0119B.runtimeconfig.json
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\bin\Debug\netcoreapp3.1\Es0119B.runtimeconfig.dev.json
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\bin\Debug\netcoreapp3.1\Es0119B.dll
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\bin\Debug\netcoreapp3.1\Es0119B.pdb
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\obj\Debug\netcoreapp3.1\Es0119B.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\obj\Debug\netcoreapp3.1\Es0119B.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\obj\Debug\netcoreapp3.1\Es0119B.AssemblyInfoInputs.cache
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\obj\Debug\netcoreapp3.1\Es0119B.AssemblyInfo.cs
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\obj\Debug\netcoreapp3.1\Es0119B.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\obj\Debug\netcoreapp3.1\Es0119B.dll
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\obj\Debug\netcoreapp3.1\Es0119B.pdb
+C:\Users\leona\Code\Csharp\Es0119B\Es0119B\obj\Debug\netcoreapp3.1\Es0119B.genruntimeconfig.cache
