@@ -34,10 +34,14 @@ namespace Es0119B
             t3.Join();
             t4.Join();
 
+            Console.WriteLine("Valori singoli dei quattro sottoarray:");
             for(int i = 0; i < 4; i++)
             {
                 Console.WriteLine(i+1+".\t MAX:"+res[i]);
             }
+            
+            res = Bubble(res);
+            Console.WriteLine("Il valore massimo risulta dunque essere "+res[res.Length-1]);
             Console.WriteLine("\nEND");
         }
 
@@ -49,16 +53,22 @@ namespace Es0119B
                 secondary[i] = array[first + i];
             }
             //sorting with bubble sort algorithm
-            for (int j = 0; j < secondary.Length - 1; j++) 
-                for (int i = 0; i < secondary.Length - 1; i++)
-                    if (secondary[i] > secondary[i + 1])
-                    {
-                        int temp = secondary[i];
-                        secondary[i] = secondary[i + 1];
-                        secondary[i + 1] = temp;
-                    }
+            secondary = Bubble(secondary);
             res[val] = secondary[secondary.Length - 1];
         
+        }
+
+        static int[] Bubble(int[] arr)
+        {
+            for (int j = 0; j < arr.Length - 1; j++)
+                for (int i = 0; i < arr.Length - 1; i++)
+                    if (arr[i] > arr[i + 1])
+                    {
+                        int temp = arr[i];
+                        arr[i] = arr[i + 1];
+                        arr[i + 1] = temp;
+                    }
+            return arr;
         }
     }
 }
