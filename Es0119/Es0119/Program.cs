@@ -23,8 +23,12 @@ namespace Es0119
 
 
             Thread t1 = new Thread(Operazione);
+            //otherwise we can use the following function:
+            //Thread t1 = new Thread(() =>Operazione(qta,Tipo.add));
             t1.Start(s1);
+            //We must change also the second thread
             Thread t2 = new Thread(Operazione);
+            
             t2.Start(s2);
 
             t1.Join();
@@ -32,7 +36,8 @@ namespace Es0119
             Console.WriteLine("Numero 1 uguale a "+num1+"\nNumero 2 uguale a "+num2);
 
         }
-
+        //obviously using the lambda function we must change the parameters of the method operazione
+        // static void Operazione(int q,Tipo m)
         static void Operazione(object o)
         {
             Shift s = o as Shift;
