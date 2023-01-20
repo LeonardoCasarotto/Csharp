@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\8293359\\Csharp\\Es0119\\Es0119\\Es0119.csproj": {}
+    "C:\\Users\\8293359\\Csharp\\Es0120\\Es0120\\Es0120.csproj": {}
   },
   "projects": {
-    "C:\\Users\\8293359\\Csharp\\Es0119\\Es0119\\Es0119.csproj": {
+    "C:\\Users\\8293359\\Csharp\\Es0120\\Es0120\\Es0120.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\8293359\\Csharp\\Es0119\\Es0119\\Es0119.csproj",
-        "projectName": "Es0119",
-        "projectPath": "C:\\Users\\8293359\\Csharp\\Es0119\\Es0119\\Es0119.csproj",
+        "projectUniqueName": "C:\\Users\\8293359\\Csharp\\Es0120\\Es0120\\Es0120.csproj",
+        "projectName": "Es0120",
+        "projectPath": "C:\\Users\\8293359\\Csharp\\Es0120\\Es0120\\Es0120.csproj",
         "packagesPath": "C:\\Users\\8293359\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\8293359\\Csharp\\Es0119\\Es0119\\obj\\",
+        "outputPath": "C:\\Users\\8293359\\Csharp\\Es0120\\Es0120\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

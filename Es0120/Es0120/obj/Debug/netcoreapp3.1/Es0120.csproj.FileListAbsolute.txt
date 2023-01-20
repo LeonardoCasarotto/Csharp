@@ -1,0 +1,13 @@
+C:\Users\8293359\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.exe
+C:\Users\8293359\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.deps.json
+C:\Users\8293359\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.runtimeconfig.json
+C:\Users\8293359\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.runtimeconfig.dev.json
+C:\Users\8293359\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.dll
+C:\Users\8293359\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.pdb
+C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.csproj.AssemblyReference.cache
+C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.AssemblyInfoInputs.cache
+C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.AssemblyInfo.cs
+C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.csproj.CoreCompileInputs.cache
+C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.dll
+C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.pdb
+C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.genruntimeconfig.cache
