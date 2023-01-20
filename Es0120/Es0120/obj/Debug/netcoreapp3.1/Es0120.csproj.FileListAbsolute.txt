@@ -11,3 +11,17 @@ C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.csproj.Core
 C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.dll
 C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.pdb
 C:\Users\8293359\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.genruntimeconfig.cache
+C:\Users\leona\Code\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.exe
+C:\Users\leona\Code\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.deps.json
+C:\Users\leona\Code\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.runtimeconfig.json
+C:\Users\leona\Code\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.runtimeconfig.dev.json
+C:\Users\leona\Code\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.dll
+C:\Users\leona\Code\Csharp\Es0120\Es0120\bin\Debug\netcoreapp3.1\Es0120.pdb
+C:\Users\leona\Code\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Code\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.AssemblyInfoInputs.cache
+C:\Users\leona\Code\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.AssemblyInfo.cs
+C:\Users\leona\Code\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.dll
+C:\Users\leona\Code\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.pdb
+C:\Users\leona\Code\Csharp\Es0120\Es0120\obj\Debug\netcoreapp3.1\Es0120.genruntimeconfig.cache

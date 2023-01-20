@@ -12,6 +12,7 @@ namespace Es0120
         static Thread[] threads;
         static int[,] matrix;
         static int[] somme;
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Benvenuti, inserire il numero di righe");
@@ -22,22 +23,20 @@ namespace Es0120
             FillRandom();
             threads = new Thread[rows];
             somme = new int[rows];
-            for(int i = 0; i < rows; i++)
+            for (int i = 0; i < rows; i++)
             {
-                Console.WriteLine("Row"+i);
-                threads[i] = new Thread(() => somma(i));
-            }
-            for(int i = 0; i < rows; i++)
-            {
+                int local = i;
+                threads[i] = new Thread(() => somma(local));
                 threads[i].Start();
             }
-            for(int i = 0; i < rows; i++)
+            for (int i = 0; i < rows; i++)
             {
                 threads[i].Join();
             }
-            int s = tot();
-            Console.WriteLine("Il risultato della somma uguale a "+s);
-            Console.WriteLine("\n END");
+            
+            Console.WriteLine("Il risultato della somma uguale a "+som());
+            
+            Console.WriteLine("\nEND");
             
 
 
@@ -51,28 +50,36 @@ namespace Es0120
             {
                 for (int j = 0; j < cols; j++)
                 {
-                    matrix[i, j] = new Random().Next(1, 100000);
+                    matrix[i, j] = new Random().Next(1, 10);
                 }
             }
 
         }
         static void somma(int index)
         {
-            int somma = 0;
-            for(int i = 0; i < cols; i++)
+
+            int temp = 0;
+            for (int i = 0; i < cols; i++)
             {
-                somma +=matrix[index, i];
+                 temp+= matrix[index, i];
             }
-            somme[index] = somma;
+            somme[index] = temp;
+                
+                
+            
+            
+            
         }
-        static int tot()
+
+
+        static int som()
         {
-            int m = 0;
+            int temp = 0;
             for(int i = 0; i < somme.Length; i++)
             {
-                m += somme[i];
+                temp += somme[i];
             }
-            return m;
+            return temp;
         }
     }
 }
