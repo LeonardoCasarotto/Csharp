@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "Bn2809WVKmTDlR1zjQ9yU2iyV2qJ8R8wPRDSraFNYxBUyIfgoJbzxgKQC2UTBePvYPgUMrMdO9vKsJNadxwdCA==",
   "success": true,
   "projectFilePath": "C:\\Users\\8293359\\Csharp\\Es0119B\\Es0119B\\Es0119B.csproj",
+=======
+  "dgSpecHash": "mPzpBvhvwSOez9i4lcfs+OtjqmUhufPuaUQwsH00P+XCocR103EYJkEMyDGU3kfaGlPxi8EqYs6YPwsosbiTzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leona\\School\\Csharp\\Es0119B\\Es0119B\\Es0119B.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [],
   "logs": []
 }
