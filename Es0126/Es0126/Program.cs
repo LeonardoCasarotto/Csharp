@@ -9,7 +9,7 @@ namespace Es0126
         static Thread produttore;
         static Thread consumatore;
         static void Main(string[] args) {
-
+            //TODO usare anche array
             
         }
 
