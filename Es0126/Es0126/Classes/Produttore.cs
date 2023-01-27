@@ -24,8 +24,11 @@ namespace Es0126.Classes
             for(int i = 0; i <= 4; i++)
             {
                 Thread.Sleep(sleep.Next(0, 35000));
+                sharedloc.Buffer = i;
 
             }
+
+            Console.WriteLine();
         }
         
 
