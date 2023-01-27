@@ -8,7 +8,7 @@ namespace Es0126.Classes
 
     namespace CThreadWaitPulse_base
     {
-        class BufferCondiviso
+        public class BufferCondiviso
         {
             private int buffer = -1;                  // buffer shared by producer and consumer threads  
             private int occupiedBufferCount = 0;

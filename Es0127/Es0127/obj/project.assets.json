@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\8293359\\Csharp\\Es0123\\Es0123\\Es0123.csproj",
-      "projectName": "Es0123",
-      "projectPath": "C:\\Users\\8293359\\Csharp\\Es0123\\Es0123\\Es0123.csproj",
+      "projectUniqueName": "C:\\Users\\8293359\\Csharp\\Es0127\\Es0127\\Es0127.csproj",
+      "projectName": "Es0127",
+      "projectPath": "C:\\Users\\8293359\\Csharp\\Es0127\\Es0127\\Es0127.csproj",
       "packagesPath": "C:\\Users\\8293359\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\8293359\\Csharp\\Es0123\\Es0123\\obj\\",
+      "outputPath": "C:\\Users\\8293359\\Csharp\\Es0127\\Es0127\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
