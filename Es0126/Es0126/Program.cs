@@ -1,15 +1,38 @@
-﻿using System;
+﻿using Es0126.Classes.CThreadWaitPulse_base;
+using System;
 using System.Threading;
-using Es0126.Classes;
 
-namespace Es0126
+
+namespace Es0126.Classes
 {
     class Program
     {
-        static Thread produttore;
-        static Thread consumatore;
+        static BufferCondiviso buf;
+        static Random rn;
+        static Produttore producer;
+        static Consumatore consumer;
         static void Main(string[] args) {
-            //TODO usare anche array
+            //initializing producer and consumer
+            buf = new BufferCondiviso();
+            rn = new Random();
+            producer = new Produttore(buf, rn);
+            consumer = new Consumatore(buf, rn);
+
+
+
+
+            //declaring and assigning threads
+            Thread prod = new Thread(() => producer.Produce());
+            Thread cons = new Thread(() => consumer.Consume());
+
+            prod.Start();
+            cons.Start();
+
+            prod.Join();
+            cons.Join();
+
+
+
             
         }
 

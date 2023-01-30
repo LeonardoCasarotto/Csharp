@@ -23,7 +23,7 @@ namespace Es0126.Classes
             Console.WriteLine(Thread.CurrentThread.Name);
             for(int i = 0; i <= 4; i++)
             {
-                Thread.Sleep(sleep.Next(0, 35000));
+                Thread.Sleep(sleep.Next(0, 3000));
                 sharedloc.Buffer = i;
 
             }
@@ -32,10 +32,31 @@ namespace Es0126.Classes
         }
         
 
-        
 
+    }
+    public class Consumatore
+    {
+        private BufferCondiviso sharedloc;
+        private Random sleep;
+        private int somma;
 
+        public Consumatore(BufferCondiviso bf, Random rnd)
+        {
+            this.sharedloc = bf;
+            this.sleep = rnd;
+            this.somma = 0;
 
+        }
 
+        public void Consume()
+        {
+            for(int i = 0; i <= 4; i++)
+            {
+                Thread.Sleep(sleep.Next(0, 3000));
+                somma += sharedloc.Buffer;
+                
+            }
+            Console.WriteLine("Il risultato della somma uguale a "+somma);
+        }
     }
 }
