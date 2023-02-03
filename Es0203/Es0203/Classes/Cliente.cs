@@ -6,7 +6,17 @@ namespace Es0203.Classes
 {
     public class Cliente
     {
-        public Cliente()
+        int id;
+        public int GetId()
+        {
+            return this.id;
+        }
+        public Cliente(int id)
+        {
+            this.id = id;
+        }
+
+        public void attesa()
         {
 
         }
