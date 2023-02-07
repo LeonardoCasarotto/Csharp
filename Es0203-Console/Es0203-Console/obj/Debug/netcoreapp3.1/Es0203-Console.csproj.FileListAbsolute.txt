@@ -1,0 +1,14 @@
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\bin\Debug\netcoreapp3.1\Es0203-Console.exe
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\bin\Debug\netcoreapp3.1\Es0203-Console.deps.json
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\bin\Debug\netcoreapp3.1\Es0203-Console.runtimeconfig.json
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\bin\Debug\netcoreapp3.1\Es0203-Console.runtimeconfig.dev.json
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\bin\Debug\netcoreapp3.1\Es0203-Console.dll
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\bin\Debug\netcoreapp3.1\Es0203-Console.pdb
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\obj\Debug\netcoreapp3.1\Es0203-Console.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\obj\Debug\netcoreapp3.1\Es0203-Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\obj\Debug\netcoreapp3.1\Es0203-Console.AssemblyInfoInputs.cache
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\obj\Debug\netcoreapp3.1\Es0203-Console.AssemblyInfo.cs
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\obj\Debug\netcoreapp3.1\Es0203-Console.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\obj\Debug\netcoreapp3.1\Es0203-Console.dll
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\obj\Debug\netcoreapp3.1\Es0203-Console.pdb
+C:\Users\leona\Code\Csharp\Es0203-Console\Es0203-Console\obj\Debug\netcoreapp3.1\Es0203-Console.genruntimeconfig.cache

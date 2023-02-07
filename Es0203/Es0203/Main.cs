@@ -15,7 +15,7 @@ namespace Es0203
         public Main()
         {
             InitializeComponent();
-            Main.Image
+
         }
 
     }
