@@ -11,7 +11,7 @@ namespace Es0203_Console.Classes
 
         Queue<Cliente> CodaClienti;  //clienti in attesa sulle sedie
         int nmaxsedie;
-        Object SvegliaBarbiere;
+        Object SvegliaBarbiere; //these are objects for locking
         Object _Poltrona;
         Random rnd;
         Boolean isAllDone;
@@ -63,7 +63,7 @@ namespace Es0203_Console.Classes
                 }
             }
 
-            lock (_Poltrona)
+            lock (_Poltrona) //_Poltrona viene usato per far stare effettivamente un solo cliente alla volta nel processo
             {
                 Console.WriteLine($"{Thread.CurrentThread.Name}" + " in attesa del barbiere");
 
@@ -79,34 +79,35 @@ namespace Es0203_Console.Classes
         }
 
 
-        public void Servizio_Barbiere()
+        public void Servizio_Barbiere() //punto di entrata thread barbiere
         {
             while (!isAllDone)
             {
                 Cliente cli;
 
-                lock (SvegliaBarbiere)
+                lock (SvegliaBarbiere) //un solo alla volta può accedere al barbiere
                 {
                     if (CodaClienti.Count == 0)
                     {//barbiere si addormenta
 
                         Console.WriteLine("Il barbiere dorme sulla poltrona");
-                        Monitor.Wait(SvegliaBarbiere);   //il thread del Barbiere va in waiting
+                        Monitor.Wait(SvegliaBarbiere);   //il thread del Barbiere va in waiting, aspettando
                     }                                   //che arrivi un cliente che svegli il barbiere
 
-                    //è stato svegliato dall'arrivo di un cliente che fa sedere in poltrona
-                    CodaClienti.TryDequeue(out cli);
+                    
+                    CodaClienti.TryDequeue(out cli); //provo a rimuovere un cliente dalla poltrona
                 }
 
+                //proseguo verificando il sumero dei clienti
                 lock (_Poltrona)
                 {
                     //barbiere sveglio e c'è un cliente da servire
-                    if (cli != null)
+                    if (cli != null) // verifico che nella cosa ci sia 
                     { //fa alzare un cliente dalle sedie
 
-                        Console.WriteLine("Taglio i capelli del cliente " + cli.id);    //c'è almeno un cliente ==> taglio i capelli e libero
+                        Console.WriteLine("Taglio i capelli del cliente " + cli.id);    //se c'è almeno un cliente gli taglio i capelli
                         Thread.Sleep(rnd.Next(1, 1000));
-                        Console.WriteLine("ho finito di tagliare i capelli del cliente " + cli.id);    //c'è almeno un cliente ==> taglio i capelli e libero
+                        Console.WriteLine("ho finito di tagliare i capelli del cliente " + cli.id);    
 
                         Monitor.Pulse(_Poltrona);   //riattiva (mette in stato ready) un thread Cliente in attesa di servizio
                     }

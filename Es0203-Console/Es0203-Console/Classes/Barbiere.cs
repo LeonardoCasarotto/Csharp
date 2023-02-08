@@ -21,7 +21,7 @@ namespace Es0203_Console.Classes
 
         public void taglia_capelli()
         {
-            shared.Servizio_Barbiere();
+            shared.Servizio_Barbiere();//taglio dei capelli 
         }
 
 
