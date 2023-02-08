@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leona\\Code\\Csharp\\Es0126\\Es0126\\Es0126.csproj": {}
+    "C:\\Users\\leona\\Code\\Csharp\\Es0203-Console\\Es0203-Console\\Es0203-Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leona\\Code\\Csharp\\Es0126\\Es0126\\Es0126.csproj": {
+    "C:\\Users\\leona\\Code\\Csharp\\Es0203-Console\\Es0203-Console\\Es0203-Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es0126\\Es0126\\Es0126.csproj",
-        "projectName": "Es0126",
-        "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es0126\\Es0126\\Es0126.csproj",
+        "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es0203-Console\\Es0203-Console\\Es0203-Console.csproj",
+        "projectName": "Es0203-Console",
+        "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es0203-Console\\Es0203-Console\\Es0203-Console.csproj",
         "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es0126\\Es0126\\obj\\",
+        "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es0203-Console\\Es0203-Console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
