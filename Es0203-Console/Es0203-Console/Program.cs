@@ -7,32 +7,45 @@ namespace Es0203_Console
 {
     class Program
     {
-        public static List  <Cliente> qu= new List <Cliente>();
-        public static List <Thread> th = new List<Thread>();
-        static Barbiere b;
-        static Negozio n;
-        
+        static int nocli = 20;
         static void Main(string[] args)
         {
-           
-            n = new Negozio();
-            b = new Barbiere(n);
-            Thread barber = new Thread(()=>b.Addormentato());
-            barber.Start();
-            for(int i = 0; i < 10; i++)
+            Console.WriteLine("Quante sedie ci sono nel negozio?");
+            int n;
+            n=int.Parse(Console.ReadLine());
+
+
+            barBuffer neg = new barBuffer(n);  
+            Barbiere barb = new Barbiere(neg);
+
+            Thread tbarb = new Thread(barb.taglia_capelli);
+            tbarb.Name = "Barbiere";
+            tbarb.Start();
+
+            List<Thread> tcust = new List<Thread>(); 
+
+            Random r = new Random();
+            for (int i = 0; i < nocli; i++)
             {
-                int k = i;
-                qu.Add(new Cliente(n, i));
-                th.Add(new Thread(()=>qu[k].Entrata()));
-                th[i].Start();
+                Cliente cli = new Cliente(neg);
+                tcust.Add(new Thread(cli.entrata_cliente));
+                tcust[i].Name = "Cliente" + cli.id;
+                tcust[i].Start();
+                Thread.Sleep(r.Next(500));
             }
-            barber.Start();
+
+            for(int i = 0; i < tcust.Count; i++)
+            {
+                tcust[i].Join();
+            }
+
+            neg.finito();
+
+            tbarb.Join();
+
 
 
 
         }
-
-      
-        
     }
 }

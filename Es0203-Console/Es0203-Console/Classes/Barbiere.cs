@@ -1,26 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace Es0203_Console.Classes
 {
-    public class Barbiere
+    class Barbiere
     {
-        public Negozio n;
+        barBuffer shared;
+        
 
-        public  Barbiere(Negozio ne)
+
+
+        public Barbiere(barBuffer neg)
         {
-            this.n = ne;
+            
+            shared = neg;
+
         }
-        
-        public void Addormentato()
+
+        public void taglia_capelli()
         {
-            for(int i = 0; i < Program.qu.Count;i++)
-            {
-                n.Sleep();
-            }
+            shared.Servizio_Barbiere();
         }
-        
+
+
 
 
 

@@ -1,28 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace Es0203_Console.Classes
 {
-    public class Cliente
+    class Cliente
     {
-        Negozio n;
-        int id;
-
-        public Cliente(Negozio m, int i)
+        static int prog = 0;
+        public int id { get; } //setting id for tracking the customer no
+        barBuffer shared;
+        public Cliente(barBuffer neg)
         {
-            n = m;
-            id = i;
+
+            id = prog++;
+            shared = neg;
+
         }
 
-        
-        public void Entrata()
+        public void entrata_cliente()
         {
-            Console.WriteLine("Cliente "+id+" entra");
-            Program.qu.RemoveAt(id+1);
-            Program.th.RemoveAt(id);
+            shared.arrivo_Cliente(this);
         }
-
-
     }
 }
+
