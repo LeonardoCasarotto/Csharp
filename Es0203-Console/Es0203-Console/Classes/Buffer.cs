@@ -32,6 +32,7 @@ namespace Es0203_Console.Classes
         public void finito()
         {
             isAllDone = true;
+            
             lock (SvegliaBarbiere)  //il barbiere potrebbe essersi addormentato
                 Monitor.PulseAll(SvegliaBarbiere);
 
@@ -50,6 +51,7 @@ namespace Es0203_Console.Classes
                     foreach (var c in CodaClienti)
                         Console.WriteLine($"cli "+c.id +" si è messo in coda");
                     Console.WriteLine();
+                    //entra un cliente e sveglia il barbiere
 
                     Monitor.Pulse(SvegliaBarbiere); //prova a svegliare il barbiere,
 
@@ -91,9 +93,11 @@ namespace Es0203_Console.Classes
                     {//barbiere si addormenta
 
                         Console.WriteLine("Il barbiere dorme sulla poltrona");
-                        Monitor.Wait(SvegliaBarbiere);   //il thread del Barbiere va in waiting, aspettando
-                    }                                   //che arrivi un cliente che svegli il barbiere
+                        Monitor.Wait(SvegliaBarbiere);   //TODO UNDERSTAND
+                    }                                   
 
+                    //TODO understand what the code do here
+                    Console.WriteLine("TEST");
                     
                     CodaClienti.TryDequeue(out cli); //provo a rimuovere un cliente dalla poltrona
                 }

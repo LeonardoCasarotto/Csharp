@@ -1,0 +1,14 @@
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\bin\Debug\netcoreapp3.1\Es0208-Buffer.exe
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\bin\Debug\netcoreapp3.1\Es0208-Buffer.deps.json
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\bin\Debug\netcoreapp3.1\Es0208-Buffer.runtimeconfig.json
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\bin\Debug\netcoreapp3.1\Es0208-Buffer.runtimeconfig.dev.json
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\bin\Debug\netcoreapp3.1\Es0208-Buffer.dll
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\bin\Debug\netcoreapp3.1\Es0208-Buffer.pdb
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\obj\Debug\netcoreapp3.1\Es0208-Buffer.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\obj\Debug\netcoreapp3.1\Es0208-Buffer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\obj\Debug\netcoreapp3.1\Es0208-Buffer.AssemblyInfoInputs.cache
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\obj\Debug\netcoreapp3.1\Es0208-Buffer.AssemblyInfo.cs
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\obj\Debug\netcoreapp3.1\Es0208-Buffer.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\obj\Debug\netcoreapp3.1\Es0208-Buffer.dll
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\obj\Debug\netcoreapp3.1\Es0208-Buffer.pdb
+C:\Users\leona\Code\Csharp\Es0208-Buffer\Es0208-Buffer\obj\Debug\netcoreapp3.1\Es0208-Buffer.genruntimeconfig.cache

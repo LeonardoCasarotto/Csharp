@@ -39,7 +39,7 @@ namespace Es0203_Console
                 tcust[i].Join();
             }
 
-            neg.finito();
+            neg.finito(); //Il metodo finito viene richiamato manualmente, questo fa addormentare il barbiere.
 
             tbarb.Join();
 
