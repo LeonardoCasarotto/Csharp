@@ -6,6 +6,11 @@ namespace Es0208.Classes
 {
     class Fattorino
     {
-        Pizzeria shared;
+        
     }
+    
+    
+
+
+
 }

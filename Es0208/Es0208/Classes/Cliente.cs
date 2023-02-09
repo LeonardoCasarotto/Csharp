@@ -10,19 +10,22 @@ namespace Es0208.Classes
     class Cliente
     {
         Pizzeria shared;
-        public string nome { get; set; }
+        static int pr = 0;
+        public int id { get; set; }
         public TypeCli tipo { get; set; }
 
-        public Cliente(Pizzeria pizz, TypeCli c, string n)
+        public Cliente(Pizzeria pizz, TypeCli c)
         {
-            //todo complete the variable assignment
+            shared = pizz;
+            tipo = c;
+            id = pr++;
         }
 
 
 
         public void run()
         {
-            //shared.entrata_pizzeria();
+            shared.entrata_pizzeria(this);
         }
 
     }

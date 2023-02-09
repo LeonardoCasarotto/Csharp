@@ -8,5 +8,16 @@ namespace Es0208.Classes
     {
         Pizzeria p;
 
+        public Pizzaiolo(Pizzeria l)
+
+        {
+
+            this.p = l;
+        }
+
+        public void Lavora()
+        {
+            p.Sforna();
+        }
     }
 }
