@@ -9,7 +9,7 @@ namespace Es0208.Classes
     }
     class Cliente
     {
-        //Pizzeria shared;
+        Pizzeria shared;
         public string nome { get; set; }
         public TypeCli tipo { get; set; }
 
@@ -17,6 +17,8 @@ namespace Es0208.Classes
         {
             //todo complete the variable assignment
         }
+
+
 
         public void run()
         {
