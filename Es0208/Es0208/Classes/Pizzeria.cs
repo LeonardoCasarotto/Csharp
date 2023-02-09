@@ -8,8 +8,11 @@ namespace Es0208.Classes
     class Pizzeria
     {
         List<Cliente> clienti = new List<Cliente>();
+        Queue<Cliente> daSpedire = new Queue<Cliente>();
+        Random rnd = new Random();
         static object _ordine = new object();
         static object _alLavoro = new object();
+        static object _inConsegna = new object();
         static bool fin = false;
 
         
@@ -28,15 +31,17 @@ namespace Es0208.Classes
 
             lock (_alLavoro)
             {
-                if (clienti.Count == 0) Monitor.Pulse(_alLavoro);
+                
                 if (c.tipo == TypeCli.daRemoto)
                 {
                     clienti.Insert(0, c);
+                    Console.WriteLine("Il cliente "+c.id+" ha telefonato e ha ordinato una pizza");
                 }
 
                 else if (c.tipo == TypeCli.inPresenza)
                 {
                     clienti.Add(c);
+                    Console.WriteLine("Il cliente " + c.id + " è in negozio e ha ordinato una pizza");
                 }
                 Monitor.Pulse(_alLavoro);
 
@@ -44,7 +49,7 @@ namespace Es0208.Classes
 
             lock (_ordine)
             {
-                Console.WriteLine("Il cliente è in attesa di essere servito");
+                Console.WriteLine("Il cliente "+c.id+ " è in attesa di essere servito");
                 Monitor.Wait(_ordine);
 
             }
@@ -55,7 +60,7 @@ namespace Es0208.Classes
         {
             while (!fin)
             {
-                Console.WriteLine("PIZZAIOLO AL LAVORO");
+                
                 Cliente cliente = null;
 
                 lock (_alLavoro)
@@ -65,30 +70,41 @@ namespace Es0208.Classes
                         Monitor.Wait(_alLavoro);
 
                     }
+                    
+                   
 
 
-
-                    cliente = clienti[0];
-                    clienti.RemoveAt(0);
+                    if (clienti.Count > 0)
+                    {
+                        cliente = clienti[0];
+                        clienti.RemoveAt(0);
+                    }
                 }
 
                 lock (_ordine)
                 {
                     if (cliente != null)
                     {
-                        Console.WriteLine("Il cliente è servito");
+                        
                         Thread.Sleep(2000);
+                        
                         switch (cliente.tipo)
                         {
                             case TypeCli.inPresenza:
-                                Passa();
+                                Passa(cliente.id);
                                 break;
                             case TypeCli.daRemoto:
-                                Spedisci();
+                                daSpedire.Enqueue(cliente);
+                                
                                 break;
                         }
 
                         Monitor.Pulse(_ordine);
+                      
+                    }
+                    lock (_inConsegna)
+                    {
+                        Monitor.Pulse(_inConsegna);
                     }
 
                 }
@@ -102,14 +118,37 @@ namespace Es0208.Classes
 
 
         
-        public void Spedisci()
+        
+
+        public void Passa(int c)
         {
-            Console.WriteLine("La pizza è stata spedita");
+            Console.WriteLine("La pizza è stata affidata al cliente id "+c);
         }
 
-        public void Passa()
+        //FIXME after finishing, the program is not closing
+        public void Consegna()
         {
-            Console.WriteLine("La pizza è stata affidata al cliente");
+            while (!fin)
+            {
+                lock (_inConsegna)
+                {
+                    if (daSpedire.Count == 0)
+                    {
+                        Monitor.Wait(_inConsegna);
+                        
+
+
+                    }
+                    
+                    daSpedire.TryDequeue(out Cliente temp);
+
+                    if (temp != null)
+                    {
+                        Thread.Sleep(rnd.Next(0, 2500));
+                        Console.WriteLine("La pizza è stata recapitata al cliente identificativo " + temp.id);
+                    }
+                }
+            }
         }
     }
 }

@@ -7,16 +7,19 @@ namespace Es0208
 {
     class Program
     {
-        static int nocli;
+        
         static Random rnd;
         static void Main(string[] args)
         {
             Pizzeria pi = new Pizzeria();
             Pizzaiolo chef = new Pizzaiolo(pi);
+            Fattorino f = new Fattorino(pi);
             
             List<Thread> tcust = new List<Thread>();
             Thread pizzaiolo = new Thread(chef.Lavora);
+            Thread fattorino = new Thread(f.Lavora);
             pizzaiolo.Start();
+            fattorino.Start();
 
 
             rnd = new Random();
@@ -41,8 +44,12 @@ namespace Es0208
             {
                 tcust[i].Join();
             }
-            pi.fine();
             pizzaiolo.Join();
+            fattorino.Join();
+            pi.fine();
+            
+            Console.WriteLine("Tutti i clienti nel negozio sono stati serviti");
+            
 
         }
     }

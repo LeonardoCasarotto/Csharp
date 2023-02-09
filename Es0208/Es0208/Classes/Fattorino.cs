@@ -4,13 +4,25 @@ using System.Text;
 
 namespace Es0208.Classes
 {
-    class Fattorino
-    {
-        
+    class Fattorino { 
+
+        Pizzeria p;
+
+        public Fattorino(Pizzeria pizz)
+        {
+            p = pizz;
+        }
+
+
+        public void Lavora()
+        {
+            p.Consegna();
+        }
+
+
+
+
+
+
     }
-    
-    
-
-
-
 }
