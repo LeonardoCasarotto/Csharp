@@ -32,7 +32,7 @@ namespace Es0126.Classes
                         if (occupiedBufferCount == 0)
                         {   //mette il thread invocante nello stato WaitSleepJoin
                             Console.WriteLine(Thread.CurrentThread.Name + " prova a leggere");
-                            DisplayState("Buffer vuoto. " + Thread.CurrentThread.Name + " wait");
+                            //DisplayState("Buffer vuoto. " + Thread.CurrentThread.Name + " wait");
                             Monitor.Wait(_locker); //il thread va in waiting,
                                                    //rilascia _locker
                                                    //attende di essere risvegliato
