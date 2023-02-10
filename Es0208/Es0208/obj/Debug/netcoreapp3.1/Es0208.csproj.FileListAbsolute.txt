@@ -12,3 +12,16 @@ C:\Users\leona\Code\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.csproj.C
 C:\Users\leona\Code\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.dll
 C:\Users\leona\Code\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.pdb
 C:\Users\leona\Code\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.genruntimeconfig.cache
+C:\Users\8293359\Csharp\Es0208\Es0208\bin\Debug\netcoreapp3.1\Es0208.exe
+C:\Users\8293359\Csharp\Es0208\Es0208\bin\Debug\netcoreapp3.1\Es0208.deps.json
+C:\Users\8293359\Csharp\Es0208\Es0208\bin\Debug\netcoreapp3.1\Es0208.runtimeconfig.json
+C:\Users\8293359\Csharp\Es0208\Es0208\bin\Debug\netcoreapp3.1\Es0208.runtimeconfig.dev.json
+C:\Users\8293359\Csharp\Es0208\Es0208\bin\Debug\netcoreapp3.1\Es0208.dll
+C:\Users\8293359\Csharp\Es0208\Es0208\bin\Debug\netcoreapp3.1\Es0208.pdb
+C:\Users\8293359\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.csproj.AssemblyReference.cache
+C:\Users\8293359\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.AssemblyInfoInputs.cache
+C:\Users\8293359\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.AssemblyInfo.cs
+C:\Users\8293359\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.csproj.CoreCompileInputs.cache
+C:\Users\8293359\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.dll
+C:\Users\8293359\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.pdb
+C:\Users\8293359\Csharp\Es0208\Es0208\obj\Debug\netcoreapp3.1\Es0208.genruntimeconfig.cache

@@ -65,6 +65,7 @@ namespace Es0208.Classes
 
                 lock (_alLavoro)
                 {
+                    cliente = null;
                     if (clienti.Count == 0)
                     {
                         Monitor.Wait(_alLavoro);
