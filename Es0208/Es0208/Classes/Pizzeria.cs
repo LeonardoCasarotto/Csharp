@@ -25,6 +25,11 @@ namespace Es0208.Classes
             {
 
                 Monitor.Pulse(_alLavoro);
+                
+            }
+            lock (_inConsegna)
+            {
+                Monitor.Pulse(_inConsegna);
             }
         }
         public void entrata_pizzeria(Cliente c) {

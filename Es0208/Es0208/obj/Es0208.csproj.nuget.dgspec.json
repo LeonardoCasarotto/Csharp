@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "C:\\Users\\8293359\\Csharp\\Es0208\\Es0208\\Es0208.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\8293359\\Csharp\\Es0208\\Es0208\\Es0208.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\8293359\\Csharp\\Es0208\\Es0208\\Es0208.csproj",
-        "projectName": "Es0208",
-        "projectPath": "C:\\Users\\8293359\\Csharp\\Es0208\\Es0208\\Es0208.csproj",
-        "packagesPath": "C:\\Users\\8293359\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\8293359\\Csharp\\Es0208\\Es0208\\obj\\",
-=======
     "C:\\Users\\leona\\School\\Csharp\\Es0208\\Es0208\\Es0208.csproj": {}
   },
   "projects": {
@@ -25,17 +12,10 @@
         "projectPath": "C:\\Users\\leona\\School\\Csharp\\Es0208\\Es0208\\Es0208.csproj",
         "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\leona\\School\\Csharp\\Es0208\\Es0208\\obj\\",
->>>>>>> Stashed changes
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\8293359\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -74,11 +54,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< Updated upstream
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
         }
       }
     }
