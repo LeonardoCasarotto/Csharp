@@ -87,7 +87,7 @@ namespace Es0208.Classes
                     if (cliente != null)
                     {
                         
-                        Thread.Sleep(2000);
+                        Thread.Sleep(rnd.Next(0,2500));
                         
                         switch (cliente.tipo)
                         {
@@ -127,6 +127,8 @@ namespace Es0208.Classes
         }
 
         //FIXME after finishing, the program is not closing
+
+
         public void Consegna()
         {
             while (!fin)
