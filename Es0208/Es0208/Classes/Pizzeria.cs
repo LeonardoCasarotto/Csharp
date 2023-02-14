@@ -27,6 +27,7 @@ namespace Es0208.Classes
                 Monitor.Pulse(_alLavoro);
                 
             }
+            //qui il pulse di consegna è presente
             lock (_inConsegna)
             {
                 Monitor.Pulse(_inConsegna);
@@ -76,7 +77,12 @@ namespace Es0208.Classes
                         Monitor.Wait(_alLavoro);
 
                     }
-                    
+                    //TODO qui lui continua l'esecuzione
+                    if (fin)
+                    {
+                        return;
+                    }
+
                    
 
 
@@ -136,6 +142,7 @@ namespace Es0208.Classes
 
         public void Consegna()
         {
+           
             while (!fin)
             {
                 lock (_inConsegna)

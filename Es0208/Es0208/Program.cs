@@ -44,10 +44,9 @@ namespace Es0208
             {
                 tcust[i].Join();
             }
-            pizzaiolo.Join();
-            fattorino.Join();
             pi.fine();
-            
+
+
             Console.WriteLine("Tutti i clienti nel negozio sono stati serviti");
             
 

@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "15if93xy1GaVPtiTfmxslkHTOwuTK+OGStcJtmtwK+2N5CmRPbwKOEvJIONTxRmawUf73QAWMYaq2oz4TVR+uw==",
+  "dgSpecHash": "Hllg1hsIWI4YuRECYUKGj5m9WzcbQZYv/eQLIrmtJAgZswWCMQPLNm7lhxzIe6aDZUZ14g/4gk6X7ESwhQXjMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leona\\School\\Csharp\\Es0208\\Es0208\\Es0208.csproj",
+  "projectFilePath": "C:\\Users\\leona\\Desktop\\Es0208\\Es0208\\Es0208.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\leona\\School\\Csharp\\Es0208\\Es0208\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
