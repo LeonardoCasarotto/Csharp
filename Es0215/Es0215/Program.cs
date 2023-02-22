@@ -23,10 +23,12 @@ namespace Es0215
                 if (rn.Next(0, 2) == 0)
                 {
                     tip = Tipo.locale;
+                    
                 }
                 else
                 {
                     tip = Tipo.ospite;
+                    
                 }
 
                 Tifoso t = new Tifoso(b, tip, i);
@@ -40,6 +42,7 @@ namespace Es0215
             }
             b.end();
 
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Il locale è chiuso, tutti i clienti sono stati serviti!");
         }
     }

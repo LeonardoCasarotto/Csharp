@@ -45,18 +45,20 @@ namespace Es0215
 
                 if (t.getSquadra() == Tipo.locale && blueTeam.Count == nmax || t.getSquadra() == Tipo.ospite && redTeam.Count == nmax)
                 {
-
+                    
                     Console.WriteLine("Il cliente identificativo "+t.getId()+" non può entrare al bar, locale pieno!");
                     return;
                 }
                     if (t.getSquadra() == Tipo.locale)
                     {
-                        blueTeam.Enqueue(t);
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    blueTeam.Enqueue(t);
                     }
 
                     else if (t.getSquadra() == Tipo.ospite)
                     {
-                        redTeam.Enqueue(t);
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    redTeam.Enqueue(t);
                     }
                     Monitor.Pulse(alLavoro);
                 }
@@ -81,11 +83,15 @@ namespace Es0215
                     Random rnd = new Random();
                     if (blueTeam.Count > 0)
                     {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+
                         Console.WriteLine("Il turno al bar spetta alla squadra locale");
                         serviBlu(rnd);
                     }
                     else if (redTeam.Count > 0)
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
+
                         Console.WriteLine("Il turno al bar spetta alla squadra ospite");
                         serviRosso(rnd);
                     }
@@ -115,7 +121,7 @@ namespace Es0215
         {
             lock (ordine)
             {
-                
+                Console.ForegroundColor = ConsoleColor.Blue;
                 while (!blueTeam.IsEmpty)
                 {   
                     Tifoso temp = null;
@@ -136,6 +142,7 @@ namespace Es0215
         {
             lock (ordine)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 while (!redTeam.IsEmpty)
                 {
                     Tifoso temp = null;
