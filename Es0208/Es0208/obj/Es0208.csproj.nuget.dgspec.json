@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leona\\Desktop\\Es0208\\Es0208\\Es0208.csproj": {}
+    "C:\\Users\\leona\\Code\\Csharp\\Es0208\\Es0208\\Es0208.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leona\\Desktop\\Es0208\\Es0208\\Es0208.csproj": {
+    "C:\\Users\\leona\\Code\\Csharp\\Es0208\\Es0208\\Es0208.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leona\\Desktop\\Es0208\\Es0208\\Es0208.csproj",
+        "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es0208\\Es0208\\Es0208.csproj",
         "projectName": "Es0208",
-        "projectPath": "C:\\Users\\leona\\Desktop\\Es0208\\Es0208\\Es0208.csproj",
+        "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es0208\\Es0208\\Es0208.csproj",
         "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leona\\Desktop\\Es0208\\Es0208\\obj\\",
+        "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es0208\\Es0208\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
         }
       }
     }
