@@ -43,7 +43,7 @@ namespace Es0215
             b.end();
 
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Il locale è chiuso, tutti i clienti sono stati serviti!");
+            Console.WriteLine("\n---!!!Il locale è chiuso, tutti i clienti sono stati serviti!!!---");
         }
     }
 }
