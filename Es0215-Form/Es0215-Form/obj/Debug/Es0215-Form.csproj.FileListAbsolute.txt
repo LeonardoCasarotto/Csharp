@@ -1,0 +1,10 @@
+C:\Users\leona\Code\Csharp\Es0215-Form\Es0215-Form\bin\Debug\Es0215-Form.exe.config
+C:\Users\leona\Code\Csharp\Es0215-Form\Es0215-Form\bin\Debug\Es0215-Form.exe
+C:\Users\leona\Code\Csharp\Es0215-Form\Es0215-Form\bin\Debug\Es0215-Form.pdb
+C:\Users\leona\Code\Csharp\Es0215-Form\Es0215-Form\obj\Debug\Es0215-Form.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es0215-Form\Es0215-Form\obj\Debug\Es0215_Form.Form1.resources
+C:\Users\leona\Code\Csharp\Es0215-Form\Es0215-Form\obj\Debug\Es0215_Form.Properties.Resources.resources
+C:\Users\leona\Code\Csharp\Es0215-Form\Es0215-Form\obj\Debug\Es0215-Form.csproj.GenerateResource.cache
+C:\Users\leona\Code\Csharp\Es0215-Form\Es0215-Form\obj\Debug\Es0215-Form.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es0215-Form\Es0215-Form\obj\Debug\Es0215-Form.exe
+C:\Users\leona\Code\Csharp\Es0215-Form\Es0215-Form\obj\Debug\Es0215-Form.pdb
