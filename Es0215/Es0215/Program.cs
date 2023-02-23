@@ -12,10 +12,13 @@ namespace Es0215
             rn = new Random();
 
             Bar b = new Bar(10);
-            Barista barista = new Barista(b);
+            Barista barista1 = new Barista(b);
+            Barista barista2 = new Barista(b);
             List<Thread> tcustomers = new List<Thread>();
-            Thread tbarista = new Thread(barista.Servi);
-            tbarista.Start();
+            Thread tbarista1 = new Thread(barista1.Servi);
+            Thread tbarista2 = new Thread(barista2.Servi);
+            tbarista1.Start();
+            tbarista2.Start();
 
             for(int i = 0; i < 12; i++)
             {
@@ -43,7 +46,7 @@ namespace Es0215
             b.end();
 
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Il locale è chiuso, tutti i clienti sono stati serviti!");
+            Console.WriteLine("\n---!!!Il locale è chiuso, tutti i clienti sono stati serviti!!!---");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Es0215
         int nmax;
         ConcurrentQueue<Tifoso> blueTeam;//squadra locale
         ConcurrentQueue<Tifoso> redTeam;//squadra ospite
-
+        
 
         object ordine = new object();
         object alLavoro = new object();
@@ -78,9 +78,20 @@ namespace Es0215
         {
             while (work)
             {
-                lock (alLavoro)
+                lock (alLavoro) 
                 {
+
                     Random rnd = new Random();
+                    if (rnd.Next(0, 2) == 0)
+                    {
+                        
+                        Console.WriteLine("\n---!!!Il bar è chiuso per pulizia!!!---");
+                        
+                        Thread.Sleep(5000);
+                        
+                    }
+
+
                     if (blueTeam.Count > 0)
                     {
                         Console.ForegroundColor = ConsoleColor.Blue;
