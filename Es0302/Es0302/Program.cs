@@ -4,14 +4,14 @@ namespace Es0302
 {
     class Program
     {
-        static Pila<string> pil = new Pila<string>();
+        static Pila<char> pil = new Pila<char>();
         static void Main(string[] args)
         {
-            string exp = "12*45-+2";
+            string exp = "12*45-2*";
 
             sel(exp);
 
-            for(int i = 0; i < 10; i++)
+            for(int i = 0; i < pil.aTop ; i++)
             {
                 Console.WriteLine(pil.Pop());
             }
@@ -29,16 +29,10 @@ namespace Es0302
         {
             int posizia = 0;
 
-            for(int i = 0; i < c.Length-1; i++)
+            for(int i = 0; i < c.Length; i++)
             {
-                if (c[i] == '+' || c[i] == '-' || c[i] == '*' || c[i] == '/')
-                {
-                    if (posizia!=i)
-                    {
-                        pil.Push(c.Substring(posizia, i));
-                        posizia = i + 1;
-                    }
-                }
+                switch(c[i];:
+
             }
         }
 

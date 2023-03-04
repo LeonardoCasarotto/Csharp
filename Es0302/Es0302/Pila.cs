@@ -18,7 +18,7 @@ namespace Es0302
     class Pila<T> : Istack<T>
     {
         protected T[] aStack;
-        protected int aTop;
+        public int aTop { get; set; }
         protected const int DIM = 10;
 
         public Pila()
@@ -67,6 +67,8 @@ namespace Es0302
 
             }
         }
+
+        
 
 
     }
