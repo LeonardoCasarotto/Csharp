@@ -8,7 +8,7 @@ namespace Es0302
         static void Main(string[] args)
         {
 
-            string exp = "12*45-2*";
+            string exp = "5 9 8 + 4 6 * * 7 + * ";
             Console.WriteLine("Espressione di partenza :\n"+exp);
             sel(exp);
 
@@ -38,58 +38,48 @@ namespace Es0302
                 switch (c[i])
                 {
                     default:
-                        pil.Push(Convert.ToInt32(c[i]-'0'));
-                        
-                        break;
-                    case '+':
-                        int sum=pil.Pop();
-                        for(int j = 0; j < pil.aTop; j++)
+                        int num = 0;
+                        while (i < c.Length && c[i] >= '0' && c[i] <= '9')
                         {
+                            num = num * 10 + (int)(c[i] - '0');
                             
-                            sum += pil.Pop();
-                            
+                            i++;
                         }
-                        
-                        pil.Push(sum);
+                        i--;
+                        Console.WriteLine(num);
+                        pil.Push(num);
+                        break;
 
+                    case ' ':
                         break;
+
+                    case '+':
+                        int sum = pil.Pop();
+                        sum += pil.Pop();
+                        pil.Push(sum);
+                        break;
+
                     case '-':
-                        int diff = pil.Pop();
-                        for (int j = 0; j < pil.aTop; j++)
-                        {
-                           
-                            diff -= pil.Pop();
-                        }
-                        
+                        int b = pil.Pop();
+                        int a = pil.Pop();
+                        int diff = a - b;
                         pil.Push(diff);
                         break;
+
                     case '*':
-                        int molt = pil.Pop();
-
-                        for (int j = 0; j < pil.aTop; j++)
-                        {
-
-                            molt *= pil.Pop();
-                            
-                        }
-
-                        pil.Push(molt);
+                        int prod = pil.Pop();
+                        prod *= pil.Pop();
+                        pil.Push(prod);
                         break;
-                    case '/':
-                        int div = pil.Pop();
-                        for (int j = 0; j < pil.aTop; j++)
-                        {
-                            
-                            div /= pil.Pop();
-                        }
 
+                    case '/':
+                        b = pil.Pop();
+                        a = pil.Pop();
+                        int div = a / b;
                         pil.Push(div);
                         break;
-
-
-
                 }
-                
+
 
             }
         }
