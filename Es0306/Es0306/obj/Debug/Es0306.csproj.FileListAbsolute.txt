@@ -2,9 +2,9 @@ C:\Users\leona\School\Csharp\Es0306\Es0306\bin\Debug\Es0306.exe.config
 C:\Users\leona\School\Csharp\Es0306\Es0306\bin\Debug\Es0306.exe
 C:\Users\leona\School\Csharp\Es0306\Es0306\bin\Debug\Es0306.pdb
 C:\Users\leona\School\Csharp\Es0306\Es0306\obj\Debug\Es0306.csproj.AssemblyReference.cache
-C:\Users\leona\School\Csharp\Es0306\Es0306\obj\Debug\Es0306.Form1.resources
 C:\Users\leona\School\Csharp\Es0306\Es0306\obj\Debug\Es0306.Properties.Resources.resources
 C:\Users\leona\School\Csharp\Es0306\Es0306\obj\Debug\Es0306.csproj.GenerateResource.cache
 C:\Users\leona\School\Csharp\Es0306\Es0306\obj\Debug\Es0306.csproj.CoreCompileInputs.cache
 C:\Users\leona\School\Csharp\Es0306\Es0306\obj\Debug\Es0306.exe
 C:\Users\leona\School\Csharp\Es0306\Es0306\obj\Debug\Es0306.pdb
+C:\Users\leona\School\Csharp\Es0306\Es0306\obj\Debug\Es0306.NQueens.resources

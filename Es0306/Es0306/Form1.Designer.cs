@@ -1,7 +1,7 @@
 ﻿
 namespace Es0306
 {
-    partial class Form1
+    partial class NQueens
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,13 @@ namespace Es0306
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // NQueens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "NQueens";
+            this.Text = "NQueens";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

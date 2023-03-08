@@ -10,9 +10,11 @@ using System.Windows.Forms;
 
 namespace Es0306
 {
-    public partial class Form1 : Form
+    public partial class NQueens : Form
     {
-        public Form1()
+
+        public Pila<Regina> reg = new Pila<Regina>();
+        public NQueens()
         {
             InitializeComponent();
     
@@ -55,6 +57,7 @@ namespace Es0306
                 this.StartPosition = FormStartPosition.CenterScreen;
 
                 this.Controls.Add(scacchiera);
+                
 
 
 
@@ -68,5 +71,16 @@ namespace Es0306
         {
 
         }
+
+
+        public void Funzia()
+        {
+
+        }
+
+
+
+
+
     }
 }
