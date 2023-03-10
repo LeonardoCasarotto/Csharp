@@ -43,11 +43,11 @@ namespace Es0306
                 {
                     for (int j = 0; j < 8; j++)
                     {
-                        Label l = new Label();
-                        l.Dock = DockStyle.Fill;
-                        l.TextAlign = ContentAlignment.MiddleCenter;
-                        l.BackColor = (i + j) % 2 == 0 ? Color.White : Color.Black;
-                        scacchiera.Controls.Add(l, i, j);
+                        PictureBox p = new PictureBox();
+                        p.Dock = DockStyle.Fill;
+                        
+                        p.Image = (i + j) % 2 == 0 ? Image.FromFile("../../white.png") : Image.FromFile("../../black.png");
+                        scacchiera.Controls.Add(p, i, j);
                     }
                 }
                 //make the window a square
