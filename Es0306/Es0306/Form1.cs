@@ -101,11 +101,7 @@ namespace Es0306
         }
         public void Aggiorna()
         {
-            Pila<Regina> h = reg;
-            for (int i = 0; i < h.aTop; i++)
-            {
-                
-            }
+            
         }
 
 

@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{F372960A-3206-411B-BCD3-E2180D7230C8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Es0306/Form1.cs">
+    <Files>
+      <File FileName="Es0306/Form1.cs" Line="13" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Es0306" expanded="True" selected="True">
+            <Node name="Es0306" expanded="True">
+              <Node name="Form1.cs" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Es0306 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
