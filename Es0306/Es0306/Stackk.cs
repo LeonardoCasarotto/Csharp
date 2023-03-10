@@ -15,7 +15,7 @@ namespace Es0306
 
     }
 
-    class Pila<T> : Istack<T>
+    public class Pila<T> : Istack<T>
     {
         protected T[] aStack;
         public int aTop { get; set; }

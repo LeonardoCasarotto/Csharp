@@ -14,11 +14,12 @@ namespace Es0306
     {
 
         public Pila<Regina> reg = new Pila<Regina>();
+        TableLayoutPanel scacchiera;
         public NQueens()
         {
             InitializeComponent();
     
-            TableLayoutPanel scacchiera;
+            
             
                 InitializeComponent();
                 scacchiera = new TableLayoutPanel();
@@ -69,14 +70,44 @@ namespace Es0306
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
 
         public void Funzia()
         {
+            for(int i = 0; i < 8; i++)
+            {
+                
+             
+                    Regina temp = new Regina(i, 0);
+                    
+                
+                    if(reg.aTop>1)
+                    {
+                        Pila<Regina> rg = reg;
+                        
+                        for(int j = 0; j < rg.aTop; j++)
+                        {
+                            Regina t = rg.Pop();
+                            temp.Movimento(i,0,t);
+                            reg.Push(temp);
+                            Aggiorna();
+                        }
+                    }
+
+            }
 
         }
+        public void Aggiorna()
+        {
+            Pila<Regina> h = reg;
+            for (int i = 0; i < h.aTop; i++)
+            {
+                
+            }
+        }
+
 
 
 
