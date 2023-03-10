@@ -35,7 +35,7 @@ namespace Es0306
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1498, 875);
             this.Name = "NQueens";
             this.Text = "NQueens";
             this.Load += new System.EventHandler(this.Form1_Load);

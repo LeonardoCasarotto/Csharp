@@ -34,21 +34,21 @@ namespace Es0306
             return ris;
         }
 
-        public void Movimento(int x, int y, Regina re)
+        public void Movimento(Regina re)
         {
             while (ReginaSottoAttacco(re))
             {
-                if (x < 7)
+                if (re.XdellaRegina < 7)
                 {
                     XdellaRegina++;
                 }
-                else if (x == 7&&y<7)
+                else if (re.XdellaRegina == 7&&re.YdellaRegina<7)
                 {
                     XdellaRegina = 0;
                     YdellaRegina++;
 
                 }
-                else if(y==7 && x == 7)
+                else if(re.YdellaRegina==7 && re.XdellaRegina== 7)
                 {
                     XdellaRegina = 0;
                     YdellaRegina = 0;

@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Es0306
@@ -56,8 +56,10 @@ namespace Es0306
                 //make the window not resizable and appear in the center of the screen
                 this.FormBorderStyle = FormBorderStyle.FixedSingle;
                 this.StartPosition = FormStartPosition.CenterScreen;
+                //scacchiera.BackColor = Color.Blue;
 
                 this.Controls.Add(scacchiera);
+
                 
 
 
@@ -71,37 +73,44 @@ namespace Es0306
         private void Form1_Load(object sender, EventArgs e)
         {
            
+            Aggiorna(0,1);
+            
         }
 
 
         public void Funzia()
         {
+            Pila<Regina> appoggio = new Pila<Regina>();
             for(int i = 0; i < 8; i++)
             {
-                
+                Regina temp = new Regina(0, 0);
+                reg.Push(temp);
+                if (reg.aTop > 0)
+                {
+                    appoggio.Push(reg.Pop());
+                    //todo add recursiveness 
+                    temp.Movimento(appoggio.Top());
+                    //todo use the function Aggiorna
+                }
              
-                    Regina temp = new Regina(i, 0);
                     
-                
-                    if(reg.aTop>1)
-                    {
-                        Pila<Regina> rg = reg;
-                        
-                        for(int j = 0; j < rg.aTop; j++)
-                        {
-                            Regina t = rg.Pop();
-                            temp.Movimento(i,0,t);
-                            reg.Push(temp);
-                            Aggiorna();
-                        }
-                    }
 
             }
 
-        }
-        public void Aggiorna()
-        {
             
+
+        }
+        public void Aggiorna(int x, int y)
+        {
+            PictureBox p = new PictureBox();
+            p.Dock = DockStyle.Fill;
+
+            p.Image = Image.FromFile("../../chess.png");
+            p.BackColor = Color.Transparent;
+            var m =scacchiera.GetControlFromPosition(x, y);
+            scacchiera.Controls.Remove(m);
+
+            scacchiera.Controls.Add(p, x, y);
         }
 
 
