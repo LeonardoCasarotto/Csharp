@@ -8,8 +8,8 @@ namespace Es0306
 {
     public class Regina
     {
-        private int XdellaRegina { get; set; }
-        private int YdellaRegina { get; set; }
+         public int XdellaRegina { get; set; }
+         public int YdellaRegina { get; set; }
         public Regina(int XRegina, int YRegina)
         {
             this.XdellaRegina = XRegina;
@@ -34,21 +34,21 @@ namespace Es0306
             return ris;
         }
 
+        
         public void Movimento(Regina re)
         {
             while (ReginaSottoAttacco(re))
             {
-                if (re.XdellaRegina < 7)
+                if (XdellaRegina < 7)
                 {
                     XdellaRegina++;
                 }
-                else if (re.XdellaRegina == 7&&re.YdellaRegina<7)
+                else if (YdellaRegina < 7)
                 {
                     XdellaRegina = 0;
                     YdellaRegina++;
-
                 }
-                else if(re.YdellaRegina==7 && re.XdellaRegina== 7)
+                else
                 {
                     XdellaRegina = 0;
                     YdellaRegina = 0;

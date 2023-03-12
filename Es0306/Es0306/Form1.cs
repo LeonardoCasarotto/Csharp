@@ -59,6 +59,7 @@ namespace Es0306
                 //scacchiera.BackColor = Color.Blue;
 
                 this.Controls.Add(scacchiera);
+                
 
                 
 
@@ -72,51 +73,42 @@ namespace Es0306
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
-            Aggiorna(0,1);
+
+            
             
         }
-
-
         public void Funzia()
         {
-            Pila<Regina> appoggio = new Pila<Regina>();
-            for(int i = 0; i < 8; i++)
+            reg.Push(new Regina(0, 0));
+            for (int i = 1; i < 8; i++)
             {
                 Regina temp = new Regina(0, 0);
+
+                temp.Movimento(reg.Pop());
                 reg.Push(temp);
-                if (reg.aTop > 0)
-                {
-                    appoggio.Push(reg.Pop());
-                    //todo add recursiveness 
-                    temp.Movimento(appoggio.Top());
-                    //todo use the function Aggiorna
-                }
-             
-                    
 
+                Aggiorna(temp.XdellaRegina, temp.YdellaRegina);
             }
-
-            
-
         }
+
+
         public void Aggiorna(int x, int y)
         {
+             var m = scacchiera.GetControlFromPosition(x, y);
+            scacchiera.Controls.Remove(m);
+            
             PictureBox p = new PictureBox();
             p.Dock = DockStyle.Fill;
+            
 
-            p.Image = Image.FromFile("../../chess.png");
-            p.BackColor = Color.Transparent;
-            var m =scacchiera.GetControlFromPosition(x, y);
-            scacchiera.Controls.Remove(m);
+            p.Image = (x + y) % 2 == 0 ? Image.FromFile("../../whitequeen.png") : Image.FromFile("../../blackqueen.png");
 
             scacchiera.Controls.Add(p, x, y);
         }
 
-
-
-
-
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Funzia();
+        }
     }
 }
