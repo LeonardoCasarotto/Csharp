@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es0305\\Es0305\\Es0305.csproj",
+      "projectUniqueName": "C:\\Users\\leona\\School\\Csharp\\Es0305\\Es0305\\Es0305.csproj",
       "projectName": "Es0305",
-      "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es0305\\Es0305\\Es0305.csproj",
+      "projectPath": "C:\\Users\\leona\\School\\Csharp\\Es0305\\Es0305\\Es0305.csproj",
       "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es0305\\Es0305\\obj\\",
+      "outputPath": "C:\\Users\\leona\\School\\Csharp\\Es0305\\Es0305\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
       }
     }
   }
