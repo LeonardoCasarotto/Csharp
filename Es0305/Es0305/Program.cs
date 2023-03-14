@@ -42,21 +42,18 @@ namespace Es0305
 
                 }
                 
-                if (vip)
-                {
+                pila.Push(new Vip(i, con));
 
-
-                    pila.Push(new Vip(i, con));
-
-                }
+                
             }
             if (pila.Count == 0) Console.WriteLine(-1);
             else
             {
-                Console.WriteLine(pila.Count);
+                
                 foreach(Vip v in pila)
                 {
-                    if(v.followers>0)Console.WriteLine("Il vip a riga "+v.riga+" è conosciuto da "+v.followers+" persone");
+                    if(v.followers>0)
+                        Console.WriteLine("Il vip a riga "+v.riga+" è conosciuto da "+v.followers+" persone");
                 }
             }
 

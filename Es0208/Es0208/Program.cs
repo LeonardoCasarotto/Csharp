@@ -46,7 +46,7 @@ namespace Es0208
             }
             pi.fine();
 
-
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Tutti i clienti nel negozio sono stati serviti");
             
 

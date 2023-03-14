@@ -41,12 +41,14 @@ namespace Es0208.Classes
                 if (c.tipo == TypeCli.daRemoto)
                 {
                     clienti.Insert(0, c);
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Il cliente "+c.id+" ha telefonato e ha ordinato una pizza");
                 }
 
                 else if (c.tipo == TypeCli.inPresenza)
                 {
                     clienti.Add(c);
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Il cliente " + c.id + " è in negozio e ha ordinato una pizza");
                 }
                 Monitor.Pulse(_alLavoro);
@@ -55,6 +57,7 @@ namespace Es0208.Classes
 
             lock (_ordine)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Il cliente "+c.id+ " è in attesa di essere servito");
                 Monitor.Wait(_ordine);
 
@@ -134,6 +137,7 @@ namespace Es0208.Classes
 
         public void Passa(int c)
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("La pizza è stata affidata al cliente id "+c);
         }
 
@@ -160,6 +164,7 @@ namespace Es0208.Classes
                     if (temp != null)
                     {
                         Thread.Sleep(rnd.Next(0, 2500));
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("La pizza è stata recapitata al cliente identificativo " + temp.id);
                     }
                 }
