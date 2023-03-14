@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{0E5B9B8F-3C63-4DA4-83B8-F9EF95066822}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Es0302/Program.cs">
+    <Files>
+      <File FileName="Es0302/Exc.cs" Line="1" Column="1" />
+      <File FileName="Es0302/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Es0302" expanded="True">
+            <Node name="Es0302" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Es0302 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

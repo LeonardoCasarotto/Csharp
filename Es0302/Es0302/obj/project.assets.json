@@ -8,26 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\leona\\.nuget\\packages\\": {}
+    "/Users/leonardo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\Es0302\\Es0302\\Es0302.csproj",
+      "projectUniqueName": "/Users/leonardo/Developer/Csharp/Es0302/Es0302/Es0302.csproj",
       "projectName": "Es0302",
-      "projectPath": "C:\\Users\\leona\\Code\\Csharp\\Es0302\\Es0302\\Es0302.csproj",
-      "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leona\\Code\\Csharp\\Es0302\\Es0302\\obj\\",
+      "projectPath": "/Users/leonardo/Developer/Csharp/Es0302/Es0302/Es0302.csproj",
+      "packagesPath": "/Users/leonardo/.nuget/packages/",
+      "outputPath": "/Users/leonardo/Developer/Csharp/Es0302/Es0302/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/leonardo/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.106/RuntimeIdentifierGraph.json"
       }
     }
   }
