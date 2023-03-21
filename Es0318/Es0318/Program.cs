@@ -19,22 +19,25 @@ namespace Es0318
                 lista.Add(m);
                 Console.WriteLine("Aggiungo alla lista il numero " + m);
             }
+
+
+            Console.WriteLine(" count :" + lista.Count);
             
             Console.WriteLine("Rimuovo il primo elemento");
             lista.RemoveAt(0);
-
+            
             Console.WriteLine("Rimuovo l'ultimo elemento ");
-            lista.RemoveAt(lista.Length);
-
+            lista.RemoveAt(lista.Count-1);
+            
 
             Console.WriteLine("Rimuovo l'elemento che si trova a metá della lista");
 
-            lista.Add(46);
+            lista.RemoveAt(lista.Count / 2);
 
+            
+            
 
-            Console.WriteLine(lista.Length);
-
-
+            
             Console.WriteLine("É presente il numero 46 ? Verifico...");
 
             if (lista.Contains(46) == true) Console.WriteLine("Il numero 46 é presente nella lista!");

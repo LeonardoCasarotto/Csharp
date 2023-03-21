@@ -121,18 +121,19 @@ namespace Es0318
             bool ris = false;
 
             int i = 0;
-            while (i < Length && !curr.Value.Equals(item))
+            while (i < Count && !curr.Value.Equals(item))
             {
                 curr = curr.Next;
                 i++;
+            }
 
 
 
-                if (curr.Value.Equals(item))
+                if (curr!= null && curr.Value.Equals(item))
                 {
                     ris = true;
                 }
-            }
+            
             return ris;
 
 
