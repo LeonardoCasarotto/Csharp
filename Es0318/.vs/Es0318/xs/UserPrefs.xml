@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{4EE2EB32-4FE4-44B0-84B7-42AAB5947CE0}|Default">
   <MonoDevelop.Ide.ItemProperties.Es0318 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Es0318/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Es0318/LinkdList.cs">
     <Files>
       <File FileName="Es0318/Program.cs" Line="52" Column="1" />
-      <File FileName="Es0318/LinkdList.cs" Line="140" Column="1" />
+      <File FileName="Es0318/LinkdList.cs" Line="132" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Es0318" expanded="True">
             <Node name="Es0318" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="LinkdList.cs" selected="True" />
             </Node>
           </Node>
         </State>
