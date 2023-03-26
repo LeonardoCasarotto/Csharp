@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{1AFABA91-038E-4914-86C9-11194466F6EF}|Default">
+  <MonoDevelop.Ide.ItemProperties.Es0321-Class FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Es0321-Class/Program.cs">
+    <Files>
+      <File FileName="Es0321-Class/Program.cs" Line="54" Column="14" />
+      <File FileName="Es0321-Class/Astronauta.cs" Line="22" Column="10" />
+      <File FileName="Es0321-Class/AstronautaInAdd.cs" Line="25" Column="69" />
+      <File FileName="Es0321-Class/AstronautainMiss.cs" Line="18" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Es0321-Class" expanded="True">
+            <Node name="Es0321-Class" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
