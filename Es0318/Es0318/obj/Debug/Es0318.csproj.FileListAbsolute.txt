@@ -1,6 +1,0 @@
-/Users/leonardo/Developer/Csharp/Es0318/Es0318/obj/Debug/Es0318.csproj.AssemblyReference.cache
-/Users/leonardo/Developer/Csharp/Es0318/Es0318/obj/Debug/Es0318.csproj.CoreCompileInputs.cache
-/Users/leonardo/Developer/Csharp/Es0318/Es0318/bin/Debug/Es0318.exe
-/Users/leonardo/Developer/Csharp/Es0318/Es0318/bin/Debug/Es0318.pdb
-/Users/leonardo/Developer/Csharp/Es0318/Es0318/obj/Debug/Es0318.exe
-/Users/leonardo/Developer/Csharp/Es0318/Es0318/obj/Debug/Es0318.pdb
