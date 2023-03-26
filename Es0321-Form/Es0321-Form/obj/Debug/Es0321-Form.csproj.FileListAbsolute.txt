@@ -1,0 +1,10 @@
+C:\Users\leona\Code\Csharp\Es0321-Form\Es0321-Form\bin\Debug\Es0321-Form.exe.config
+C:\Users\leona\Code\Csharp\Es0321-Form\Es0321-Form\bin\Debug\Es0321-Form.exe
+C:\Users\leona\Code\Csharp\Es0321-Form\Es0321-Form\bin\Debug\Es0321-Form.pdb
+C:\Users\leona\Code\Csharp\Es0321-Form\Es0321-Form\obj\Debug\Es0321-Form.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\Es0321-Form\Es0321-Form\obj\Debug\Es0321_Form.Form1.resources
+C:\Users\leona\Code\Csharp\Es0321-Form\Es0321-Form\obj\Debug\Es0321_Form.Properties.Resources.resources
+C:\Users\leona\Code\Csharp\Es0321-Form\Es0321-Form\obj\Debug\Es0321-Form.csproj.GenerateResource.cache
+C:\Users\leona\Code\Csharp\Es0321-Form\Es0321-Form\obj\Debug\Es0321-Form.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\Es0321-Form\Es0321-Form\obj\Debug\Es0321-Form.exe
+C:\Users\leona\Code\Csharp\Es0321-Form\Es0321-Form\obj\Debug\Es0321-Form.pdb
