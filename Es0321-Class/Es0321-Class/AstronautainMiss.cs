@@ -3,8 +3,11 @@ namespace Es0321_Class
 {
     public class AstronautainMiss
     {
-        public AstronautainMiss()
+        public AstronautainMiss(ruolo r)
         {
+
+
+
         }
     }
 }

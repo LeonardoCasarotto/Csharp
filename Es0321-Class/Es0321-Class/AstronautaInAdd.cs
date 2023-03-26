@@ -8,7 +8,7 @@ namespace Es0321_Class
         public int hoursPhisique;
 
 
-        public AstronautaInAdd(int ht,int hp)
+        public AstronautaInAdd(ruolo rl, stato s, int ht, int hp): base(s,rl)
         {
             this.hoursTechnique = ht;
             this.hoursPhisique = hp;

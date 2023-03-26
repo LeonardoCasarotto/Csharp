@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Es0321_Class
 {
     class Program
     {
          static LinkedList<AstronautaInAdd> trainingList;
-         static LinkedList<AstronautainMiss> missionList;
+         static LinkedList<AstronautainMiss> astrmissionList;
+         static LinkedList<Missione> missionList;
 
         static void Main(string[] args)
         {
-            missionList = new LinkedList<AstronautainMiss>();
+            missionList = new LinkedList<Missione>();
+            astrmissionList = new LinkedList<AstronautainMiss>();
             trainingList = new LinkedList<AstronautaInAdd>();
 
 
@@ -27,6 +30,19 @@ namespace Es0321_Class
             Console.WriteLine("/t 3. Addestrare tutti gli astronauti, indistintamente dallo stato");
 
             Console.WriteLine("/t 4. Ordinare gli astronauti");
+
+        }
+
+
+
+
+
+
+        static void Json()
+        {
+            StreamWriter Sr = new StreamWriter("main.json");
+
+
 
         }
     }
