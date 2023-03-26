@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.Json;
 
 namespace Es0321_Class
 {
@@ -40,9 +41,17 @@ namespace Es0321_Class
 
         static void Json()
         {
+            if (File.Exists("data.json"))
+            {
+
+                File.Delete("data.json");
+            }
             StreamWriter Sr = new StreamWriter("main.json");
 
-
+            foreach(Missione mi in missionList)
+            {
+                Sr.WriteLine(JsonSerializer.Serialize(mi));
+            }
 
         }
     }

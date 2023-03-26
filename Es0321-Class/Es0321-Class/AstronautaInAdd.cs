@@ -8,7 +8,7 @@ namespace Es0321_Class
         public int hoursPhisique;
 
 
-        public AstronautaInAdd(ruolo rl, stato s, int ht, int hp): base(s,rl)
+        public AstronautaInAdd(ruolo rl, int ht, int hp): base(stato.inAddestramento,rl)
         {
             this.hoursTechnique = ht;
             this.hoursPhisique = hp;
@@ -22,7 +22,7 @@ namespace Es0321_Class
             }
             else
             {
-                Thread.Sleep((hoursPhisique + hoursTechnique) * 100;
+                Thread.Sleep((hoursPhisique + hoursTechnique) * 100);
                 hoursPhisique = 0;
                 hoursTechnique = 0;
                 return true;

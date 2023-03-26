@@ -1,13 +1,21 @@
 ﻿using System;
+using System.Threading;
+
 namespace Es0321_Class
 {
-    public class AstronautainMiss
+    public class AstronautainMiss:Astronauta
     {
-        public AstronautainMiss(ruolo r)
+
+        public Missione incorso { get; }
+        public AstronautainMiss(ruolo rl,Missione mi):base(stato.pronto,rl)
         {
+            this.incorso = mi;
+        }
 
-
-
+        public void vola()
+        {
+            Thread.Sleep(2000);
+            
         }
     }
 }
