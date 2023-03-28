@@ -1,0 +1,13 @@
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/obj/Debug/netcoreapp3.1/Es0328-Class.csproj.AssemblyReference.cache
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/obj/Debug/netcoreapp3.1/Es0328-Class.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/obj/Debug/netcoreapp3.1/Es0328-Class.AssemblyInfoInputs.cache
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/obj/Debug/netcoreapp3.1/Es0328-Class.AssemblyInfo.cs
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/obj/Debug/netcoreapp3.1/Es0328-Class.csproj.CoreCompileInputs.cache
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/bin/Debug/netcoreapp3.1/Es0328-Class.deps.json
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/bin/Debug/netcoreapp3.1/Es0328-Class.runtimeconfig.json
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/bin/Debug/netcoreapp3.1/Es0328-Class.runtimeconfig.dev.json
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/bin/Debug/netcoreapp3.1/Es0328-Class.dll
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/bin/Debug/netcoreapp3.1/Es0328-Class.pdb
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/obj/Debug/netcoreapp3.1/Es0328-Class.dll
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/obj/Debug/netcoreapp3.1/Es0328-Class.pdb
+/Users/leonardo/Developer/Csharp/Es0328-Class/Es0328-Class/obj/Debug/netcoreapp3.1/Es0328-Class.genruntimeconfig.cache
