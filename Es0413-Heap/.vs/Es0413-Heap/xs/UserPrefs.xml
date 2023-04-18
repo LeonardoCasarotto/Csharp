@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{F5975AA1-1EDF-4DB4-8A5E-5F2F3565F10E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Es0413-Heap/Program.cs">
+    <Files>
+      <File FileName="Es0413-Heap/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Es0413-Heap" expanded="True">
+            <Node name="Es0413-Heap" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Es0413-Heap FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

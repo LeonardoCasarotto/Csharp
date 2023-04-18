@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
+using Anselmo.Classes;
 
 namespace Anselmo
 {
@@ -20,7 +21,15 @@ namespace Anselmo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Coniglio Anselmo = new Coniglio();
+            /* todo:
+             * 1. inserimento primi uccellini
+             * 2. dichiarazione e avvio thread
+             * 3. evento per finire alla pressione di un pulsante
+             
+             
+             
+             */
+            
 
 
         }

@@ -13,19 +13,19 @@ namespace Anselmo.Classes
 
     public class HeapMin<Uccello>
     {
-        Uccello[] arr;
+        Uccellino[] arr;
         private int posizione { get; set; }
 
         //costruttore
         public HeapMin(int size)
         {
-            this.arr = new Uccello[size];
+            this.arr = new Uccellino[size];
             this.posizione = 1;
             Console.WriteLine("Nuovo heapmin creato");
         }
 
         //ritorna il valore minimo, cioè quello piu in alto
-        public Uccello MinValue()
+        public Uccellino MinValue()
         {
             if (posizione != 1)
                 return arr[1];
@@ -40,7 +40,7 @@ namespace Anselmo.Classes
         }
 
         //controllo dell'heap
-        public void Add(Uccello value)
+        public void Add(Uccellino value)
         {
             if (posizione <= arr.Length - 1)
             {
@@ -54,9 +54,9 @@ namespace Anselmo.Classes
         }
 
         //ridimensiona l'array di appoggio
-        private Uccello[] Resize()
+        private Uccellino[] Resize()
         {
-            Uccello[] temp = new Uccello[arr.Length * 2];
+            Uccellino[] temp = new Uccellino[arr.Length * 2];
             for (int i = 0; i < arr.Length; i++)
             {
                 temp[i] = arr[i];
@@ -66,7 +66,7 @@ namespace Anselmo.Classes
         }
 
         //inserisce un elemento nell'heap
-        private void Aggiungi(Uccello value)
+        private void Aggiungi(Uccellino value)
         {
             arr[posizione] = value;
             posizione++;
@@ -96,9 +96,9 @@ namespace Anselmo.Classes
                 Console.WriteLine("Siamo gia nella radice");
             }
             int parent = Parent(index);
-            if (arr[index].GetDimensioni < arr[parent].GetDimensioni())
+            if (arr[index].number < arr[parent].number)
             {
-                Uccello tmp = arr[index];
+                Uccellino tmp = arr[index];
                 arr[index] = arr[parent];
                 arr[parent] = tmp;
             }
