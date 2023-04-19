@@ -25,7 +25,7 @@ namespace Anselmo.Classes
         {
             lock (_locker)
             {
-                albero.estrai();
+                albero.Estrai();
             }
         }
 
