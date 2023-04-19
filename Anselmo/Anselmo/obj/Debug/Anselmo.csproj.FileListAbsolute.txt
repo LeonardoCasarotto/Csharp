@@ -20,3 +20,4 @@ Z:\Csharp\Anselmo\Anselmo\bin\Debug\Anselmo.exe.config
 Z:\Csharp\Anselmo\Anselmo\bin\Debug\Anselmo.exe
 Z:\Csharp\Anselmo\Anselmo\bin\Debug\Anselmo.pdb
 Z:\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.Utils.ImgMessageBox.resources
+C:\Users\leona\Code\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.Utils.ImgMessageBox.resources

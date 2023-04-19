@@ -12,20 +12,15 @@ namespace Anselmo.Utils
 {
     public partial class ImgMessageBox : Form
     {
-        public ImgMessageBox(string title, string message, Image im)
+        public ImgMessageBox(string title, string msg, Image img)
         {
-            text = new Label();
-            pictureBox1 = new PictureBox();
-            this.Text = title;
-            
-            text.Text = message;
-            pictureBox1.Image = im;
-            pictureBox1.Enabled = true;
-            pictureBox1.Width = im.Width;
-            pictureBox1.Height = im.Height;
-            pictureBox1.Visible = true;
-       
             InitializeComponent();
+            this.Text = title;
+            label1.Text = msg;
+            label1.MaximumSize = new Size(300, 0);
+            label1.AutoSize = true;
+            pictureBox1.Image = img;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

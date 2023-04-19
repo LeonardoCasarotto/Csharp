@@ -27,7 +27,7 @@ namespace Anselmo
 
 
             ImgMessageBox avviso = new ImgMessageBox("Inizio",
-                                                     "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito tre" +
+                                                     "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito tre " +
                                                      "uccellini nell'albero",Properties.Resources._4);
 
             avviso.ShowDialog();
