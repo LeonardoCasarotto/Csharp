@@ -10,7 +10,7 @@ namespace Anselmo.Classes
     public class Tree
     {
 
-        MinHeap<Uccellino> albero = new MinHeap<Uccellino>();
+        public MinHeap<Uccellino> albero = new MinHeap<Uccellino>();
         object _locker = new object();
         long _count = 0;
 
@@ -39,6 +39,11 @@ namespace Anselmo.Classes
                 albero.Add(new Uccellino(_count, rnd));
                 _count++;
             }
+        }
+
+        public MinHeap<Uccellino> GetHeap()
+        {
+            return this.albero;
         }
     }
 }

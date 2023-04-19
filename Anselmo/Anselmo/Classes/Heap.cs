@@ -20,7 +20,7 @@ namespace Anselmo.Classes
         public MinHeap()
         {
             this.arr = new List<Uccellino>();
-            this.posizione = 1;
+            this.posizione = 0;
             Console.WriteLine("Nuovo heapmin creato");
         }
 

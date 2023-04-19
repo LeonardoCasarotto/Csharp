@@ -29,7 +29,7 @@ namespace Anselmo.Classes
             panel.Controls.Add(pictureBox);
         }
 
-        public void DrawHeap(int[] heap)
+        public void DrawHeap(MinHeap<Uccellino> heap)
         {
             // Create a Bitmap with the desired size for the heap diagram
             bitmap = new Bitmap(500, 500);
@@ -45,5 +45,12 @@ namespace Anselmo.Classes
             // Assign the Bitmap to the Image property of the PictureBox
             pictureBox.Image = bitmap;
         }
+
+        
+
+
+
+
+
     }
 }
