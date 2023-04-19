@@ -10,7 +10,7 @@ namespace Anselmo.Classes
     public class Tree
     {
 
-        MinHeap albero = new MinHeap();
+        MinHeap<Uccellino> albero = new MinHeap();
         object _locker = new object();
 
 

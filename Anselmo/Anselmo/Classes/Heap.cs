@@ -11,15 +11,15 @@ namespace Anselmo.Classes
 
 
 
-    public class HeapMin<Uccello>
+    public class MinHeap<Uccello>
     {
-        Uccellino[] arr;
+        List<Uccellino> arr;
         private int posizione { get; set; }
 
         //costruttore
-        public HeapMin(int size)
+        public MinHeap(int size)
         {
-            this.arr = new Uccellino[size];
+            this.arr = new List<Uccellino>();
             this.posizione = 1;
             Console.WriteLine("Nuovo heapmin creato");
         }
@@ -40,9 +40,10 @@ namespace Anselmo.Classes
         }
 
         //controllo dell'heap
+        //TOREV rivedere metodi resize
         public void Add(Uccellino value)
         {
-            if (posizione <= arr.Length - 1)
+            if (posizione <= arr.Count - 1)
             {
                 Aggiungi(value);
             }
@@ -54,10 +55,10 @@ namespace Anselmo.Classes
         }
 
         //ridimensiona l'array di appoggio
-        private Uccellino[] Resize()
+        private List<Uccellino> Resize()
         {
-            Uccellino[] temp = new Uccellino[arr.Length * 2];
-            for (int i = 0; i < arr.Length; i++)
+            List<Uccellino> temp = new List<Uccellino>();
+            for (int i = 0; i < arr.Count; i++)
             {
                 temp[i] = arr[i];
             }

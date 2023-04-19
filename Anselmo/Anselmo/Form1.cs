@@ -19,8 +19,15 @@ namespace Anselmo
             InitializeComponent();
         }
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
+
+
+
+
+
+
             /* todo:
              * 1. inserimento primi uccellini
              * 2. dichiarazione e avvio thread
