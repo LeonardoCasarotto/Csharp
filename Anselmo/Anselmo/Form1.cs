@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
 using Anselmo.Classes;
+using Anselmo.Utils;
 
 namespace Anselmo
 {
@@ -19,14 +20,19 @@ namespace Anselmo
             InitializeComponent();
         }
 
+        Tree albero = new Tree();
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
 
+            ImgMessageBox avviso = new ImgMessageBox("Inizio",
+                                                     "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito tre" +
+                                                     "uccellini nell'albero",Properties.Resources._4);
 
+            avviso.ShowDialog();
 
-
+                
 
             /* todo:
              * 1. inserimento primi uccellini
@@ -36,7 +42,7 @@ namespace Anselmo
              
              
              */
-            
+
 
 
         }

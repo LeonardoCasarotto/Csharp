@@ -17,7 +17,7 @@ namespace Anselmo.Classes
         private int posizione { get; set; }
 
         //costruttore
-        public MinHeap(int size)
+        public MinHeap()
         {
             this.arr = new List<Uccellino>();
             this.posizione = 1;
@@ -94,7 +94,7 @@ namespace Anselmo.Classes
             if (index <= 1)
             {
                 return;
-                Console.WriteLine("Siamo gia nella radice");
+                Console.WriteLine("Siamo gia nella radice");//TOREV
             }
             int parent = Parent(index);
             if (arr[index].number < arr[parent].number)

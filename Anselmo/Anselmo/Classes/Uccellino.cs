@@ -9,12 +9,12 @@ namespace Anselmo
     public class Uccellino
     {
 
-        public int id { get; }
+        public long id { get; }
         public int number { get; }
 
-        public Uccellino(int x, int n)
+        public Uccellino(long identifier, int n)
         {
-            this.id = x;
+            this.id = identifier;
             this.number = n;
         }
     }

@@ -8,3 +8,15 @@ C:\Users\leona\Code\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.csproj.GenerateReso
 C:\Users\leona\Code\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.csproj.CoreCompileInputs.cache
 C:\Users\leona\Code\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.exe
 C:\Users\leona\Code\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.pdb
+Z:\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.csproj.AssemblyReference.cache
+Z:\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.csproj.SuggestedBindingRedirects.cache
+Z:\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.Form1.resources
+Z:\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.Properties.Resources.resources
+Z:\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.csproj.GenerateResource.cache
+Z:\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.csproj.CoreCompileInputs.cache
+Z:\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.exe
+Z:\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.pdb
+Z:\Csharp\Anselmo\Anselmo\bin\Debug\Anselmo.exe.config
+Z:\Csharp\Anselmo\Anselmo\bin\Debug\Anselmo.exe
+Z:\Csharp\Anselmo\Anselmo\bin\Debug\Anselmo.pdb
+Z:\Csharp\Anselmo\Anselmo\obj\Debug\Anselmo.Utils.ImgMessageBox.resources
