@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{46E528A8-BEE5-41C6-967F-C743569D38F2}|Default">
+  <MonoDevelop.Ide.ItemProperties.TestHeap FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestHeap/Heap.cs">
+    <Files>
+      <File FileName="TestHeap/Program.cs" Line="1" Column="1" />
+      <File FileName="TestHeap/Heap.cs" Line="92" Column="5" />
+      <File FileName="TestHeap/Uccellino.cs" Line="21" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TestHeap" expanded="True">
+            <Node name="TestHeap" expanded="True">
+              <Node name="Heap.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
