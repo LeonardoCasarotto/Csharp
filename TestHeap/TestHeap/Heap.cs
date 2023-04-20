@@ -3,7 +3,7 @@ using System.Collections.Generic;
 namespace TestHeap
 {
 
-    public class MinHeap<Uccellino>
+    public class MinHeap
     {
         Uccellino[] heap;
         int capacity;
@@ -41,7 +41,7 @@ namespace TestHeap
             int i = occupied;
             occupied++;
 
-            while(i!= 0 && Parent(i).number > heap[i].number)
+            while (i != 0 && ((Uccellino)Parent(i)).number > ((Uccellino)heap[i]).number)
             {
                 Uccellino temp = heap[i];
                 heap[i] = Parent(i);

@@ -6,12 +6,10 @@ namespace TestHeap
     {
         static void Main(string[] args)
         {
-            MinHeap<Uccellino> ciao = new MinHeap<Uccellino>(250);
+            MinHeap ciao = new MinHeap(250);
             Console.WriteLine("CREATO HEAP");
 
-            ciao.Insert(new Uccellino(5, 10));
-
-            ciao.Tipo();
+            
         }
     }
 }
