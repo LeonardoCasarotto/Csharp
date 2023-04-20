@@ -36,9 +36,7 @@ namespace Anselmo
             albero.Aggiungi();
             albero.Aggiungi();
 
-            HeapDrawer hp = new HeapDrawer(new Panel(), new PictureBox());
-
-            hp.DrawHeap(albero.GetHeap());
+           
 
 
 

@@ -6,80 +6,71 @@ namespace TestHeap
     public class MinHeap<Uccellino>
     {
         Uccellino[] heap;
-        int size;
-        int cap;
+        int capacity;
+        int occupied;
 
-        public MinHeap(int s)
+
+        public MinHeap(int size)
         {
-            heap = new Uccellino[s];
-            size = 0;
-            cap = s;
+            this.heap = new Uccellino[size];
+            this.capacity = size;
+            this.occupied = 0;
         }
 
-        public Uccellino Parent(int pos)
+        public Uccellino  Parent(int index)
         {
-
-            return heap[(pos - 1) / 2];
-
-
-        }
-        public Uccellino LeftChild(int pos)
-        {
-
-            return heap[(2 * pos) + 1];
-
+            return heap[(index - 1) / 2];
 
         }
 
-        public Uccellino RightChild(int pos)
+        public Uccellino LeftChild(int index) 
         {
 
-            return heap[(2 * pos) + 2];
-
+            return heap[(2 * index) + 1];
 
         }
 
-        public Uccellino Min()
+        public Uccellino RightChild(int index)
         {
-
-            return heap[0];
+            return heap[(2 * index) + 2];
         }
 
-        public void Insert(Uccellino t)
+        public void Inserisci( Uccellino u)
         {
-            if (cap == size)
+            heap[occupied] = u;
+            int i = occupied;
+            occupied++;
+
+            while(i!= 0 && Parent(i).number > heap[i].number)
             {
-                Double();
+                Uccellino temp = heap[i];
+                heap[i] = Parent(i);
+                heap[(i - 1) / 2] = temp;
+                i = (i - 1) / 2;
             }
-
-            heap[size] = t;
-            size++;
         }
 
-        public void Double()
+        public int Altezza()//torev
         {
+            return Convert.ToInt32(Math.Log2(occupied + 1));
+        }
 
-            cap = cap * 2;
-            Uccellino[] temp = new Uccellino[cap];
-            for (int i = 0; i < heap.Length; i++)
+
+
+       
+
+        public void Resize()
+        {
+            capacity = capacity * 2;
+            Uccellino[] temp = new Uccellino[capacity];
+
+            for(int i = 0; i < occupied; i++)
             {
                 temp[i] = heap[i];
             }
+
             heap = temp;
-
         }
-        public void Heapify(int posizia)//ordina l'heap
-        {
-            int parent = heap[posizia].GetNumber();
-        }
-
-
-
-
-
-
-
-
 
 
 
@@ -89,7 +80,18 @@ namespace TestHeap
 
 
     }
-    
+    public class Uccellino
+    {
+        public int id { get; }
+        public int number { get; }
+
+        public Uccellino(int identifier, int num)
+        {
+            this.id = identifier;
+            this.number = num;
+        }
+    }
+
 
 
 

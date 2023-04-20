@@ -1,0 +1,14 @@
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\bin\Debug\netcoreapp3.1\TestHeap.exe
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\bin\Debug\netcoreapp3.1\TestHeap.deps.json
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\bin\Debug\netcoreapp3.1\TestHeap.runtimeconfig.json
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\bin\Debug\netcoreapp3.1\TestHeap.runtimeconfig.dev.json
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\bin\Debug\netcoreapp3.1\TestHeap.dll
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\bin\Debug\netcoreapp3.1\TestHeap.pdb
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\obj\Debug\netcoreapp3.1\TestHeap.csproj.AssemblyReference.cache
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\obj\Debug\netcoreapp3.1\TestHeap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\obj\Debug\netcoreapp3.1\TestHeap.AssemblyInfoInputs.cache
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\obj\Debug\netcoreapp3.1\TestHeap.AssemblyInfo.cs
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\obj\Debug\netcoreapp3.1\TestHeap.csproj.CoreCompileInputs.cache
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\obj\Debug\netcoreapp3.1\TestHeap.dll
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\obj\Debug\netcoreapp3.1\TestHeap.pdb
+C:\Users\leona\Code\Csharp\TestHeap\TestHeap\obj\Debug\netcoreapp3.1\TestHeap.genruntimeconfig.cache

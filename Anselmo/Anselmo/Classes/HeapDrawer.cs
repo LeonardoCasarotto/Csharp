@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Anselmo.Classes
-{
+{/*
     public class HeapDrawer
     {
         private Panel panel;
@@ -52,5 +52,5 @@ namespace Anselmo.Classes
 
 
 
-    }
+    }*/
 }

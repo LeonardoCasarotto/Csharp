@@ -4,118 +4,154 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace Anselmo.Classes
+using Anselmo.Classes;
+namespace Anselmo
 {
-    public class MinHeap<T> where T : Uccellino
+    public class MinHeap<Uccellino>
     {
-        private List<T> arr;
-        private int posizione;
+        Uccellino[] arr;
+        private int posizione { get; set; }
 
-        public MinHeap()
+        //costruttore
+        public MinHeap(int size)
         {
-            this.arr = new List<T>();
-            this.posizione = 0;
+            this.arr = new Uccellino[size];
+            this.posizione = 1;
             Console.WriteLine("Nuovo heapmin creato");
         }
 
-        public T MinValue()
+        //ritorna il valore minimo, cioè quello piu in alto
+        public Uccellino MinValue()
         {
-            if (posizione > 0)
-                return arr[0];
+            if (posizione != 1)
+                return arr[1];
             else
-                return null;
+                return arr[0];
         }
 
+        //ritorna il numero di elementi presenti nell'heap
         public int SizeOfHeap()
         {
-            return posizione;
+            return posizione - 1;  //posizione dell'ultimo elemento
         }
 
-        public void Add(T value)
+        //controllo dell'heap
+        public void Add(Uccellino value)
         {
-            arr.Add(value);
+            if (posizione <= arr.Length - 1)
+            {
+                Aggiungi(value);
+            }
+            else
+            {
+                arr = Resize();
+                Aggiungi(value);
+            }
+        }
+
+        //ridimensiona l'array di appoggio
+        private Uccellino[] Resize()
+        {
+            Uccellino[] temp = new Uccellino[arr.Length * 2];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                temp[i] = arr[i];
+            }
+            Console.WriteLine("Ridimensionamento dell'array avvenuto");
+            return temp;
+        }
+
+        //inserisce un elemento nell'heap
+        private void Aggiungi(Uccellino value)
+        {
+            arr[posizione] = value;
             posizione++;
-            Ordinamento(posizione - 1);
-            Console.WriteLine("Uccello appena arrivato!");
+            Ordinamento(posizione);
+            MessageBox.Show("Uccello appena arrivato!");
         }
 
-        private void Scambia(int i, int j)
+        //trova il parent di un elemento
+        private int Parent(int pos)
         {
-            T temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
+            if (pos % 2 == 0)
+            {
+                return pos / 2;
+            }
+            else
+            {
+                return (pos - 1) / 2;
+            }
         }
 
+        //mette l'elemento nella posizione corretta
         private void Ordinamento(int index)
+        { //num1 è il numero dell'index mentre num 2 è il valore di index+1 
+            if (index <= 1)
+            {
+                return;
+                Console.WriteLine("Siamo gia nella radice");
+            }
+            int parent = Parent(index);
+           
+           
+            if (arr[index].Getnum() < arr[parent].Getnum())
+            {
+                Uccellino tmp = arr[index];
+                arr[index] = arr[parent];
+                arr[parent] = tmp;
+            }
+            Ordinamento(parent);
+        }
+
+        //stampa l'heap
+        public void stampa()
         {
-            if (index <= 0)
+            Console.WriteLine("Stampo array");// Printing from 1 because 0th cell is dummy  
+            for (int i = 1; i <= posizione - 1; i++)
+            {
+                Console.WriteLine(arr[i] + " ");
+            }
+            Console.WriteLine("\n");
+
+        }
+
+        //altezza dell'albero
+        public int altezza()
+        {
+            return (int)Math.Ceiling(Math.Log(posizione) / Math.Log(2));
+        }
+
+        private int num;
+
+        //estrae l'ultima foglia a sinistra dell'heap
+        public void estrai()
+        {
+            if (posizione < 2)
             {
                 return;
             }
-
-            int parent = (index - 1) / 2;
-            if (arr[index].number < arr[parent].number)
+            else
             {
-                Scambia(index, parent);
-                Ordinamento(parent);
+                int h = altezza();
+                num = 2 ^ (h - 1);
+                arr[num] = arr[num + 1];
+                num = num + 1;
+                Ordina();
             }
         }
 
-        public void Stampa()
+        //mette in ordina l'heap
+        public void Ordina()
         {
-            Console.WriteLine("Stampo array:");
-            foreach (T uccellino in arr)
+            for (int i = num; num < posizione - 1; num++)
             {
-                Console.WriteLine(uccellino.id + ", " + uccellino.number);
-            }
-            Console.WriteLine();
-        }
 
-        public int Altezza()
-        {
-            return (int)Math.Ceiling(Math.Log(posizione + 1, 2)) - 1;
-        }
+                arr[num] = arr[num + 1];
 
-        public void Estrai()
-        {
-            if (posizione <= 0)
-            {
-                return;
-            }
-
-            arr[0] = arr[posizione - 1];
-            arr.RemoveAt(posizione - 1);
-            posizione--;
-
-            if (posizione > 1)
-            {
-                Heapify(0);
+                Ordinamento(num);
             }
         }
 
-        private void Heapify(int index)
-        {
-            int smallest = index;
-            int left = 2 * index + 1;
-            int right = 2 * index + 2;
-
-            if (left < posizione && arr[left].number < arr[smallest].number)
-            {
-                smallest = left;
-            }
-
-            if (right < posizione && arr[right].number < arr[smallest].number)
-            {
-                smallest = right;
-            }
-
-            if (smallest != index)
-            {
-                Scambia(index, smallest);
-                Heapify(smallest);
-            }
-        }
     }
 
 }
