@@ -37,6 +37,10 @@ namespace TestHeap
 
         public void Inserisci( Uccellino u)
         {
+            if (occupied == capacity) Resize();
+
+
+
             heap[occupied] = u;
             int i = occupied;
             occupied++;
@@ -55,9 +59,34 @@ namespace TestHeap
             return Convert.ToInt32(Math.Log2(occupied + 1));
         }
 
+        public Uccellino RemoveRight()
+        {
+            Uccellino temp = heap[occupied];
+            heap[occupied] = null;
+            occupied--;
+            return temp;
 
+        }
 
-       
+        public void PrintHeapGraphically()
+        {
+            int currentLevel = 0;
+            int currentLevelCount = 0;
+            int currentLevelMax = 1;
+            for (int i = 0; i < occupied; i++)
+            {
+                Console.Write(heap[i].number + " ");
+                currentLevelCount++;
+                if (currentLevelCount == currentLevelMax)
+                {
+                    Console.WriteLine();
+                    currentLevel++;
+                    currentLevelMax = (int)Math.Pow(2, currentLevel);
+                    currentLevelCount = 0;
+                }
+            }
+        }
+
 
         public void Resize()
         {
@@ -72,6 +101,7 @@ namespace TestHeap
             heap = temp;
         }
 
+       
 
 
 
