@@ -1,20 +1,23 @@
 ﻿<Properties StartupConfiguration="{46E528A8-BEE5-41C6-967F-C743569D38F2}|Default">
   <MonoDevelop.Ide.ItemProperties.TestHeap PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TestHeap/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestHeap/Heap.cs">
     <Files>
-      <File FileName="TestHeap/Program.cs" Line="12" Column="13" />
-      <File FileName="TestHeap/Heap.cs" Line="69" Column="35" />
-      <File FileName="TestHeap/Uccellino.cs" Line="14" Column="8" />
+      <File FileName="TestHeap/Program.cs" Line="23" Column="1" />
+      <File FileName="TestHeap/Heap.cs" Line="102" Column="10" />
+      <File FileName="TestHeap/Uccellino.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TestHeap" expanded="True">
             <Node name="TestHeap" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Heap.cs" selected="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

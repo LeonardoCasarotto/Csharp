@@ -16,6 +16,13 @@ namespace TestHeap
 
 
 
+
+            Console.WriteLine("\n\n\n");
+            ciao.RemoveRight();
+            ciao.PrintHeapGraphically();
+
+
+
         }
     }
 }
