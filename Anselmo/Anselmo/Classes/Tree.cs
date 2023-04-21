@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,11 +16,12 @@ namespace Anselmo.Classes
         object _stampa = new object();
         bool edited = true;
         long _count = 0;
+        Random rn;
 
 
         public Tree()
         {
-            
+            rn = new Random();
 
         }
 
@@ -35,13 +37,15 @@ namespace Anselmo.Classes
         }
 
 
-        public void Insert()
+        public void Insert(int m)
         {
-            lock (_locker)
-            {
+            //lock (_locker)
+            //{
+            heap.Insert(new Uccellino(_count, m));
+
+            _count++;
                 
-                
-            }
+            //}
         }
 
         public int[] GetNdraw()

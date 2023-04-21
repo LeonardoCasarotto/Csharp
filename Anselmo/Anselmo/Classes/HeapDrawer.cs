@@ -18,66 +18,12 @@ namespace Anselmo.Classes
         {
             this.panel = panel;
             this.pictureBox = pictureBox;
-
-            // Set the AutoScroll property of the Panel to True
             panel.AutoScroll = true;
-
-            // Set the SizeMode property of the PictureBox to AutoSize
             pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
-
-            // Add the PictureBox to the Panel
             panel.Controls.Add(pictureBox);
         }
 
-        public void Draw()
-        {
-            // Create a Bitmap with the desired size for the heap diagram
-            bitmap = new Bitmap(500, 500);
-
-            // Use the Graphics class to draw the heap onto the Bitmap
-            using (Graphics graphics = Graphics.FromImage(bitmap))
-            {
-                // Draw the heap here
-                // For example:
-                graphics.FillEllipse(Brushes.Red, 50, 50, 50, 50);
-            }
-
-            // Assign the Bitmap to the Image property of the PictureBox
-            pictureBox.Image = bitmap;
-        }
-
-
-
-
-        public void DrawHeap()
-        {
-
-
-
-            // Create a Bitmap with the desired size for the heap diagram
-            bitmap = new Bitmap(500, 500);
-
-            // Use the Graphics class to draw the heap onto the Bitmap
-            using (Graphics graphics = Graphics.FromImage(bitmap))
-            {
-                // Draw the heap here
-              
-
-                int leafsize = 50;
-                int x = 100;
-                int y = 50;
-
-                for (int i = 0; i < 4; i++)
-                {
-                    graphics.FillEllipse(Brushes.Red, x + i * leafsize, y, leafsize, leafsize);
-                }
-
-            }
-
-            // Assign the Bitmap to the Image property of the PictureBox
-            pictureBox.Image = bitmap;
-        }
-
+       
 
 
 
@@ -104,7 +50,25 @@ namespace Anselmo.Classes
                 using (Graphics graphics = Graphics.FromImage(bitmap))
                 {
                     graphics.FillEllipse(Brushes.Red, nodeX, nodeY, leafSize, leafSize);
-                    graphics.DrawString(heap[i].ToString(), new Font("Arial",11), Brushes.White, nodeX+leafSize/4, nodeY+leafSize/4);
+
+                    int lenx = 1;
+                    int leny = 1;
+                    switch (heap[i].ToString().Length)
+                    {
+                        case 1:
+                            lenx = 3; 
+                            leny = 4;
+                            break;
+                        case 2:
+                            lenx = 4;
+                            leny = 4;
+                            break;
+                        case 3:
+                            lenx = 9;
+                            leny = 5;
+                            break;
+                    }
+                    graphics.DrawString(heap[i].ToString(), new Font("Arial",11), Brushes.White, nodeX+leafSize/lenx, nodeY+leafSize/leny);
                 }
             }
             pictureBox.Image = bitmap;

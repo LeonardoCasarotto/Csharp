@@ -21,7 +21,7 @@ namespace Anselmo
         }
 
         Tree albero = new Tree();
-        HeapDrawer hp;
+        public HeapDrawer hp;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -33,7 +33,7 @@ namespace Anselmo
             stopBtn.Enabled = false;
             pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
             panelTree.AutoScroll = true;
-            int[] heap = new int[] { 35, 33, 43, 10, 14, 19, 27 };
+            
 
             hp = new HeapDrawer(panelTree,pictureBox);
             
@@ -42,10 +42,10 @@ namespace Anselmo
             //avviso.ShowDialog();
             
 
-            albero.Aggiungi();
-            albero.Aggiungi();
-            albero.Aggiungi();
-            hp.DrawHeap(heap,100,30,30);  
+            albero.Insert(3);
+            albero.Insert(57);
+            albero.Insert(875);
+            hp.DrawHeap(albero.GetNdraw(),100,30,30);  
 
 
 
