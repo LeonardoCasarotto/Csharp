@@ -21,6 +21,7 @@ namespace Anselmo
         }
 
         Tree albero = new Tree();
+        HeapDrawer hp;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -29,8 +30,13 @@ namespace Anselmo
             ImgMessageBox avviso = new ImgMessageBox("Inizio",
                                                      "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito tre " +
                                                      "uccellini nell'albero",Properties.Resources._4);
+            stopBtn.Enabled = false;
+
+            hp = new HeapDrawer(panelTree,pictureBox);
+
 
             avviso.ShowDialog();
+            
 
             albero.Aggiungi();
             albero.Aggiungi();
@@ -51,6 +57,16 @@ namespace Anselmo
              
              */
 
+
+
+        }
+
+        private void startBtn_Click(object sender, EventArgs e)
+        {
+
+            hp.Draw();
+            stopBtn.Enabled = true;
+            startBtn.Enabled = false;
 
 
         }

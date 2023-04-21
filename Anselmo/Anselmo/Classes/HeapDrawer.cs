@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Anselmo.Classes
-{/*
+{
     public class HeapDrawer
     {
         private Panel panel;
@@ -29,7 +29,7 @@ namespace Anselmo.Classes
             panel.Controls.Add(pictureBox);
         }
 
-        public void DrawHeap(MinHeap<Uccellino> heap)
+        public void Draw()
         {
             // Create a Bitmap with the desired size for the heap diagram
             bitmap = new Bitmap(500, 500);
@@ -52,5 +52,5 @@ namespace Anselmo.Classes
 
 
 
-    }*/
+    }
 }
