@@ -27,26 +27,40 @@ namespace Anselmo
         {
 
 
-            ImgMessageBox avviso = new ImgMessageBox("Inizio",
+            /*ImgMessageBox avviso = new ImgMessageBox("Inizio",
                                                      "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito tre " +
-                                                     "uccellini nell'albero",Properties.Resources._4);
+                                                     "uccellini nell'albero",Properties.Resources._4);*/
             stopBtn.Enabled = false;
+            pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
+            panelTree.AutoScroll = true;
+            int[] heap = new int[] { 35, 33, 43, 10, 14, 19, 27 };
 
             hp = new HeapDrawer(panelTree,pictureBox);
+            
 
 
-            avviso.ShowDialog();
+            //avviso.ShowDialog();
             
 
             albero.Aggiungi();
             albero.Aggiungi();
             albero.Aggiungi();
+            hp.DrawHeap(heap,100,30,30);  
+
+
+
+            
+            
+
+
+                
 
            
 
 
 
-                
+
+
 
             /* todo:
              * 1. inserimento primi uccellini
@@ -64,11 +78,21 @@ namespace Anselmo
         private void startBtn_Click(object sender, EventArgs e)
         {
 
-            hp.Draw();
+            hp.DrawHeap();
             stopBtn.Enabled = true;
             startBtn.Enabled = false;
 
 
         }
+
+        
+        
+
+
+
     }
+
+
+
 }
+
