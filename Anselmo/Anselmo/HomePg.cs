@@ -92,9 +92,13 @@ namespace Anselmo
         private void startBtn_Click(object sender, EventArgs e)
         {
 
-           
-            stopBtn.Enabled = true;
-            startBtn.Enabled = false;
+
+            albero.Insert(rn.Next(0, 999), true);
+            hp.DrawHeap(albero.GetNdraw(), 100, 30, 30);
+            pictureBox.Width += 10;
+            pictureBox.Height += 10;
+
+            
 
 
         }
