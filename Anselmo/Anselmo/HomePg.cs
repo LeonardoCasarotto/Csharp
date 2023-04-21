@@ -15,20 +15,24 @@ namespace Anselmo
 {
     public partial class HomePg : Form
     {
+        Tree albero = new Tree();
+        public HeapDrawer hp;
+        Random rn;
+
         public HomePg()
         {
             InitializeComponent();
+            rn = new Random();
         }
 
-        Tree albero = new Tree();
-        public HeapDrawer hp;
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
 
             /*ImgMessageBox avviso = new ImgMessageBox("Inizio",
-                                                     "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito tre " +
+                                                     "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito dieci " +
                                                      "uccellini nell'albero",Properties.Resources._4);*/
             stopBtn.Enabled = false;
             pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -43,28 +47,19 @@ namespace Anselmo
 
 
             //inserimento dati
-            albero.Insert(198);
-            albero.Insert(840);
-            albero.Insert(382);
-            albero.Insert(541);
-            albero.Insert(22);
-            albero.Insert(777);
-            albero.Insert(301);
-            albero.Insert(665);
-            albero.Insert(490);
-            albero.Insert(915);
-            albero.Insert(12);
+           
+
+            for(int i = 0; i < 10; i++)
+            {
+                albero.Insert(rn.Next(0, 999));
+            }
 
 
 
             hp.DrawHeap(albero.GetNdraw(),100,30,30);  
            
-            int[] arr = albero.GetNdraw();
-            label1.Text = "[";
-            for (int i = 0; i < arr.Length; i++)
-            {
-                label1.Text += arr[i] + ",";
-            }
+           
+           
 
 
 

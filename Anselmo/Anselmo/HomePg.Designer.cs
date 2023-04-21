@@ -59,18 +59,18 @@
             // 
             // stopBtn
             // 
-            this.stopBtn.Location = new System.Drawing.Point(1097, 639);
+            this.stopBtn.Location = new System.Drawing.Point(1198, 672);
             this.stopBtn.Name = "stopBtn";
-            this.stopBtn.Size = new System.Drawing.Size(256, 71);
+            this.stopBtn.Size = new System.Drawing.Size(155, 38);
             this.stopBtn.TabIndex = 1;
             this.stopBtn.Text = "Stop";
             this.stopBtn.UseVisualStyleBackColor = true;
             // 
             // startBtn
             // 
-            this.startBtn.Location = new System.Drawing.Point(835, 643);
+            this.startBtn.Location = new System.Drawing.Point(1015, 672);
             this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(256, 67);
+            this.startBtn.Size = new System.Drawing.Size(155, 38);
             this.startBtn.TabIndex = 3;
             this.startBtn.Text = "Start";
             this.startBtn.UseVisualStyleBackColor = true;
@@ -81,9 +81,8 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(830, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
             // 
             // HomePg
             // 
