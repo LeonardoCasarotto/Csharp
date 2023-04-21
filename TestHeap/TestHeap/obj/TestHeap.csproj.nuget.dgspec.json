@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/leonardo/Developer/Csharp/TestHeap/TestHeap/TestHeap.csproj": {}
+    "C:\\Users\\leona\\Code\\Csharp\\TestHeap\\TestHeap\\TestHeap.csproj": {}
   },
   "projects": {
-    "/Users/leonardo/Developer/Csharp/TestHeap/TestHeap/TestHeap.csproj": {
+    "C:\\Users\\leona\\Code\\Csharp\\TestHeap\\TestHeap\\TestHeap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/leonardo/Developer/Csharp/TestHeap/TestHeap/TestHeap.csproj",
+        "projectUniqueName": "C:\\Users\\leona\\Code\\Csharp\\TestHeap\\TestHeap\\TestHeap.csproj",
         "projectName": "TestHeap",
-        "projectPath": "/Users/leonardo/Developer/Csharp/TestHeap/TestHeap/TestHeap.csproj",
-        "packagesPath": "/Users/leonardo/.nuget/packages/",
-        "outputPath": "/Users/leonardo/Developer/Csharp/TestHeap/TestHeap/obj/",
+        "projectPath": "C:\\Users\\leona\\Code\\Csharp\\TestHeap\\TestHeap\\TestHeap.csproj",
+        "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leona\\Code\\Csharp\\TestHeap\\TestHeap\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/leonardo/.config/NuGet/NuGet.Config"
+          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.106/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }

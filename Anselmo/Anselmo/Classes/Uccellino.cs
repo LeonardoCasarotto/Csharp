@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Anselmo.Classes
 {
+    /*
     public class Uccellino
     {
 
@@ -17,5 +18,5 @@ namespace Anselmo.Classes
             this.number = n;
         }
 
-    }
+    }*/
 }

@@ -36,16 +36,27 @@ namespace Anselmo
             
 
             hp = new HeapDrawer(panelTree,pictureBox);
-            
+
 
 
             //avviso.ShowDialog();
-            
 
-                albero.Insert();
-            
-            
-           
+
+            //inserimento dati
+            albero.Insert(198);
+            albero.Insert(840);
+            albero.Insert(382);
+            albero.Insert(541);
+            albero.Insert(22);
+            albero.Insert(777);
+            albero.Insert(301);
+            albero.Insert(665);
+            albero.Insert(490);
+            albero.Insert(915);
+            albero.Insert(12);
+
+
+
             hp.DrawHeap(albero.GetNdraw(),100,30,30);  
            
             int[] arr = albero.GetNdraw();

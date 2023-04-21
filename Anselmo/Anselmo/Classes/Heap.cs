@@ -46,26 +46,9 @@ namespace Anselmo.Classes
             return heap[(2 * index) + 2];
         }
 
-        public void Insert(Uccellino u)
-        {
-            if (occupied == capacity) Resize();
+       
 
 
-
-            heap[occupied] = u;
-            int i = occupied;
-            occupied++;
-
-            while (i != 0 && ((Uccellino)Parent(i)).number > ((Uccellino)heap[i]).number)
-            {
-                Uccellino temp = heap[i];
-                heap[i] = Parent(i);
-                heap[(i - 1) / 2] = temp;
-                i = (i - 1) / 2;
-            }
-        }
-
-        
 
         public Uccellino removeRight()
         {
@@ -102,6 +85,50 @@ namespace Anselmo.Classes
             }
 
             return temp;
+        }
+        public void Insert(Uccellino x)
+        {
+            if (occupied == capacity)
+            {
+                Resize();
+            }
+
+            heap[occupied] = x;
+
+            int current = occupied;
+            int parent = (current - 1) / 2;
+
+            while (parent >= 0 && heap[current].number < heap[parent].number)
+            {
+                Swap(heap, current, parent);
+
+                current = parent;
+                parent = (current - 1) / 2;
+            }
+
+            occupied++;
+        }
+
+        private void Swap(Uccellino[] arr, int i, int j)
+        {
+            Uccellino temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+
+    }
+
+
+    public class Uccellino
+    {
+
+        public long id { get; }
+        public int number { get; }
+
+        public Uccellino(long identifier, int n)
+        {
+            this.id = identifier;
+            this.number = n;
         }
 
     }

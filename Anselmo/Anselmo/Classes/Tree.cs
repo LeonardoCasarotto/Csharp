@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Anselmo.Classes
 {
@@ -16,12 +17,12 @@ namespace Anselmo.Classes
         object _stampa = new object();
         bool edited = true;
         long _count = 0;
-        Random rn = new Random();
+        
 
 
         public Tree()
         {
-            
+           
 
         }
 
@@ -37,19 +38,13 @@ namespace Anselmo.Classes
         }
 
 
-        public void Insert()
+        public void Insert(int num)
         {
             //lock (_locker)
-            //{
-            for (int i = 0; i < 10; i++)
-            {
-                heap.Insert(new Uccellino(_count, rn.Next(0, 1000)));
-                _count++;
-            }
-            
 
-            
-                
+                heap.Insert(new Uccellino(_count,num));
+                _count++;
+
             //}
         }
 
