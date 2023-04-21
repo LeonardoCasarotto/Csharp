@@ -50,11 +50,11 @@
     <Compile Include="Classes\HeapDrawer.cs" />
     <Compile Include="Classes\Heap.cs" />
     <Compile Include="Classes\Tree.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="HomePg.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="HomePg.Designer.cs">
+      <DependentUpon>HomePg.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,8 +66,8 @@
     <Compile Include="Utils\ImgMessageBox.Designer.cs">
       <DependentUpon>ImgMessageBox.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="HomePg.resx">
+      <DependentUpon>HomePg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

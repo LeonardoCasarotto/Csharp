@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Anselmo.Classes;
-namespace Anselmo
+namespace Anselmo.Classes
 {
     public class Uccellino
     {
 
         public long id { get; }
-        public int number;
+        public int number { get; }
 
         public Uccellino(long identifier, int n)
         {
@@ -18,9 +17,5 @@ namespace Anselmo
             this.number = n;
         }
 
-        public int Getnum()
-        {
-            return this.number;
-        }
     }
 }

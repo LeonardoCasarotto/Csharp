@@ -13,9 +13,9 @@ using Anselmo.Utils;
 
 namespace Anselmo
 {
-    public partial class Form1 : Form
+    public partial class HomePg : Form
     {
-        public Form1()
+        public HomePg()
         {
             InitializeComponent();
         }

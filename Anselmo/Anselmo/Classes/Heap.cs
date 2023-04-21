@@ -4,153 +4,86 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Anselmo.Classes;
-namespace Anselmo
+namespace Anselmo.Classes
 {
-    public class MinHeap<Uccellino>
+    public class MinHeap
     {
-        Uccellino[] arr;
-        private int posizione { get; set; }
+        Uccellino[] heap;
+        int capacity;
+        int occupied;
 
-        //costruttore
+
         public MinHeap(int size)
         {
-            this.arr = new Uccellino[size];
-            this.posizione = 1;
-            Console.WriteLine("Nuovo heapmin creato");
+            this.heap = new Uccellino[size];
+            this.capacity = size;
+            this.occupied = 0;
         }
 
-        //ritorna il valore minimo, cioè quello piu in alto
-        public Uccellino MinValue()
+        public Uccellino Parent(int index)
         {
-            if (posizione != 1)
-                return arr[1];
-            else
-                return arr[0];
+            return heap[(index - 1) / 2];
+
         }
 
-        //ritorna il numero di elementi presenti nell'heap
-        public int SizeOfHeap()
+        public Uccellino LeftChild(int index)
         {
-            return posizione - 1;  //posizione dell'ultimo elemento
+
+            return heap[(2 * index) + 1];
+
         }
 
-        //controllo dell'heap
-        public void Add(Uccellino value)
+        public Uccellino RightChild(int index)
         {
-            if (posizione <= arr.Length - 1)
+            return heap[(2 * index) + 2];
+        }
+
+        public void Inserisci(Uccellino u)
+        {
+            if (occupied == capacity) Resize();
+
+
+
+            heap[occupied] = u;
+            int i = occupied;
+            occupied++;
+
+            while (i != 0 && ((Uccellino)Parent(i)).number > ((Uccellino)heap[i]).number)
             {
-                Aggiungi(value);
-            }
-            else
-            {
-                arr = Resize();
-                Aggiungi(value);
+                Uccellino temp = heap[i];
+                heap[i] = Parent(i);
+                heap[(i - 1) / 2] = temp;
+                i = (i - 1) / 2;
             }
         }
 
-        //ridimensiona l'array di appoggio
-        private Uccellino[] Resize()
+        
+
+        public Uccellino RemoveRight()
         {
-            Uccellino[] temp = new Uccellino[arr.Length * 2];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                temp[i] = arr[i];
-            }
-            Console.WriteLine("Ridimensionamento dell'array avvenuto");
+            Uccellino temp = heap[occupied];
+            heap[occupied] = null;
+            occupied--;
             return temp;
+
         }
 
-        //inserisce un elemento nell'heap
-        private void Aggiungi(Uccellino value)
+        
+
+
+        public void Resize()
         {
-            arr[posizione] = value;
-            posizione++;
-            Ordinamento(posizione);
-            MessageBox.Show("Uccello appena arrivato!");
+            capacity = capacity * 2;
+            Uccellino[] temp = new Uccellino[capacity];
+
+            for (int i = 0; i < occupied; i++)
+            {
+                temp[i] = heap[i];
+            }
+
+            heap = temp;
         }
 
-        //trova il parent di un elemento
-        private int Parent(int pos)
-        {
-            if (pos % 2 == 0)
-            {
-                return pos / 2;
-            }
-            else
-            {
-                return (pos - 1) / 2;
-            }
-        }
-
-        //mette l'elemento nella posizione corretta
-        private void Ordinamento(int index)
-        { //num1 è il numero dell'index mentre num 2 è il valore di index+1 
-            if (index <= 1)
-            {
-                return;
-                Console.WriteLine("Siamo gia nella radice");
-            }
-            int parent = Parent(index);
-           
-           
-            if (arr[index].Getnum() < arr[parent].Getnum())
-            {
-                Uccellino tmp = arr[index];
-                arr[index] = arr[parent];
-                arr[parent] = tmp;
-            }
-            Ordinamento(parent);
-        }
-
-        //stampa l'heap
-        public void stampa()
-        {
-            Console.WriteLine("Stampo array");// Printing from 1 because 0th cell is dummy  
-            for (int i = 1; i <= posizione - 1; i++)
-            {
-                Console.WriteLine(arr[i] + " ");
-            }
-            Console.WriteLine("\n");
-
-        }
-
-        //altezza dell'albero
-        public int altezza()
-        {
-            return (int)Math.Ceiling(Math.Log(posizione) / Math.Log(2));
-        }
-
-        private int num;
-
-        //estrae l'ultima foglia a sinistra dell'heap
-        public void estrai()
-        {
-            if (posizione < 2)
-            {
-                return;
-            }
-            else
-            {
-                int h = altezza();
-                num = 2 ^ (h - 1);
-                arr[num] = arr[num + 1];
-                num = num + 1;
-                Ordina();
-            }
-        }
-
-        //mette in ordina l'heap
-        public void Ordina()
-        {
-            for (int i = num; num < posizione - 1; num++)
-            {
-
-                arr[num] = arr[num + 1];
-
-                Ordinamento(num);
-            }
-        }
 
     }
 
