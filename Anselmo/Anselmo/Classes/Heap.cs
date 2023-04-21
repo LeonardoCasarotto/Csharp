@@ -38,7 +38,7 @@ namespace Anselmo.Classes
             return heap[(2 * index) + 2];
         }
 
-        public void Inserisci(Uccellino u)
+        public void Insert(Uccellino u)
         {
             if (occupied == capacity) Resize();
 
@@ -59,7 +59,7 @@ namespace Anselmo.Classes
 
         
 
-        public Uccellino RemoveRight()
+        public Uccellino removeRight()
         {
             Uccellino temp = heap[occupied];
             heap[occupied] = null;
@@ -84,6 +84,17 @@ namespace Anselmo.Classes
             heap = temp;
         }
 
+        public int[] getHeap()
+        {
+            int[] temp = new int[occupied];
+
+            for (int i = 0; i < temp.Length; i++)
+            {
+                temp[i] = heap[i].number;
+            }
+
+            return temp;
+        }
 
     }
 
