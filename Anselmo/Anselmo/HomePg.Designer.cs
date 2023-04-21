@@ -33,6 +33,7 @@
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.stopBtn = new System.Windows.Forms.Button();
             this.startBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelTree.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +76,15 @@
             this.startBtn.UseVisualStyleBackColor = true;
             this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(830, 119);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
             // HomePg
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -82,6 +92,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1365, 722);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.startBtn);
             this.Controls.Add(this.stopBtn);
             this.Controls.Add(this.panelTree);
@@ -95,6 +106,7 @@
             this.panelTree.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -104,6 +116,7 @@
         private System.Windows.Forms.Button stopBtn;
         private System.Windows.Forms.Button startBtn;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 

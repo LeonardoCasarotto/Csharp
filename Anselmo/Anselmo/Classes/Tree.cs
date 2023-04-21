@@ -16,12 +16,12 @@ namespace Anselmo.Classes
         object _stampa = new object();
         bool edited = true;
         long _count = 0;
-        Random rn;
+        Random rn = new Random();
 
 
         public Tree()
         {
-            rn = new Random();
+            
 
         }
 
@@ -37,13 +37,18 @@ namespace Anselmo.Classes
         }
 
 
-        public void Insert(int m)
+        public void Insert()
         {
             //lock (_locker)
             //{
-            heap.Insert(new Uccellino(_count, m));
+            for (int i = 0; i < 10; i++)
+            {
+                heap.Insert(new Uccellino(_count, rn.Next(0, 1000)));
+                _count++;
+            }
+            
 
-            _count++;
+            
                 
             //}
         }

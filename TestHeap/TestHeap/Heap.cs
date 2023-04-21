@@ -35,24 +35,7 @@ namespace TestHeap
             return heap[(2 * index) + 2];
         }
 
-        public void Inserisci( Uccellino u)
-        {
-            if (occupied == capacity) Resize();
-
-
-
-            heap[occupied] = u;
-            int i = occupied;
-            occupied++;
-
-            while (i != 0 && ((Uccellino)Parent(i)).number > ((Uccellino)heap[i]).number)
-            {
-                Uccellino temp = heap[i];
-                heap[i] = Parent(i);
-                heap[(i - 1) / 2] = temp;
-                i = (i - 1) / 2;
-            }
-        }
+        
 
         public int Altezza()//torev
         {
@@ -66,6 +49,22 @@ namespace TestHeap
             occupied--;
             return temp;
 
+        }
+        public void Inserisci(Uccellino uccellino)
+        {
+            if (occupied == capacity) { Resize(); }
+
+            heap[occupied] = uccellino;
+            occupied++;
+
+            int currentIndex = occupied - 1;
+            while (currentIndex > 0 && heap[currentIndex].number < Parent(currentIndex).number)
+            {
+                Uccellino temp = Parent(currentIndex);
+                heap[(currentIndex - 1) / 2] = heap[currentIndex];
+                heap[currentIndex] = temp;
+                currentIndex = (currentIndex - 1) / 2;
+            }
         }
 
         public void PrintHeapGraphically()
@@ -99,6 +98,17 @@ namespace TestHeap
             }
 
             heap = temp;
+        }
+
+        public int[] Arr()
+        {
+            int[] temp = new int[occupied];
+
+            for(int i = 0; i < occupied; i++)
+            {
+                temp[i] = heap[i].number;
+            }
+            return temp;
         }
 
        

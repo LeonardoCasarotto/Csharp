@@ -22,7 +22,15 @@ namespace Anselmo.Classes
 
         public Uccellino Parent(int index)
         {
-            return heap[(index - 1) / 2];
+            if (index % 2 == 0)
+            {
+                return heap[index / 2];
+            }
+            else
+            {
+                return heap[(index - 1) / 2];
+            }
+            
 
         }
 

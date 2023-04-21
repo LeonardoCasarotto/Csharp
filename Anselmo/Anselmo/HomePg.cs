@@ -42,10 +42,18 @@ namespace Anselmo
             //avviso.ShowDialog();
             
 
-            albero.Insert(3);
-            albero.Insert(57);
-            albero.Insert(875);
+                albero.Insert();
+            
+            
+           
             hp.DrawHeap(albero.GetNdraw(),100,30,30);  
+           
+            int[] arr = albero.GetNdraw();
+            label1.Text = "[";
+            for (int i = 0; i < arr.Length; i++)
+            {
+                label1.Text += arr[i] + ",";
+            }
 
 
 
@@ -78,7 +86,7 @@ namespace Anselmo
         private void startBtn_Click(object sender, EventArgs e)
         {
 
-            hp.DrawHeap();
+           
             stopBtn.Enabled = true;
             startBtn.Enabled = false;
 

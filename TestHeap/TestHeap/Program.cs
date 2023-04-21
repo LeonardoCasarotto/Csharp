@@ -6,20 +6,23 @@ namespace TestHeap
     {
         static void Main(string[] args)
         {
+            Random rnd = new Random();
             MinHeap ciao = new MinHeap(250);
-            ciao.Inserisci(new Uccellino(0, 20));
-            ciao.Inserisci(new Uccellino(1, 12));
-            ciao.Inserisci(new Uccellino(2, 150));
-            ciao.Inserisci(new Uccellino(3, 4));
-
-            ciao.PrintHeapGraphically();
+            for (int i = 0; i < 10; i++)
+                ciao.Inserisci(new Uccellino(0, rnd.Next(0,1000)));
 
 
+            int[] arr = ciao.Arr();
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
 
 
-            Console.WriteLine("\n\n\n");
-            ciao.RemoveRight();
-            ciao.PrintHeapGraphically();
+
+
+            
 
 
 

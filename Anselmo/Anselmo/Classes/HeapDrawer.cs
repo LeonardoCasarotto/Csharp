@@ -29,7 +29,7 @@ namespace Anselmo.Classes
 
         public void DrawHeap(int[] heap, int x, int y, int leafSize)
         {
-            bitmap = new Bitmap(500, 500);
+            bitmap = new Bitmap(500, 1500);
 
 
             
