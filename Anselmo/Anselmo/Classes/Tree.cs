@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Anselmo.Utils;
 
 namespace Anselmo.Classes
 {
@@ -17,7 +18,11 @@ namespace Anselmo.Classes
         object _stampa = new object();
         bool edited = true;
         long _count = 0;
-        
+        ImgMessageBox ins = new ImgMessageBox("Aggiunta",
+                                                 "Attenzione! Il coniglio Anselmo ha annunciato l'arrivo di un nuovo uccellino", Properties.Resources._2);
+        ImgMessageBox rem = new ImgMessageBox("Rimozione",
+                                                 "Attenzione! La volpe Tecla ha appena rimosso un uccellino!", Properties.Resources.wolf);
+
 
 
         public Tree()
@@ -30,20 +35,24 @@ namespace Anselmo.Classes
         {
             lock (_locker)
             {
-                
 
 
+                rem.ShowDialog();
 
             }
         }
 
 
-        public void Insert(int num)
+        public void Insert(int num,bool ann)
         {
             //lock (_locker)
 
                 heap.Insert(new Uccellino(_count,num));
                 _count++;
+            if (ann) ins.ShowDialog();
+            
+                
+                
 
             //}
         }

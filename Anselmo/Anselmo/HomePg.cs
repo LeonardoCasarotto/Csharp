@@ -51,7 +51,7 @@ namespace Anselmo
 
             for(int i = 0; i < 10; i++)
             {
-                albero.Insert(rn.Next(0, 999));
+                albero.Insert(rn.Next(0, 999),false);
             }
 
 

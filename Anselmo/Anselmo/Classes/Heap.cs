@@ -118,19 +118,4 @@ namespace Anselmo.Classes
 
     }
 
-
-    public class Uccellino
-    {
-
-        public long id { get; }
-        public int number { get; }
-
-        public Uccellino(long identifier, int n)
-        {
-            this.id = identifier;
-            this.number = n;
-        }
-
-    }
-
 }
