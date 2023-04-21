@@ -14,27 +14,34 @@ namespace Anselmo.Classes
         private PictureBox pictureBox;
         private Bitmap bitmap;
 
-        public HeapDrawer(Panel panel, PictureBox pictureBox)
+        public HeapDrawer(FlowLayoutPanel panel, PictureBox pictureBox)
         {
             this.panel = panel;
             this.pictureBox = pictureBox;
             panel.AutoScroll = true;
             pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
             panel.Controls.Add(pictureBox);
-            panel.AutoScroll = true;
-            panel.AutoScrollMinSize = new Size(500, 1500);
-            panel.AutoScroll = true;
+           
+  
+
+
+           
+
+
+            
+
+
         }
 
 
 
 
 
-        public void DrawHeap(int[] heap, int x, int y, int leafSize)
+        public void DrawHeap(int[] heap, int x, int y, int leafSize, int leafSpacing)
         {
-            bitmap = new Bitmap(500, 1500);
+            bitmap = new Bitmap(1500, 1500);
 
-            int leafSpacing = 10;
+           
             int levels = (int)Math.Log(heap.Length, 2) + 1;
             int maxNodesInLevel = (int)Math.Pow(2, levels - 1);
             int totalWidth = maxNodesInLevel * (leafSize + leafSpacing);

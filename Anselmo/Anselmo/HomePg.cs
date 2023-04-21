@@ -35,11 +35,11 @@ namespace Anselmo
                                                      "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito dieci " +
                                                      "uccellini nell'albero",Properties.Resources._4);*/
             stopBtn.Enabled = false;
-            pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
-            panelTree.AutoScroll = true;
+            /*pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
+            panelTree.AutoScroll = true;*/
             
 
-            hp = new HeapDrawer(panelTree,pictureBox);
+            hp = new HeapDrawer(flowLayoutPanel1,pictureBox1);
 
 
 
@@ -56,7 +56,7 @@ namespace Anselmo
 
 
 
-            hp.DrawHeap(albero.GetNdraw(),100,30,30);  
+            hp.DrawHeap(albero.GetNdraw(),100,30,30,30);  
            
            
            
@@ -93,10 +93,10 @@ namespace Anselmo
         {
 
 
-            albero.Insert(rn.Next(0, 999), true);
-            hp.DrawHeap(albero.GetNdraw(), 100, 30, 30);
-            pictureBox.Width += 10;
-            pictureBox.Height += 10;
+            albero.Insert(rn.Next(0, 999), false);
+            hp.DrawHeap(albero.GetNdraw(), 100, 30, 30,30);
+            /*pictureBox.Width += 10;
+            pictureBox.Height += 10;*/
 
             
 
