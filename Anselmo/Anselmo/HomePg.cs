@@ -36,7 +36,9 @@ namespace Anselmo
             stopBtn.BackColor = Color.FromArgb(255, 156, 126);
 
             threadConiglio = new Thread(coniglioAnselmo.Coniglia);
+            threadConiglio.IsBackground = true;
             threadVolpe = new Thread(volpeTecla.Volpeggia);
+            threadVolpe.IsBackground = true;
 
             Control.CheckForIllegalCrossThreadCalls = false;
 
@@ -68,7 +70,7 @@ namespace Anselmo
         private void startBtn_Click(object sender, EventArgs e)
         {
 
-
+            
             threadConiglio.Start();
             threadVolpe.Start();
             startBtn.Enabled = false;
@@ -85,8 +87,7 @@ namespace Anselmo
             stopBtn.Enabled = false;
             startBtn.Enabled = false;
             albero.funzia = false;
-            //threadConiglio.Abort();
-            //threadVolpe.Abort();
+            
 
 
 
