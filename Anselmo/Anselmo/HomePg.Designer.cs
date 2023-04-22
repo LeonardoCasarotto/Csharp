@@ -77,6 +77,7 @@
             // HomePg
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(1362, 738);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.startBtn);

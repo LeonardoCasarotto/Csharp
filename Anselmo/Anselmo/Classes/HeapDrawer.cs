@@ -55,8 +55,8 @@ namespace Anselmo.Classes
                     int nodeIndexInLevel = i - nodesInLevel + 1;
                     int nodeX = x + totalWidth / 2 - nodesInLevel * leafSize / 2 - (nodesInLevel - 1) * leafSpacing / 2 + nodeIndexInLevel * (leafSize + leafSpacing);
                     int nodeY = y + level * (leafSize + leafSpacing);
-
-                    graphics.FillEllipse(Brushes.Red, nodeX, nodeY, leafSize, leafSize);
+                    SolidBrush brush = new SolidBrush(Color.FromArgb(249, 196, 255));
+                    graphics.FillEllipse(brush, nodeX, nodeY, leafSize, leafSize);
 
                     int lenx = 1;
                     int leny = 1;
