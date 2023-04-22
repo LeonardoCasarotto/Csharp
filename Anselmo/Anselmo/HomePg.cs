@@ -126,6 +126,8 @@ namespace Anselmo
             threadConiglio.Abort();
             threadVolpe.Abort();
 
+
+
             ImgMessageBox end = new ImgMessageBox("Fine", "Il programma è finito, ci vediamo la prossima Pasqua!", Properties.Resources._3);
         }
         
