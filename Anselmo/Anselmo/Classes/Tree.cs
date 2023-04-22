@@ -31,13 +31,14 @@ namespace Anselmo.Classes
 
         }
 
-        public void Remove()
+        public void Remove(bool ann)
         {
             lock (_locker)
             {
 
 
-                rem.ShowDialog();
+                if(ann)rem.ShowDialog();
+                heap.removeRight();
 
             }
         }

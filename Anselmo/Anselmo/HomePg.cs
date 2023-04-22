@@ -34,10 +34,9 @@ namespace Anselmo
             /*ImgMessageBox avviso = new ImgMessageBox("Inizio",
                                                      "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito dieci " +
                                                      "uccellini nell'albero",Properties.Resources._4);*/
-            stopBtn.Enabled = false;
-            /*pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
-            panelTree.AutoScroll = true;*/
-            
+           // stopBtn.Enabled = false;
+
+
 
             hp = new HeapDrawer(flowLayoutPanel1,pictureBox1);
 
@@ -56,10 +55,7 @@ namespace Anselmo
 
 
 
-            hp.DrawHeap(albero.GetNdraw(),100,30,30,30);  
-           
-           
-           
+            hp.DrawHeap(albero.GetNdraw(),100,30,30,30);
 
 
 
@@ -103,11 +99,12 @@ namespace Anselmo
 
         }
 
-        
-        
+        private void stopBtn_Click(object sender, EventArgs e)
+        {
+            albero.Remove(false);
+            hp.DrawHeap(albero.GetNdraw(), 100, 30, 30, 30);
 
-
-
+        }
     }
 
 

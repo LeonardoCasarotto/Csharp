@@ -39,16 +39,17 @@
             // 
             // stopBtn
             // 
-            this.stopBtn.Location = new System.Drawing.Point(1198, 672);
+            this.stopBtn.Location = new System.Drawing.Point(1045, 660);
             this.stopBtn.Name = "stopBtn";
             this.stopBtn.Size = new System.Drawing.Size(155, 38);
             this.stopBtn.TabIndex = 1;
             this.stopBtn.Text = "Stop";
             this.stopBtn.UseVisualStyleBackColor = true;
+            this.stopBtn.Click += new System.EventHandler(this.stopBtn_Click);
             // 
             // startBtn
             // 
-            this.startBtn.Location = new System.Drawing.Point(1015, 672);
+            this.startBtn.Location = new System.Drawing.Point(862, 660);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(155, 38);
             this.startBtn.TabIndex = 3;
@@ -78,7 +79,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(208)))));
-            this.ClientSize = new System.Drawing.Size(1362, 738);
+            this.ClientSize = new System.Drawing.Size(1222, 719);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.startBtn);
             this.Controls.Add(this.stopBtn);

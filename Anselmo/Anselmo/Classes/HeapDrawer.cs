@@ -50,13 +50,22 @@ namespace Anselmo.Classes
             {
                 for (int i = 0; i < heap.Length; i++)
                 {
+                    //various params
                     int level = (int)Math.Log(i + 1, 2);
                     int nodesInLevel = (int)Math.Pow(2, level);
                     int nodeIndexInLevel = i - nodesInLevel + 1;
                     int nodeX = x + totalWidth / 2 - nodesInLevel * leafSize / 2 - (nodesInLevel - 1) * leafSpacing / 2 + nodeIndexInLevel * (leafSize + leafSpacing);
                     int nodeY = y + level * (leafSize + leafSpacing);
-                    SolidBrush brush = new SolidBrush(Color.FromArgb(249, 196, 255));
+
+
+                    SolidBrush brush = new SolidBrush(Color.FromArgb(249, 196, 255));//custom brush 
+
+
+
                     graphics.FillEllipse(brush, nodeX, nodeY, leafSize, leafSize);
+
+
+                    //write number over the circle 
 
                     int lenx = 1;
                     int leny = 1;
@@ -75,6 +84,9 @@ namespace Anselmo.Classes
                             leny = 5;
                             break;
                     }
+
+
+
                     graphics.DrawString(heap[i].ToString(), new Font("Arial", 11), Brushes.White, nodeX + leafSize / lenx, nodeY + leafSize / leny);
 
                     // Draw branches
@@ -87,7 +99,9 @@ namespace Anselmo.Classes
                         int parentNodeX = x + totalWidth / 2 - parentNodesInLevel * leafSize / 2 - (parentNodesInLevel - 1) * leafSpacing / 2 + parentNodeIndexInLevel * (leafSize + leafSpacing);
                         int parentNodeY = y + parentLevel * (leafSize + leafSpacing);
 
-                        Pen pen = new Pen(Brushes.Black, 2);
+
+
+                        Pen pen = new Pen(Color.FromArgb(255,156,126), 2);
                         graphics.DrawLine(pen, nodeX + leafSize / 2, nodeY, parentNodeX + leafSize / 2, parentNodeY + leafSize);
                     }
                 }
