@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
+
 using Anselmo.Classes;
 using Anselmo.Utils;
 
@@ -34,6 +35,8 @@ namespace Anselmo
 
             threadConiglio = new Thread(coniglioAnselmo.Coniglia);
             threadVolpe = new Thread(volpeTecla.Volpeggia);
+
+            Control.CheckForIllegalCrossThreadCalls = false;
 
         }
 
@@ -119,9 +122,9 @@ namespace Anselmo
         private void stopBtn_Click(object sender, EventArgs e)
         {
             
-            funzia = false;
-            threadConiglio.Join();
-            threadVolpe.Join();
+            albero.funzia = false;
+            threadConiglio.Abort();
+            threadVolpe.Abort();
 
             ImgMessageBox end = new ImgMessageBox("Fine", "Il programma è finito, ci vediamo la prossima Pasqua!", Properties.Resources._3);
         }

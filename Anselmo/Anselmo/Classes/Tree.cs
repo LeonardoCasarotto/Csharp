@@ -18,7 +18,7 @@ namespace Anselmo.Classes
         object _stampa;
         Random rn;
         bool removed = true;
-        bool funzia { get; set; } = true;
+        public bool funzia { get; set; } = true;
 
 
 
@@ -67,9 +67,16 @@ namespace Anselmo.Classes
 
 
                     Uccellino tmp = heap.removeRight();
-                    rem.setMsg("La volpe Tecla ha rimosso l'uccellino identificativo " + tmp.id + " con valore " + tmp.number);
-                    if (ann) rem.ShowDialog();
-                    hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
+
+
+                    if (tmp != null)
+                    {
+                        rem.setMsg("La volpe Tecla ha rimosso l'uccellino identificativo " + tmp.id + " con valore " + tmp.number);
+                        if (ann) rem.ShowDialog();
+                        hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
+
+                        Thread.Sleep(500);
+                    }
                     removed = true;
 
                     Monitor.Pulse(_locker);
@@ -96,7 +103,7 @@ namespace Anselmo.Classes
                     heap.Insert(new Uccellino(_count, rn.Next(0, 999)));
                     _count++;
 
-
+                    //ins.ShowDialog();
 
                   
 

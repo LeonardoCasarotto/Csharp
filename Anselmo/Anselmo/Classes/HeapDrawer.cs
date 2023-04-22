@@ -97,6 +97,7 @@ namespace Anselmo.Classes
                     }
                 }
             }
+
             pictureBox.Image = bitmap;
         }
 
