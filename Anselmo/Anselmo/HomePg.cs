@@ -20,6 +20,7 @@ namespace Anselmo
         Thread threadConiglio;
         Volpe volpeTecla;
         Thread threadVolpe;
+        
 
 
 
@@ -31,6 +32,8 @@ namespace Anselmo
             albero = new Tree(hp);
             coniglioAnselmo = new Coniglio(albero);
             volpeTecla = new Volpe(albero);
+            startBtn.BackColor = Color.FromArgb(255, 156, 126);
+            stopBtn.BackColor = Color.FromArgb(255, 156, 126);
 
             threadConiglio = new Thread(coniglioAnselmo.Coniglia);
             threadVolpe = new Thread(volpeTecla.Volpeggia);
@@ -48,12 +51,12 @@ namespace Anselmo
 
 
 
-            albero.firstInsert(10);
+            albero.firstInsert(20);
 
 
 
             ImgMessageBox avviso = new ImgMessageBox("Inizio",
-                                                     "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito dieci " +
+                                                     "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito venti " +
                                                      "uccellini nell'albero", Properties.Resources._4);
             avviso.ShowDialog();
 
@@ -82,8 +85,8 @@ namespace Anselmo
             stopBtn.Enabled = false;
             startBtn.Enabled = false;
             albero.funzia = false;
-            threadConiglio.Abort();
-            threadVolpe.Abort();
+            //threadConiglio.Abort();
+            //threadVolpe.Abort();
 
 
 

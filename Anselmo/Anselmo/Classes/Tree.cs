@@ -58,7 +58,7 @@ namespace Anselmo.Classes
 
         public void Remove(bool ann)
         {
-            while (true)
+            while (funzia)
             {
 
 
@@ -69,8 +69,8 @@ namespace Anselmo.Classes
 
                 if (tmp != null)
                 {
-                    //rem.setMsg("La volpe Tecla ha rimosso l'uccellino identificativo " + tmp.id + " con valore " + tmp.number);
-                    //if (ann) rem.ShowDialog();
+                    rem.setMsg("La volpe Tecla ha rimosso l'uccellino identificativo " + tmp.id + " con valore " + tmp.number);
+                    if (ann) rem.ShowDialog();
                     lock (_stampa)  hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
 
                     Thread.Sleep(rn.Next(500,5500));
@@ -87,7 +87,7 @@ namespace Anselmo.Classes
         public void Insert(bool ann)
         {
 
-            while (true)
+            while (funzia)
             {
 
 
@@ -101,9 +101,11 @@ namespace Anselmo.Classes
 
                   
 
-
+                    
                     lock(_stampa) hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
                     removed = false;
+;
+                    ins.ShowDialog();
 
                     Thread.Sleep(rn.Next(500,5500));
 
@@ -112,10 +114,10 @@ namespace Anselmo.Classes
 
 
 
-                }
+             }
 
 
-            }
+        }
 
 
 

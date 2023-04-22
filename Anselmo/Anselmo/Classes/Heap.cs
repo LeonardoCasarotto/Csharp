@@ -10,7 +10,7 @@ namespace Anselmo.Classes
     {
         Uccellino[] heap;
         int capacity;
-        int occupied;
+        public int occupied { get; set; }
 
 
         public MinHeap(int size)
@@ -52,6 +52,7 @@ namespace Anselmo.Classes
 
         public Uccellino removeRight()
         {
+            if(occupied <= 0) return null;
             Uccellino temp = heap[occupied];
             heap[occupied] = null;
             occupied--;
@@ -77,7 +78,7 @@ namespace Anselmo.Classes
 
         public int[] getHeap()
         {
-            if(occupied == 0) return null;
+            if(occupied <= 0) return null;
             int[] temp = new int[occupied];
 
             for (int i = 0; i < temp.Length; i++)
@@ -93,6 +94,7 @@ namespace Anselmo.Classes
             {
                 Resize();
             }
+            if (occupied < 0) return;
 
             heap[occupied] = x;
 

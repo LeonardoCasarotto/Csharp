@@ -21,7 +21,9 @@ namespace Anselmo.Utils
             label1.MaximumSize = new Size(300, 0);
             label1.AutoSize = true;
             pictureBox1.Image = img;
+ 
             
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,5 +36,12 @@ namespace Anselmo.Utils
         {
             label1.Text = msg;
         }
+
+        private void ImgMessageBox_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        
     }
 }
