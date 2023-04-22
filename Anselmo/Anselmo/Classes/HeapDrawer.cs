@@ -21,15 +21,6 @@ namespace Anselmo.Classes
             panel.AutoScroll = true;
             pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
             panel.Controls.Add(pictureBox);
-           
-  
-
-
-           
-
-
-            
-
 
         }
 

@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Anselmo.Classes;
-namespace Anselmo
+
+
+namespace Anselmo.Classes
 {
     public class Coniglio
     {
         Tree albero;
-
-
 
 
         public Coniglio(Tree t) 
@@ -18,10 +17,10 @@ namespace Anselmo
             this.albero = t;
         }
 
-        public void Coniglia() { }
-
-
-
+        public void Coniglia() 
+        {
+            albero.Insert(true);
+        }
 
 
     }

@@ -12,6 +12,7 @@ namespace Anselmo.Utils
 {
     public partial class ImgMessageBox : Form
     {
+
         public ImgMessageBox(string title, string msg, Image img)
         {
             InitializeComponent();
@@ -25,7 +26,13 @@ namespace Anselmo.Utils
 
         private void button1_Click(object sender, EventArgs e)
         {
+          
             this.Close();
+        }
+
+        public void setMsg(string msg)
+        {
+            label1.Text = msg;
         }
     }
 }

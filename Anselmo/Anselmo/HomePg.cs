@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
@@ -15,14 +13,28 @@ namespace Anselmo
 {
     public partial class HomePg : Form
     {
-        Tree albero = new Tree();
         public HeapDrawer hp;
-        Random rn;
+        Tree albero;
+        Coniglio coniglioAnselmo;
+        Thread threadConiglio;
+        Volpe volpeTecla;
+        Thread threadVolpe;
+
+
+        bool funzia = true;
 
         public HomePg()
         {
             InitializeComponent();
-            rn = new Random();
+
+            hp = new HeapDrawer(flowLayoutPanel1, pictureBox1);
+            albero = new Tree(hp);
+            coniglioAnselmo = new Coniglio(albero);
+            volpeTecla = new Volpe(albero);
+
+            threadConiglio = new Thread(coniglioAnselmo.Coniglia);
+            threadVolpe = new Thread(volpeTecla.Volpeggia);
+
         }
 
         
@@ -31,31 +43,31 @@ namespace Anselmo
         {
 
 
-            /*ImgMessageBox avviso = new ImgMessageBox("Inizio",
+            
+            // stopBtn.Enabled = false;
+
+
+
+            albero.firstInsert(10);
+
+
+
+
+            ImgMessageBox avviso = new ImgMessageBox("Inizio",
                                                      "Attenzione! Per l'inizio, il coniglio Anselmo ha giá inserito dieci " +
-                                                     "uccellini nell'albero",Properties.Resources._4);*/
-           // stopBtn.Enabled = false;
-
-
-
-            hp = new HeapDrawer(flowLayoutPanel1,pictureBox1);
-
-
-
-            //avviso.ShowDialog();
-
-
-            //inserimento dati
-           
-
-            for(int i = 0; i < 10; i++)
-            {
-                albero.Insert(rn.Next(0, 999),false);
-            }
-
-
+                                                     "uccellini nell'albero", Properties.Resources._4);
+            avviso.ShowDialog();
 
             hp.DrawHeap(albero.GetNdraw(),100,30,30,30);
+
+
+
+
+
+
+
+
+
 
 
 
@@ -89,10 +101,15 @@ namespace Anselmo
         {
 
 
-            albero.Insert(rn.Next(0, 999), false);
-            hp.DrawHeap(albero.GetNdraw(), 100, 30, 30,30);
+            // albero.Insert(rn.Next(0, 999), false);
+            //hp.DrawHeap(albero.GetNdraw(), 100, 30, 30,30);
             /*pictureBox.Width += 10;
             pictureBox.Height += 10;*/
+            threadConiglio.Start();
+            threadVolpe.Start();
+
+
+
 
             
 
@@ -101,10 +118,27 @@ namespace Anselmo
 
         private void stopBtn_Click(object sender, EventArgs e)
         {
-            albero.Remove(false);
-            hp.DrawHeap(albero.GetNdraw(), 100, 30, 30, 30);
+            
+            funzia = false;
+            threadConiglio.Join();
+            threadVolpe.Join();
 
+            ImgMessageBox end = new ImgMessageBox("Fine", "Il programma è finito, ci vediamo la prossima Pasqua!", Properties.Resources._3);
         }
+        
+
+
+        private void Draw(object sender, EventArgs e)
+        {
+            hp.DrawHeap(albero.GetNdraw(), 100, 30, 30, 30);
+        }
+
+       
+
+
+
+
+
     }
 
 

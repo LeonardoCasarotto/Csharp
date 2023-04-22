@@ -58,7 +58,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Classes\Tecla.cs" />
+    <Compile Include="Classes\Volpe.cs" />
     <Compile Include="Classes\Uccellino.cs" />
     <Compile Include="Utils\ImgMessageBox.cs">
       <SubType>Form</SubType>

@@ -3,21 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Anselmo.Classes;
 
-namespace Anselmo
+
+namespace Anselmo.Classes
 {
-    public class Tecla
+    public class Volpe
     {
         Tree albero;
 
-        public Tecla(Tree al) 
+        public Volpe(Tree al) 
         {
 
             this.albero = al;
         }
 
-        public void Funzia() { }
+        public void Volpeggia()
+        {
+            albero.Remove(true);
+        }
 
     }
 }

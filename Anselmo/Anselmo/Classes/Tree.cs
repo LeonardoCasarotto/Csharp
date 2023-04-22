@@ -13,49 +13,121 @@ namespace Anselmo.Classes
     public class Tree
     {
 
-        MinHeap heap = new MinHeap(50);
-        object _locker = new object();
-        object _stampa = new object();
-        bool edited = true;
+        MinHeap heap;
+        object _locker;
+        object _stampa;
+        Random rn;
+        bool removed = true;
+        bool funzia { get; set; } = true;
+
+
+
+
+
+
+
+
         long _count = 0;
         ImgMessageBox ins = new ImgMessageBox("Aggiunta",
                                                  "Attenzione! Il coniglio Anselmo ha annunciato l'arrivo di un nuovo uccellino", Properties.Resources._2);
         ImgMessageBox rem = new ImgMessageBox("Rimozione",
                                                  "Attenzione! La volpe Tecla ha appena rimosso un uccellino!", Properties.Resources.wolf);
+        public HeapDrawer hp;
 
 
 
-        public Tree()
+
+
+
+
+
+        public Tree(HeapDrawer h)
         {
-           
+            heap = new MinHeap(5);
+            this.hp = h;
 
+            rn = new Random();
+
+            _locker = new object();
         }
+
+
+
+
+
+
 
         public void Remove(bool ann)
         {
-            lock (_locker)
+            while (true)
             {
+                lock (_locker)
+                {
+                    if (removed) Monitor.Wait(_locker);
 
 
-                if(ann)rem.ShowDialog();
-                heap.removeRight();
+                    Uccellino tmp = heap.removeRight();
+                    rem.setMsg("La volpe Tecla ha rimosso l'uccellino identificativo " + tmp.id + " con valore " + tmp.number);
+                    if (ann) rem.ShowDialog();
+                    hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
+                    removed = true;
 
+                    Monitor.Pulse(_locker);
+
+                }
             }
         }
 
 
-        public void Insert(int num,bool ann)
+        public void Insert(bool ann)
         {
-            //lock (_locker)
 
-                heap.Insert(new Uccellino(_count,num));
-                _count++;
-            if (ann) ins.ShowDialog();
+
+            //torev
+            while (true)
+            {
+
+
+                lock (_locker)
+                {
+                    if (!removed) Monitor.Wait(_locker);
+
+
+                    heap.Insert(new Uccellino(_count, rn.Next(0, 999)));
+                    _count++;
+
+
+
+                  
+
+
+                    hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
+                    removed = false;
+
+                    Monitor.Pulse(_locker);
+
+
+
+
+                }
+
+
+            }
+
+
+
             
-                
-                
+        }
 
-            //}
+
+        public void firstInsert(int num)
+        {
+
+            for (int i = 0; i < num; i++)
+            {
+                heap.Insert(new Uccellino(_count, rn.Next(0, 999)));
+                _count++;
+            }
         }
 
         public int[] GetNdraw()
