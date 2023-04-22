@@ -77,6 +77,7 @@ namespace Anselmo.Classes
 
         public int[] getHeap()
         {
+            if(occupied == 0) return null;
             int[] temp = new int[occupied];
 
             for (int i = 0; i < temp.Length; i++)

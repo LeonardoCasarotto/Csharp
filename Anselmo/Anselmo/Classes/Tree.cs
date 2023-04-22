@@ -14,7 +14,6 @@ namespace Anselmo.Classes
     {
 
         MinHeap heap;
-        object _locker;
         object _stampa;
         Random rn;
         bool removed = true;
@@ -45,10 +44,10 @@ namespace Anselmo.Classes
         {
             heap = new MinHeap(5);
             this.hp = h;
-
+            _stampa = new object();
             rn = new Random();
 
-            _locker = new object();
+            
         }
 
 
@@ -61,57 +60,54 @@ namespace Anselmo.Classes
         {
             while (true)
             {
-                lock (_locker)
+
+
+
+
+                Uccellino tmp = heap.removeRight();
+
+
+                if (tmp != null)
                 {
-                    if (removed) Monitor.Wait(_locker);
+                    //rem.setMsg("La volpe Tecla ha rimosso l'uccellino identificativo " + tmp.id + " con valore " + tmp.number);
+                    //if (ann) rem.ShowDialog();
+                    lock (_stampa)  hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
 
-
-                    Uccellino tmp = heap.removeRight();
-
-
-                    if (tmp != null)
-                    {
-                        rem.setMsg("La volpe Tecla ha rimosso l'uccellino identificativo " + tmp.id + " con valore " + tmp.number);
-                        if (ann) rem.ShowDialog();
-                        hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
-
-                        Thread.Sleep(500);
-                    }
-                    removed = true;
-
-                    Monitor.Pulse(_locker);
-
+                    Thread.Sleep(rn.Next(500,5500));
                 }
+                removed = true;
             }
+                    
+
+                
+            
         }
 
 
         public void Insert(bool ann)
         {
 
-
-            //torev
             while (true)
             {
 
 
-                lock (_locker)
-                {
-                    if (!removed) Monitor.Wait(_locker);
+               
+                   
 
 
                     heap.Insert(new Uccellino(_count, rn.Next(0, 999)));
                     _count++;
 
-                    //ins.ShowDialog();
 
                   
 
 
-                    hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
+                    lock(_stampa) hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
                     removed = false;
 
-                    Monitor.Pulse(_locker);
+                    Thread.Sleep(rn.Next(500,5500));
+
+                    
 
 
 
@@ -124,7 +120,7 @@ namespace Anselmo.Classes
 
 
             
-        }
+        
 
 
         public void firstInsert(int num)
@@ -139,22 +135,17 @@ namespace Anselmo.Classes
 
         public int[] GetNdraw()
         {
-            lock ( _locker)
-            {
+            
 
 
                 return heap.getHeap();
 
 
-            }
+            
 
         }
 
 
 
-
-
-
-        
     }
 }

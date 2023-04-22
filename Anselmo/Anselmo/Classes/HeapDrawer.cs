@@ -30,6 +30,7 @@ namespace Anselmo.Classes
 
         public void DrawHeap(int[] heap, int x, int y, int leafSize, int leafSpacing)
         {
+            if (heap == null) return;
             bitmap = new Bitmap(1500, 1500);
 
            

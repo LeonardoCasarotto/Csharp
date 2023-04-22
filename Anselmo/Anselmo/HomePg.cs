@@ -22,7 +22,6 @@ namespace Anselmo
         Thread threadVolpe;
 
 
-        bool funzia = true;
 
         public HomePg()
         {
@@ -46,13 +45,10 @@ namespace Anselmo
         {
 
 
-            
-            // stopBtn.Enabled = false;
 
 
 
             albero.firstInsert(10);
-
 
 
 
@@ -64,64 +60,27 @@ namespace Anselmo
             hp.DrawHeap(albero.GetNdraw(),100,30,30,30);
 
 
-
-
-
-
-
-
-
-
-
-
-            
-            
-
-
-                
-
-           
-
-
-
-
-
-
-            /* todo:
-             * 1. inserimento primi uccellini
-             * 2. dichiarazione e avvio thread
-             * 3. evento per finire alla pressione di un pulsante
-             
-             
-             
-             */
-
-
-
         }
 
         private void startBtn_Click(object sender, EventArgs e)
         {
 
 
-            // albero.Insert(rn.Next(0, 999), false);
-            //hp.DrawHeap(albero.GetNdraw(), 100, 30, 30,30);
-            /*pictureBox.Width += 10;
-            pictureBox.Height += 10;*/
             threadConiglio.Start();
             threadVolpe.Start();
+            startBtn.Enabled = false;
+            stopBtn.Enabled = true;
 
 
-
-
-            
 
 
         }
 
         private void stopBtn_Click(object sender, EventArgs e)
         {
-            
+
+            stopBtn.Enabled = false;
+            startBtn.Enabled = false;
             albero.funzia = false;
             threadConiglio.Abort();
             threadVolpe.Abort();
@@ -129,6 +88,7 @@ namespace Anselmo
 
 
             ImgMessageBox end = new ImgMessageBox("Fine", "Il programma è finito, ci vediamo la prossima Pasqua!", Properties.Resources._3);
+            end.ShowDialog();
         }
         
 
@@ -137,10 +97,6 @@ namespace Anselmo
         {
             hp.DrawHeap(albero.GetNdraw(), 100, 30, 30, 30);
         }
-
-       
-
-
 
 
 
