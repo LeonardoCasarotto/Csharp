@@ -16,7 +16,6 @@ namespace Anselmo.Classes
         MinHeap heap;
         object _stampa;
         Random rn;
-        bool removed = true;
         public bool funzia { get; set; } = true;
 
 
@@ -53,9 +52,6 @@ namespace Anselmo.Classes
 
 
 
-
-
-
         public void Remove(bool ann)
         {
             while (funzia)
@@ -75,7 +71,7 @@ namespace Anselmo.Classes
 
                     Thread.Sleep(rn.Next(500,5500));
                 }
-                removed = true;
+
             }
                     
 
@@ -90,28 +86,14 @@ namespace Anselmo.Classes
             while (funzia)
             {
 
-
-               
-                   
-
-
                     heap.Insert(new Uccellino(_count, rn.Next(0, 999)));
                     _count++;
-
-
-                  
-
                     
                     lock(_stampa) hp.DrawHeap(this.GetNdraw(), 100, 30, 30, 30);
-                    removed = false;
 ;
                     ins.ShowDialog();
 
                     Thread.Sleep(rn.Next(500,5500));
-
-                    
-
-
 
 
              }
@@ -137,13 +119,9 @@ namespace Anselmo.Classes
 
         public int[] GetNdraw()
         {
-            
-
 
                 return heap.getHeap();
 
-
-            
 
         }
 

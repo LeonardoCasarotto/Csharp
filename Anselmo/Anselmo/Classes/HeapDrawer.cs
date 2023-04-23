@@ -79,7 +79,7 @@ namespace Anselmo.Classes
 
 
 
-                    graphics.DrawString(heap[i].ToString(), new Font("Arial", 11), Brushes.White, nodeX + leafSize / lenx, nodeY + leafSize / leny);
+                    graphics.DrawString(heap[i].ToString(), new Font("Microsoft YaHei", 10), Brushes.White, nodeX + leafSize / lenx, nodeY + leafSize / leny);
 
                     // Draw branches
                     if (i > 0)

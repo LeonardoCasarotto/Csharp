@@ -29,12 +29,12 @@ namespace Anselmo
             InitializeComponent();
 
             hp = new HeapDrawer(flowLayoutPanel1, pictureBox1);
+
             albero = new Tree(hp);
+
+            //objects and threads
             coniglioAnselmo = new Coniglio(albero);
             volpeTecla = new Volpe(albero);
-            startBtn.BackColor = Color.FromArgb(255, 156, 126);
-            stopBtn.BackColor = Color.FromArgb(255, 156, 126);
-
             threadConiglio = new Thread(coniglioAnselmo.Coniglia);
             threadConiglio.IsBackground = true;
             threadVolpe = new Thread(volpeTecla.Volpeggia);
@@ -42,19 +42,14 @@ namespace Anselmo
 
             Control.CheckForIllegalCrossThreadCalls = false;
 
+
         }
 
         
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-
-
-
-
             albero.firstInsert(20);
-
 
 
             ImgMessageBox avviso = new ImgMessageBox("Inizio",
@@ -77,8 +72,6 @@ namespace Anselmo
             stopBtn.Enabled = true;
 
 
-
-
         }
 
         private void stopBtn_Click(object sender, EventArgs e)
@@ -87,12 +80,10 @@ namespace Anselmo
             stopBtn.Enabled = false;
             startBtn.Enabled = false;
             albero.funzia = false;
-            
-
-
 
             ImgMessageBox end = new ImgMessageBox("Fine", "Il programma è finito, ci vediamo la prossima Pasqua!", Properties.Resources._3);
             end.ShowDialog();
+            this.Close();
         }
         
 
