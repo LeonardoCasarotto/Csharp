@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{5DAB1B93-4FA3-4126-A323-5708B86A5785}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Es0424/simpleGraph.cs">
+    <Files>
+      <File FileName="Es0424/AdiacencyListGraph.cs" Line="51" Column="41" />
+      <File FileName="Es0424/simpleGraph.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Es0424" expanded="True">
+            <Node name="Es0424" expanded="True">
+              <Node name="simpleGraph.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Es0424 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
