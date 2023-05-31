@@ -81,6 +81,17 @@ namespace Es0424
 
         public string PrintAdjecyMatrix(int?[,] adj, int Length)
         {
+            string n = "";
+            for (int i = 0; i < arrLinkedList.Length; i++)
+            {
+                n += " [Node Value: " + i + " with Neighbors";
+                foreach (var item in arrLinkedList)
+                {
+                    n += " -> " + item;
+                    n += " I\n";
+                }
+            }
+                return n;
 
         }
 
